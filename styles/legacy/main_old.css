@@ -1,0 +1,61 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center-holder {
+  position: absolute;
+  top: 128px;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+
+  /*url('https://media.istockphoto.com/photos/old-dirty-paper-texture-picture-id1133497899?k=20&m=1133497899&s=612x612&w=0&h=prcfczBW4lvGL2MMa4p5Amptoop924QBgYX_1eJYzoU=')*/
+  background-image: url('/images/Parchment.png');
+  background-size: contain;
+}
+
+/* */
+.row-minor {
+  padding-left: 5%;
+  height: 1px;
+}
+
+/* Media queries to adjust for special conditions, such as split-screen or mobile devices */
+@media (max-width: 1000px) {
+  .center-holder {
+    left: 5%;
+    width: 90%;
+  }
+}
+
+/* ### index ### */
+.cell {
+  background-image: url('/images/GridCell.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  background-blend-mode: multiply;
+}
+.cell-overlay {
+  /* Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Overlay */
+  width: 86%;
+  height: 87.88%;
+  margin: 5.9%;
+  
+  background-color: rgba(0, 255, 255, 0.5);  
+}

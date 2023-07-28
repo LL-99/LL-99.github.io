@@ -1,0 +1,102 @@
+<!DOCTYPE html><!-- CSS only -->
+<html>
+<header>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Setup -->
+    <title>Weather Generator</title>
+
+    <!-- Navbar -->
+    <script src="/loaders/navloader.js"> </script>
+</header>
+
+<body>
+    <!-- Define script before main html, since we need the onchange event -->
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/weather.js"></script>
+
+    <!-- Background Image-->
+    <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg"
+        class="img-fluid w-100 h-50 parallax" style="padding-bottom: -0%; position: static;" alt="Responsive image">
+
+    <!-- Outer wrapper to attach to navbar -->
+    <div id="main-center" class="center-holder"
+        style="background-color: rgb(192, 192, 192); background-image: none; border-radius: 20px;">
+        <!-- Actual content holder; Absolute offset to overlay image -->
+        <main role="main" class="container" style="position:relative; top:80px; width: 90%;">
+
+            <h1 style="text-align: center;">Weather Generator</h1>
+
+            <div style="height: 20px;"></div>
+
+            <p>This page contains a simple weather generator. Pick your biome/region as well as the time of year below
+                and confirm your selection.</p>
+
+            <div class="container">
+                <select id="biome-select" class="form-select" onchange="updateBiomeDescription(this)"
+                    style="width: 20%;" aria-label="Default select example">
+                    <option value="0" selected>A</option>
+                    <option value="1">B</option>
+                    <option value="2">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</option>
+                    <option value="3">D</option>
+                </select>
+                <select id="season-select" class="form-select" style="width: 20%;" aria-label="Default select example">
+                    <option value="0" selected>Spring</option>
+                    <option value="1">Summer</option>
+                    <option value="2">Fall</option>
+                    <option value="3">Winter</option>
+                </select>
+                <p id="biome-descr">EYEYEYEY</p>
+            </div>
+
+            <button id="button-confirm-selection" type="button" class="btn btn-primary" onclick="generateWeather()"
+                style="margin-left: 40%; margin-right: 40%; width: 20%; height: 60px; font-size: large;">Generate
+                Weather</button>
+
+            <div style="height: 20px;"></div>
+
+            <table class="table" style="margin-bottom: 1000px";>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Temperature</th>
+                        <th scope="col">Humidity/Downpour</th>
+                        <th scope="col">Cloudiness</th>
+                        <th scope="col">Wind speed</th>
+                        <th scope="col">Short Description</th>
+                    </tr>
+                </thead>
+                <tbody id="weather-table">
+                    <tr>
+                        <td>10°C</th>
+                        <td>238% (1l/s)</td>
+                        <td>Spectral Supercell</td>
+                        <td>100 km/s</td>
+                        <td>The most super of superstorms</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html><!-- CSS only -->
+<html>
+<header>
+    <!-- Include Stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Setup -->
+    <title>Some prices</title>
+
+    <!-- Navbar -->
+    <script src="../navloader.js"> </script>
+
+</header>
+
+<body>
+
+    <div class="justify-content-center" style="position: relative;">
+        <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg"
+            class="img-fluid rounded w-100 h-50" style="padding-bottom: -0%" alt="Responsive image">
+
+        <main role="main" class="container center-holder">
+
+            <h1 class="text-center">Prices</h1>
+            <p class="text-center">This page contains (in my eyes) appropriate prices for items, services and more.
+                Please keep in mind that these values are setting-dependent! </p>
+                <p class="text-center">This page contains (in my eyes) appropriate prices for items, services and more.
+                    Please keep in mind that these values are setting-dependent! </p>
+
+
+            <div style="margin-left: 10%; width: 80%;">
+                <h2 class="text-center">Lifestyles</h2>
+
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="col-md-1">Lifestyle</th>
+                            <th scope="col" class="col-md-1">Daily Expenses</th>
+                            <th scope="col" class="col-md-1">Average loan (week)</th>
+                            <th scope="col" class="col-md-2">Who</th>
+                            <th scope="col" class="col-md-1">High sum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Wretched</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Beggars and homeless people</td>
+                            <td>4 cp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Poor</th>
+                            <td>8-10 cp</td>
+                            <td>6-7 sp</td>
+                            <td>Simple farmers and workers, often not much more than serfs</td>
+                            <td>4 sp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modest</th>
+                            <td>2-4 sp</td>
+                            <td>3-4 gp</td>
+                            <td>Artisans, small merchants and similar</td>
+                            <td>2-3 gp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Comfortable</th>
+                            <td>1-2 gp</td>
+                            <td>10 gp</td>
+                            <td>Traders, small business owners, etc.</td>
+                            <td>1 pp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wealthy</th>
+                            <td>5-10 gp</td>
+                            <td>>10 pp</td>
+                            <td>Large business owners, rich merchants or equivalent</td>
+                            <td>100 pp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aristocratic/Rich</th>
+                            <td>>10 gp</td>
+                            <td>>10 pp</td>
+                            <td>Wealth on a level usually only obtained by an entire house or clan. Weekly loan should be considered as more than just personal earnings.</td>
+                            <td>1000 pp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <div style="margin-left: 5%; width:90%;">
+
+                        <h2 class="text-center">Cost of Living</h2>
+                        <p>This table contains various food, drink, and lodging related
+                            items/services. While these values are based upon the official 5e guidelines - which can be
+                            found on DM Screens for instance - I expanded them based on overall regional wealth as well
+                            as a short description/flavor. I also fixed a few mind-boggling math errors (how would a mug
+                            of ale be 1/5th the price of a gallon?) and converted from imperial to metric units where
+                            appropriate.</p>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Cost</th>
+                                    <th scope="col">Lifestyle</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" colspan="4">Drinks</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 cp</td>
+                                    <td>Poor</td>
+                                    <td>A simple mug of water, occasionally offered in poor taverns and inns. Tastes
+                                        dirty.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 gp</td>
+                                    <td>Rich</td>
+                                    <td>Clean water served in a luxurious cup. While not especially tasty, clean water
+                                        serves as a status symbol in rich establishments in large and dirty cities.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Ale</p>
+                                    </td>
+                                    <td>2 cp (mug), 6 cp (liter), 2.8 sp (barrel)</td>
+                                    <td>Poor, Moderate</td>
+                                    <td>Cheap ale sold en masse in low-income taverns and inns. It tastes more watery
+                                        than most cups of water and serves as staple food for most peasants and workers.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Beer</p>
+                                    </td>
+                                    <td>4 cp (mug), 1.2 sp (liter), 5.5 sp (barrel)</td>
+                                    <td>Poor</td>
+                                    <td>Strong beer traditionally brewed in monasteries and dedicated breweries. Its
+                                        taste varies on multiple factors, such as its production (maybe roll a d20 to
+                                        see how tasty it is).</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Region</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Region</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Region</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lodging</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="margin-left: 5%; width:90%;">
+
+                        <h2 class="text-center">Cost of Living</h2>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Cost</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" colspan="3">Drinks</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="row-minor">Water</p>
+                                    </td>
+                                    <td>1 GP</td>
+                                    <td>Descr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">Food</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lodging</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex
+                communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem
+                certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+            <p class="text-left">Left aligned text on all viewport sizes.</p>
+            <p class="text-center">Center aligned text on all viewport sizes.</p>
+            <p class="text-right">Right aligned text on all viewport sizes.</p>
+
+            <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+            <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+            <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+            <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+            <p class="text-lowercase">Lowercased text.</p>
+            <p class="text-uppercase">Uppercased text.</p>
+            <p class="text-capitalize">CapiTaliZed text.</p>
+
+            <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                This text should wrap.
+            </div>
+
+            <p class="text-break">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+            <p class="fs-1">.fs-1 text</p>
+            <p class="fs-2">.fs-2 text</p>
+            <p class="fs-3">.fs-3 text</p>
+            <p class="fs-4">.fs-4 text</p>
+            <p class="fs-5">.fs-5 text</p>
+            <p class="fs-6">.fs-6 text</p>
+
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+            <p class="fw-normal">Normal weight text.</p>
+            <p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+
+            <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+        </main>
+    </div>
+</body>
+
+</html>

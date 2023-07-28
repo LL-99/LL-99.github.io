@@ -1,0 +1,880 @@
+/* ############### */
+/* Body & Wrappers */
+/* ############### */
+/* #region */
+
+/* Enable border-box sizing for all elements to make page layout more consistent*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* Format the main page container*/
+.content {
+    background-color: #e7e7e7;
+
+    border-style: ridge;
+    border-color: #acacac;
+    border-width: 5px;
+    border-radius: 10px;
+
+    padding: 0% 5% 5% 5%;
+
+}
+
+/* Used in v2 of the page for the individual (now disjointed) sections */
+/*.container {
+}*/
+
+/* If the screen is larger than a specific threshold add a bufferzone on the left and right side for visual reasons*/
+@media (min-width: 600px) {
+
+    .container,
+    .content {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        margin-left: 10vw;
+
+        width: calc(80vw - (100vw - 100%));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container,
+    .content {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        margin-left: 5vw;
+
+        width: calc(90vw - (100vw - 100%));
+    }
+}
+
+/* #endregion */
+
+/* ############### */
+/* Layout Elements */
+/* ############### */
+/* #region */
+
+.divider-super-tiny {
+    padding-bottom: 10px;
+}
+
+.divider-tiny {
+    padding-bottom: 25px;
+}
+
+.divider-small {
+    padding-bottom: 50px;
+}
+
+.divider-medium {
+    padding-bottom: 100px;
+}
+
+.divider-large {
+    padding-bottom: 150px;
+}
+
+.divider-small-barred {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+
+    margin: 50px 0px 50px 0px;
+}
+
+/* #endregion */
+
+
+/* ######### */
+/* Scrollbar */
+/* ######### */
+/* #region */
+
+/* Adjust width */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5f5f5f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+}
+
+/* #endregion */
+
+/* ################# */
+/* Table of Contents */
+/* ################# */
+/* #region */
+
+.toc {
+    background: #f9f9f9;
+    border: 2px solid #aaa;
+    display: table;
+    font-size: larger;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+
+    margin: auto;
+    width: auto;
+}
+
+.toc-title {
+    text-align: center;
+}
+
+/* #endregion */
+
+/* ######################### */
+/* General text and headings */
+/* ######################### */
+/* #region */
+
+/* Set basic font for all texts */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Slightly increase the default paragraph */
+p {
+    font-size: larger;
+}
+
+/* Adapted default h1 settings for the page's main caption*/
+h0 {
+    display: block;
+    font-size: 4em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* Class to easily force a justified text layout */
+.text-justify {
+    text-align: justify;
+}
+
+/* Class to easily force a centered text layout */
+.text-center {
+    text-align: center;
+}
+
+/* Text that should be centered in desktop view and justified in mobile view */
+.text-centered-justify {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .text-centered-justify {
+        text-align: justify;
+    }
+}
+
+
+.text-outline {
+    color: white;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+/* Classes for captions, may be expanded later */
+.caption {
+    text-align: center;
+}
+
+.caption-main {
+    text-align: center;
+    padding-top: 20vh;
+    /* TODO: Rework this to use scale*/
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Adjusts the "return to top" text found at each project*/
+.return-to-top-text {
+    position: absolute;
+    font-size: smaller;
+    text-decoration: none;
+
+    margin-top: 10px;
+    right: 16%;
+
+    margin-bottom: -10px;
+}
+
+.return-to-top {
+    position: absolute;
+    font-size: smaller;
+    text-decoration: none;
+
+    margin-top: 26px;
+    right: 10%;
+
+    margin-bottom: -10px;
+}
+
+/* #endregion */
+
+/* ##### */
+/* Lists */
+/* ##### */
+/* #region */
+
+/* For certain lists we don't want an additional offset left to each bullet point */
+.list-narrow {
+    font-size: large;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-right: 0%;
+}
+
+/* Same as the narrow list, but with a bit more padding*/
+.list-not-so-narrow {
+    font-size: large;
+    padding-left: 30px;
+    margin-left: 0px;
+    margin-right: 0%;
+}
+
+/* #endregion */
+
+/* ######## */
+/* Parallax */
+/* ######## */
+/* #region */
+
+.parallax {
+    /* The image used */
+    background-image: url("/images/placeholders/thumbnails/Placeholder1_Thumbnail.png");
+
+    /* Full height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-intro-holder {
+    width: 100%;
+
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    min-height: 60vh;
+}
+
+.parallax-intro {
+    /* The image used */
+    background-image: url("/images/placeholders/Placeholder1.png");
+
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+
+    /* Set to full width */
+    width: 100%;
+    /* more fancy version: calc(100vw - (100vw - 100%));*/
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* Make sure the image is rendered behind all others*/
+    z-index: -1000;
+
+    /* Full height */
+    min-height: 60vh;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*animation: slide-in 3s;*/
+}
+
+@keyframes slide-in {
+    0% {
+        -webkit-transform: translate(100vw, 0);
+    }
+
+    10% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+/* #endregion */
+
+/* ############### */
+/* Skills showcase */
+/* ############### */
+/* #region */
+
+#skills-table {
+    margin: auto;
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#skills-table th {
+    width: 20%;
+}
+
+#skills-table tr,
+th,
+td {
+    border-style: none;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Divs inside the actual cells are required for proper borders & coloring */
+#skills-table td div {
+    height: 200px;
+
+    padding: 10px;
+    margin: 0%;
+
+    border-style: none;
+    border-color: red;
+
+    border-width: 2px;
+    border-radius: 10px;
+
+    background-color: rgb(181, 216, 221);
+
+    font-weight: bold;
+}
+
+/* Lists inside the skill showcase should have no bullet points and indent */
+#skills-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#skills-table li {
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+
+/* #endregion */
+
+/* ################ */
+/* Project showcase */
+/* ################ */
+/* #region */
+
+/* Base project showcase container */
+.project-cell {
+    /* Add empty spaces left and right */
+    margin-left: 5%;
+    margin-right: 5%;
+
+    /* Background color may be overwritten individually for specific projects */
+    background-color: rgb(255, 189, 189);
+
+    border-radius: 20px;
+    border-style: outset;
+
+    /* By default force text into a justified layout */
+    text-align: justify;
+
+    /* Make sure the project text is not overlapping with the border */
+    padding: 2%;
+}
+
+/* If the screen is to narrow, instead display without extra margin*/
+@media (max-width: 600px) {
+    .project-cell {
+        margin-left: 0%;
+        margin-right: 0%;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Deprecated; Removal pending; Use classes from the "Parallax" region instead */
+.project-background {
+    background-image: url("images/placeholders/Placeholder1.png");
+    min-height: 400px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-color: red;
+    border-width: 20px;
+    border-radius: 0;
+}
+
+/* #endregion */
+
+/* ######### */
+/* Slideshow */
+/* ######### */
+/* #region */
+
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.temp {
+
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+    border: 1px solid black;
+}
+
+.slide {
+    display: none;
+}
+
+.slide .caption {
+    /* Apply a tiny offset between captions and slides */
+    margin-top: 10px;
+}
+
+.slide-prev,
+.slide-next {
+    /* Positioning */
+    /*position: absolute;
+    top: 32%;
+    width: auto;
+    margin-top: 0%;*/
+
+    position: absolute;
+    top: 0px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+
+    /* Button-like visuals */
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 0 8px 8px 0;
+
+    color: rgb(0, 0, 0);
+    background-color: #dddddd80;
+    font-weight: bold;
+    font-size: 18px;
+
+    transition: 0.6s ease;
+    user-select: none;
+
+    z-index: 1000;
+
+    /* Make transitions instant, since we're constantly adjusting positions */
+    transition-duration: 0s;
+}
+
+.slide-image,
+.slide-video {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+
+    /* For Debug purposes only */
+    /* border: 3px dotted red; */
+}
+
+.slide-video {
+    display: block; 
+    margin: auto; 
+}
+
+.slide-portrait {
+    display: block;
+    margin: auto;
+
+    object-fit: contain;
+
+    max-height: 455px;
+    width: auto;
+}
+
+.slide-landscape {
+    display: block;
+    margin: auto;
+    
+    object-fit: contain;
+
+    max-width: 100%;
+    max-height: 455px;
+    width: auto;
+}
+
+.slide-landscape-fixed {
+    display: block;
+    margin: auto;
+    
+    object-fit: contain;
+
+    max-width: 100%;
+    height: 455px;
+    width: auto;
+
+    aspect-ratio: 1.7777777;
+}
+
+.slide-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slide-prev:hover,
+.slide-next:hover {
+    background-color: rgba(90, 90, 90, 0.8);
+}
+
+.slide-index {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Visuals */
+    color: #f2f2f2;
+    background-color: #717171;
+    font-size: 12px;
+
+    padding: 8px 12px;
+    border-radius: 8px 0 8px 0;
+}
+
+/* The dots/bullets/indicators */
+.dot-holder {
+    /* Make sure the dots are centered*/
+    text-align: center;
+
+    /* Add a tiny extra space between captions and dots */
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* #endregion */
+
+/* ###### */
+/* Tables */
+/* ###### */
+/* #region */
+
+.table-basic {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    table-layout: fixed;
+}
+
+/* In general */
+.table-basic,
+.table-basic tr,
+.table-basic th,
+.table-basic td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Format images to fully fill out a table cell*/
+.table-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 8px;
+}
+
+/* Fake one-liner table to evenly space images across a single row */
+.table-images {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .table-images {
+        margin: 0 10% 0 10%;
+    }
+}
+
+.table-images span {
+    width: 50%;
+    padding: 10px;
+}
+
+.table-images p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    font-size: medium;
+}
+
+.table-images img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* #endregion */
+
+/* ############### */
+/* Project Preview */
+/* ############### */
+/* #region */
+
+/* Row that contains any number of projects */
+.project-preview-row {
+    width: 100%;
+
+    /* Make flexbox to easily order the project entries */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Keep the entries in the center */
+    justify-content: center;
+    align-items: center;
+}
+
+/* If the screen is to narrow, instead display projects as vertical list */
+@media (max-width: 600px) {
+    .project-preview-row {
+        flex-direction: column;
+    }
+}
+
+/* Main container  */
+.project-preview-cell {
+    position: relative;
+
+    min-width: 256px;
+    width: 256px;
+    height: 455px;
+
+    /*
+    width: 192px;
+    height: 341px;
+    */
+    margin: 16px;
+}
+
+/* Background example image */
+.project-preview-background {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.project-preview-background img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.project-preview-background video {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+/* Short description shown on hover */
+.project-preview-description {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+
+    padding: 10px;
+    margin: 0;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.project-preview-description h3 {
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.project-preview-description p {
+    margin: 10px 0 5px 0;
+    padding: 0;
+
+    font-size: medium;
+}
+
+/* Fade in the project short description */
+.project-preview-background:hover+.project-preview-description,
+.project-preview-description:hover {
+    background-color: rgba(192, 192, 192, 0.85);
+    opacity: 1;
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: .0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.project-preview-scrolling-image {
+    object-fit: cover;
+    animation: scrollImage 10s alternate infinite linear;
+}
+
+@keyframes scrollImage {
+    from {
+        object-position: 0;
+    }
+
+    to {
+        object-position: 100%;
+    }
+}
+
+.project-group-preview {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.project-group-preview a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-group-preview img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.project-group-preview p {
+    margin: 0;
+    text-align: center;
+}
+
+/* #endregion */
+
+/* ########## */
+/* Hyperlinks */
+/* ########## */
+/* #region */
+
+.return-link {
+    margin: auto;
+    padding: 16px;
+
+    width: 64px;
+    height: 64px;
+
+    font-size: xx-large;
+
+    background-color: white;
+
+    border: 5px solid black;
+    border-radius: 50%;
+
+}
+
+.return-link a {
+    display: block;
+
+    position: absolute;
+    left: 50%;    
+    transform: translate(-50%, -.35em);   
+  
+    text-decoration: none;
+    color:black;
+}
+
+/* #endregion */

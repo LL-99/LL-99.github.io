@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "on",
+    "diffEditor.wordWrap": "inherit",
+    "editor.autoIndent": "full",
+    "editor.detectIndentation": true,
+    "brace_style": "collapse,preserve-inline"
+}

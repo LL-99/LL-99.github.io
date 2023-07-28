@@ -1,0 +1,145 @@
+<!DOCTYPE html><!-- CSS only -->
+<html>
+<header>
+    <!-- Include Stuff -->
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/translator.css">
+
+    <!-- Setup -->
+    <title>Translator</title>
+
+    <!-- Navbar -->
+    <!--<script src="../loaders/navloader.js"> </script>-->
+
+</header>
+
+<body>
+    <div class="translator-main">
+        <!--<p>Head's up! Using the word classifier will store retrieved data in a cookie to move some strain of the API! If you do not like that you can always clear the cookie data here or disable this entirely. Be aware that absolutely ZERO personal info is stored in these cookies!</p>-->
+
+        <h0>Procedural Translator</h0>
+
+        <button class="help-button" onclick="TogglePopup('Info')">?</button>
+        <button class="help-button" onclick="TogglePopup('Rule Editor')" style="right: 100px;">!</button>
+
+
+        <!-- Holds the import/export buttons, etc.-->
+        <div id="sharing" style="width: 100%; height: 50px; display: table;">
+            <div id="sharing-export"
+                 style="margin-left: 2%; width: 45%; height: 100%; display: table-cell;">
+
+                <button id="sharing-export-button" class="translator-button" type="button" style="width: 15%">Generate Code</button>
+
+                <input id="sharing-code-output" class="sharing-text-area" readonly style="width: 80%;" placeholder="Press 'Generate Export Code' to retrieve a share-able code!" value=""></input>
+
+            </div>
+            <div id="sharing-import" style="position: relative; top: 0px; margin-right: 2%; width: 45%; display: table-cell;">
+                <input id="sharing-code-input" class="sharing-text-area" style="width: 80%;" placeholder="Paste your import code here" value=""></input>
+                <button id="sharing-import-button" class="translator-button" type="button" style="width: 19%">Import Code</button>
+
+            </div>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="textInput">Test Text</label>
+                <br>
+                <textarea class="form-control" id="textInput" rows="3" style="width: 100%"
+                          placeholder="How much wood would a woodchuck chuck if a woodchuck could chuck wood?"></textarea>
+            </div>
+        </form>
+        <button type="button" onclick="AnalyzeText()">Analyze Text</button>
+        <ul id="ResultList">
+
+        </ul>
+        <ul id="ResultBuffer">
+
+        </ul>
+        <div id="popups">
+            <div id="popup-info" class="popup">
+                <h0>Help</h0>
+
+                <p>
+                    Great, you found the help panel!
+                    <br>
+                    Here are some basic infos on how to use this tool and general tips:
+                </p>
+
+                <ul>
+                    <li>
+                        In the 'Input' field, you can write or paste whatever text you want to translate.
+                    </li>
+                    <li>
+                        On the right, you can add, edit, and remove translation rules.
+                    </li>
+                    <li>
+                        There are many different variations of translation rules, most of them are self-explanatory and/or contain helpful examples.
+                    </li>
+                    <li>
+                        By using each rule's up & down arrow buttons (or directly entering an index), you can change the execution order of rules.
+                    </li>
+                    <li>
+                        Rule groups can be added to easily reorder large collections of rules. Move a rule below a group and press the '->' button to add it to the group. With '<-' you can remove it again.
+                            </li>
+                            <li>
+                            You can always toggle grammar rules with the respective checkbox. Excluding them while setting up individual word rules can save a lot of time!
+                    </li>
+                    <li>
+                        Press the 'Analyze Text' button (only available when grammar rules are enabled) to check your text for word types. Depending on the length of your text and your internet speed this may take a moment.
+                    </li>
+                    <li>
+                        Some words may exist in multiple categories, if a word is marked with a red border in the 'Analysis' segment, click it to select its type (the border will turn green). If you do not do this manually, the most likely type will be chosen automatically, but the result may not be what you want.
+                    </li>
+                    <li>
+                        Once everything is set up, press 'Translate' to get your final result.
+                    </li>
+                    <li>
+                        Finally, by using the 'Generate Code' and 'Import Code' buttons, you can share your creations with whomever you like!
+                    </li>
+                    <li>
+                        But wait, I can do most of the stuff this translator does with a Regex expression!
+                        - That's good for you, but most people can't :)
+                        <br>
+                        (also it's more fun to share it like that)
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div id="popup-rule-editor" class="popup">
+                <form>
+                    <select id="rule-type" name="Rule Archetype">
+                        <option value="grammar">Grammar Rule</option>
+                        <option value="character">Character Rule</option>
+                    </select>
+
+                    <select id="rule-subtype-grammar" name="Rule Subtype">
+                        <option value="swap">Swap Words</option>
+                        <option value="remove">Remove Word Types</option>
+                    </select>
+
+                    <select id="rule-subtype-char" name="Rule Subtype">
+                        <option value="replace">Replace Letters</option>
+                        <option value="remove">Remove Word Types</option>
+                    </select>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <p></p>
+
+    <script src="../scripts/translator.js"></script>
+</body>
+
+</html>
