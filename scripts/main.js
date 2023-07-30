@@ -13,7 +13,7 @@ async function HandleParallax() {
 
     // Permanently loop through them
     while(true) {
-        console.log("Showing new image");
+        //console.log("Showing new image");
 
         currentImage++;
         currentImage %= parallaxImages.length;

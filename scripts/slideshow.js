@@ -20,10 +20,10 @@ window.addEventListener('resize', function () { updateNavigatorPositionAll() });
 
 // Forcefully call this once after page initialization is done
 // Sadly I haven't found a better way, please let me know if you are aware of one
-window.setTimeout(function () {
-    console.log("force update");
-    updateNavigatorPositionAll();
-}, 100);
+// window.setTimeout(function () {
+//     console.log("force update");
+//     updateNavigatorPositionAll();
+// }, 100);
 
 /**
  * Initializes all slideshows by registering them and giving them IDs
@@ -109,6 +109,8 @@ function setSlide(slideshowIndex, newSlideIndex) {
  * Updates the position of all navigators
  */
 function updateNavigatorPositionAll() {
+    console.log("Updating all navigators");
+
     for (let i = 0; i < slideshowCount; i++) {
         updateNavigatorPosition(i);
     }
