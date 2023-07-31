@@ -400,6 +400,28 @@ td {
     margin: 10px 0 10px 0;
 }
 
+
+#skills-table-new {
+    width: 100%;
+}
+
+#skills-table-new,
+#skills-table-new th,
+#skills-table-new td {
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.known {
+    color: goldenrod;
+}
+
+#skills-table-new .category-definition {
+    border-top: 2px solid black;
+}
+
+
 /* #endregion */
 
 /* ################ */

@@ -15,8 +15,9 @@ for (let i = 0; i < slideshowCount; i++) {
     setSlide(i, slideIndices[i]);
 }
 
-// Lastly add a "on resize" listener to the window to ensure that the navigators are placed correctly
+// Lastly add listeners to the window to ensure that the navigators are placed correctly
 window.addEventListener('resize', function () { updateNavigatorPositionAll() });
+
 
 // Forcefully call this once after page initialization is done
 // Sadly I haven't found a better way, please let me know if you are aware of one
