@@ -1,0 +1,1137 @@
+<!-- Contains legacy code that's deprecated but may be used later for inspirational purposes -->
+
+    <div class="content text-justify">
+        <h0 class="caption">Portfolio</h0>
+
+        <!-- Intro text -->
+        <div id="intro">
+            <p>
+                Hi and welcome to my page! I'm Lucas, a recent IT M.Sc. graduate from the Technical University of
+                Munich.
+                <br>
+                This is were I collect most of the projects I've been working on. :) <br>If you want to get in contact,
+                feel free to shoot a me message via email (<a href="mailto:lucas.leder99@gmail.com" target="_blank"
+                   rel="noopener noreferrer">lucas.leder99@gmail.com</a>) or Discord (Lucas#1336). You can also find me
+                on LinkedIn.
+            </p>
+        </div>
+
+        <div class="divider-small"></div>
+
+        <!-- Table of contents -->
+        <div id="table-of-contents" class="toc">
+            <p class="toc-title">Table of Contents</p>
+            <ul class="toc-main">
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects-own">Own Projects</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#project-website">This Website</a>
+                    </li>
+                    <li>
+                        <a href="#project-extraction-point">Extraction Point</a>
+                    </li>
+                    <!--<li><a href="#own-projects">RP Utils</a></li>
+                                                                    <li><a href="#own-projects">[WIP] Translator</a></li>
+                                                                    <li><a href="#own-projects">[WIP] Tactical FPS Tech-Demo</a></li>-->
+                </ul>
+                <li>
+                    <a href="#projects-far">Student Assistant Projects</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#project-fit-app">Nutrition Quiz (Bachelor's Thesis: Part II)</a>
+                    </li>
+                    <li>
+                        <a href="#project-bluetooth-dice">Bluetooth Dice</a>
+                    </li>
+                    <li>
+                        <a href="#project-drinking-gadgets">Drinking Gadgets</a>
+                    </li>
+                    <li><a href="#project-vr-supermarket">VR Supermarket</a></li>
+                </ul>
+                <li>
+                    <a href="#projects-uni">Study Projects</a>
+                </li>
+                <ul>
+                    <li><a href="#project-masters-thesis">Master's Thesis</a></li>
+                    <li><a href="#project-bachelors-thesis">Bachelor's Thesis: Part I</a></li>
+                    <li><a href="#project-level-design">The Facility (Level Design Course)</a></li>
+                    <li><a href="#project-games-lab">Bullet Hell (Master Practical Course)</a></li>
+                    <li><a href="#project-business-simulations">Galaxy Simulation (Business Simulations Course)</a></li>
+                    <li><a href="#project-social-games">Platformer</a></li>
+                    <li><a href="#project-game-engine-design">Game Engine Design</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Skill list with basic formatting-->
+        <div id="skills">
+            <div id="skills" class="divider-small-barred"></div>
+
+            <h2>
+                <u>Skills</u>
+            </h2>
+
+            <!-- TODO!!!!!!!!!
+            <table id="skills-table">
+                <tr>
+                    <th></th>
+                    <th>Progamming Languages</th>
+                    <th>Software</th>
+                    <th>Design</th>
+                    <th>Other</th>
+                </tr>
+                <tr>
+                    <th>Very good skills</th>
+                    <td>
+                        <div>
+                            <ul>
+                                <li> C# </li>
+                                <li> DEF </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li> Unity </li>
+                                <li> </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li> </li>
+                                <li> DEF </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li> Code Comprehension </li>
+                                <li> Communication & Teamwork </li>
+                                <li> German </li>
+                                <li> English </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Good skills</th>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <th>Further skills</th>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Germany</td>
+                </tr>
+            </table>
+        -->
+
+            <p>
+                During my studies and due to personal interest I have gathered experience in a wide variety of subjects
+                related
+                to IT and in particular Game Development & Design.
+
+                <ul class="list-narrow">
+                    <li>
+                        <b>Very good skills:</b>
+                    </li>
+                    <ul class="list-narrow">
+                        <li>
+                            <b>Unity & C#:</b>
+                            I've used it for most of my University and own projects, during the last few
+                            years there
+                            were only few weeks during which I didn't work with Unity
+                        </li>
+                        <li>
+                            <b>Data Management:</b>
+                            I've been regularly working with many different types of data files and
+                            markup
+                            languages, such as XML, JSON, CSV and similar.
+                        </li>
+                        <li>
+                            <b>Communication & Teamwork:</b>
+                            During my studies, my communication skills and willingness for
+                            teamwork
+                            have
+                            proven useful more than once to support and even lead student teams, resulting in multiple
+                            successful final
+                            projects.
+                        </li>
+                        <li>
+                            <b>Code Comprehension:</b>
+                            As I've worked on complex subsystems and algorithms multiple times, I am
+                            able to
+                            easily understand difficult code and extract relevant information for my tasks.
+                        </li>
+                        <li>
+                            <b>Software & Game Design:</b>
+                            TODO
+                        </li>
+                        <li>
+                            <b>German:</b>
+                            I am from Germany :)
+                        </li>
+                        <li>
+                            <b>English:</b>
+                            During High School I passed the "Cambridge English: Advanced" (aka CAE or C1
+                            Advanced)
+                            exams with grade ###. Since then I have further improved my knowledge of the English language.
+                        </li>
+                    </ul>
+                    <li>
+                        <b>Good skills:</b>
+                    </li>
+                    <ul class="list-narrow">
+                        <li>
+                            <b>C++:</b>
+                            I've used it quite a bit for University courses and recently while learning more about
+                            Unreal
+                            Engine
+                        </li>
+                        <li>
+                            <b>Shader Programming:</b>
+                            Solid understanding of rendering and related topics have helped me create
+                            more
+                            complex VFX for many of the projects I worked on
+                        </li>
+                        <li>
+                            <b>Gimp & Blender:</b>
+                            While I wouldn't called myself an artist, I have become proficient in using
+                            both
+                            programs
+                        </li>
+                        <li>
+                            <b>Git:</b>
+                            Most of the team projects I've worked on required source control, which was usually
+                            achieved
+                            using
+                            Git
+                        </li>
+                        <li>
+                            <b>HTML, CSS & JS:</b>
+                            Decent skills with these have helped me create this website. While this
+                            website is
+                            nothing special, I still had a lot of fun playing around with all the possibilities and trying many
+                            different variations.
+                        </li>
+                    </ul>
+                    <li>
+                        <b>Further skills:</b>
+                    </li>
+                    <ul class="list-narrow">
+                        <li>
+                            <b>Unreal Engine:</b>
+                            Sadly I did not get to use it for any University courses, though I am actively
+                            learning
+                            UE5 at the moment
+                        </li>
+                        <li>
+                            <b>App Deployment:</b>
+                            As part of my student assistant job I deployed multiple apps on both the
+                            Google
+                            Playstore & iOS AppStore
+                        </li>
+                        <li>
+                            <b>Godot:</b>
+                            While I have tried out the Godot Engine and created some beginner projects, I would
+                            like to
+                            work
+                            with it more in the future
+                        </li>
+                        <li>
+                            <b>Further programming, markup and query languages:</b>
+                        </li>
+                        <ul class="list-not-so-narrow">
+                            <li>
+                                <b>Python</b>
+                            </li>
+                            <li>
+                                <b>R</b>
+                            </li>
+                            <li>
+                                <b>SQL:</b>
+                                Sadly I never had the opportunity to work with large-scale databases myself, but I
+                                picked
+                                up quite a bit about it during University classes.
+                            </li>
+                            <li>
+                                <b>Java:</b>
+                                My first programming language, learned during High School and used a lot during my
+                                early
+                                semesters at University.
+                            </li>
+                        </ul>
+                        <li>
+                            <b>Swedish and Portuguese:</b>
+                            During my studies I visited and passed A1-level courses for both
+                            languages.
+                        </li>
+                        <li>
+                            <b>Arduino:
+                            </b>
+                            As part of my student assistant job at TUM I worked with multiple simple
+                            Arduino-based devices,
+                            such as custom made scales and dice.
+                        </li>
+                    </ul>
+                </ul>
+            </p>
+
+            <a class="return-to-top-text" href="#navbar-holder">Return to top</a>
+        </div>
+
+        <!-- Own projects -->
+        <div id="projects-own">
+            <div class="divider-small-barred"></div>
+
+            <h2>
+                <u>Own Projects</u>
+            </h2>
+
+            <p>
+                These are the projects I have been working on myself.
+                <br>
+                There are quite a few more prototypes/tiny fun projects I made over the years, but listing them all would get quite boring, so instead I want to focus on the notable ones here.
+            </p>
+
+            <div id="project-website" class="project-cell">
+                <h2 class="caption">This Website</h2>
+                <p>
+                    Unsurprisingly, this website was made by me ;)
+                    <br>While I could've used any of the countless visual editors for websites (or used some framework
+                    or library like Bootstrap or Google Sites), I wanted to familiarize myself a bit more with web
+                    development, so I decided to do all of this myself.
+                    <br>This website may not look as good as a professional company's page, but I can proudly say that
+                    I've learned quite a bit about HTML, CSS and JS during the process of making it.
+                    <br>Since you are already on this page screenshots/pictures wouldn't make sense, however feel free
+                    to check
+                    out the page's source code if your browser supports some kind of developer console or
+                    <a href="TODO!_PLEASE_LET_ME_KNOW_IF_I_FORGET_TO_FIX_THIS_LINK">directly on GitHub</a>.
+                </p>
+            </div>
+
+            <a class="return-to-top" href="#navbar-holder">Return to top</a>
+        </div>
+
+        <!-- Student Assistant projects (FAR/CAMPAR, TUM)-->
+        <div id="projects-far">
+            <div class="divider-small-barred"></div>
+
+            <h2>
+                <u>Student Assistant Projects</u>
+            </h2>
+
+            <p>
+                These are the projects I worked on during my job at the TUM's Chair for Augmented Medical Procedures & Augmented Reality (CAMPAR) or more precisely, the research group "Forschungsgruppe Augmented Reality" (FAR).
+                <br>
+                Sadly, I'm not able to provide a lot of images, since many of the projects have not been made publically available (at least for free). However, I will link research papers & publications were appropriate.
+            </p>
+
+            <div class="divider-tiny"></div>
+
+            <!-- Bluetooth Dice -->
+            <div id="project-bluetooth-dice" class="project-cell" style="background-color: #eae998;">
+                <h2 class="caption">Bluetooth Dice</h2>
+                <p>
+                    For this project I built upon an existing project that aimed to create a digital version of the
+                    German board game "<a href="https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht"
+                       target="_blank" rel="noopener noreferrer">Mensch ärgere Dich nicht</a>" (which is pretty similar
+                    to <a href="https://en.wikipedia.org/wiki/Ludo" target="_blank" rel="noopener noreferrer">Ludo</a>).
+                    The original project digitized the entire board game and combined it with a server-based splitscreen
+                    functionality that would allow up to 4 devices (typically tablets) to be joined together into a
+                    single playing field. Later iterations added custom-made 3D-printed pawns/pieces that could be
+                    placed on top of the tablets and moved as if playing the classic version of the game. The tablets
+                    then registered these movements, if they were in accordance to the rules.
+                    <br>
+                    My job was to further integrate a previously created 3D dice, which would communicate its results
+                    with the tablets using Bluetooth. The dice was based on an Arduino microcontroller and utilized
+                    gyroscopes to gather required data. In order to achieve my goal, I rewrote the dice-script and fully
+                    integrated the Bluetooth connection into the existing game project using Unity.
+                </p>
+                <table class="image-table">
+                    <tr class="image-table-row">
+                        <td class="image-table-header">
+                            <img class="table-image" src="images/placeholders/Placeholder2.png" alt="Placeholder Image">
+                        </td>
+                        <td>
+                            <img class="table-image" src="images/placeholders/Placeholder1.png" alt="Placeholder Image">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Slideshow -->
+                <div class="slideshow">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png">
+                        </img>
+                        <div class="caption">The Bluetooth-Dice</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption"></div>
+                    </div>
+
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+
+            <!-- Quiz App (BT) -->
+            <div id="project-fit-app" class="project-cell" style="background-color: #eae998;">
+                <h2 class="caption">Quiz App - Freisinger Innovationstag (aka FIT; ~Freising Day of Innovation)</h2>
+                <p class="summary">
+                    This project was a continuation of my Bachelor's Thesis. <a href="#project-bachelors-thesis">Click here to scroll down to part I.</a>
+                    <br>
+
+                </p>
+                <table class="image-table">
+                    <tr class="image-table-row">
+                        <td class="image-table-header">
+                            <img class="table-image" src="images/placeholders/Placeholder2.png" alt="Placeholder Image">
+                        </td>
+                        <td>
+                            <img class="table-image" src="images/placeholders/Placeholder1.png" alt="Placeholder Image">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Slideshow -->
+                <div class="slideshow">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png">
+                        <p>AA</p>
+                        </img>
+                        <div class="caption">Hi</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption">Pic B</div>
+                    </div>
+
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+
+                <p>During development of this page I worked on a number of different web-based utilities, you can find
+                    by clicking their names below</p>
+
+                <table class="table-basic">
+                    <tr>
+                        <th>Work in progress</th>
+                        <th>Done</th>
+                        <th>In Consideration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="list-narrow">
+                                <li>
+                                    <a href="pages/rputils/dice.html" target="_blank" rel="noopener noreferrer">Dice
+                                        Roller</a>
+                                </li>
+                                <li>
+                                    <a href="pages/rputils/weather.html" target="_blank"
+                                       rel="noopener noreferrer">Weather
+                                        Generator</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>---</td>
+                        <td>
+                            <ul class="list-narrow">
+                                <li>Dice Roller</li>
+                                <li>Weather Generator</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="slideshow">
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png" style="width:100%">
+                        <div class="caption">Pic A</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png" style="width:100%">
+                        <div class="caption">Pic B</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png" style="width:100%">
+                        <div class="caption">Pic C</div>
+                    </div>
+
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+
+            <!-- Drinking Scale -->
+            <div id="project-drinking-gadgets" class="project-cell" style="background-color: #eae998;">
+                <h2 class="caption">Bluetooth Dice</h2>
+                <p>
+                    This project
+                    Unsurprisingly, this website was made by me ;)
+                    <br>While I could've used any of the countless visual editors for websites (or used some framework
+                    or
+                    library like Bootstrap), I wanted to familiarize myself a bit more with both html and css, so I
+                    decided
+                    to do all of this myself.
+                    <br>This website may not look as good as some professional company's page, I can proudly say that
+                    I've
+                    learned quite a bit about HTML, CSS and JS during the process of making it.
+                </p>
+                <table class="image-table">
+                    <tr class="image-table-row">
+                        <td class="image-table-header">
+                            <img class="table-image" src="images/placeholders/Placeholder2.png" alt="Placeholder Image">
+                        </td>
+                        <td>
+                            <img class="table-image" src="images/placeholders/Placeholder1.png" alt="Placeholder Image">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Slideshow -->
+                <div class="slideshow">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png">
+                        <p>AA</p>
+                        </img>
+                        <div class="caption">Hi</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption">Pic B</div>
+                    </div>
+
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+
+                <p>During development of this page I worked on a number of different web-based utilities, you can find
+                    by clicking their names below</p>
+
+                <table class="table-basic">
+                    <tr>
+                        <th>Work in progress</th>
+                        <th>Done</th>
+                        <th>In Consideration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="list-narrow">
+                                <li>
+                                    <a href="pages/rputils/dice.html" target="_blank" rel="noopener noreferrer">Dice
+                                        Roller</a>
+                                </li>
+                                <li>
+                                    <a href="pages/rputils/weather.html" target="_blank"
+                                       rel="noopener noreferrer">Weather
+                                        Generator</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>---</td>
+                        <td>
+                            <ul class="list-narrow">
+                                <li>Dice Roller</li>
+                                <li>Weather Generator</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="slideshow">
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png" style="width:100%">
+                        <div class="caption">Pic A</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png" style="width:100%">
+                        <div class="caption">Pic B</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 3</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png" style="width:100%">
+                        <div class="caption">Pic C</div>
+                    </div>
+
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+
+            <!-- VR/AV Lidl -->
+            <div id="project-vr-supermarket" class="project-cell" style="background-color: #eae998;">
+                <h2 class="caption">VR Supermarket</h2>
+                <p>
+                    Undoubtedly, this was one of the more complex projects I worked on. It combined server-based
+                    Networking, VR and Webcam inputs to create an experience akin to an immersive simulation of a
+                    supermarket. This project was called into life way before I joined the research group with the goal
+                    of studying users' experience and behavior in such a situation. Utilizing a VR Headset, users are
+                    placed inside the supermarket and are tasked with retrieving specific goods. In order to find the
+                    goods, users are supported by a virtualized smartphone, which - depending on the mode - may be a
+                    livestreamed version of their own smartphone.
+                    <br>
+                    Of course, this complex system had multiple components which were developed by students writing
+                    their theses or other FAR members over multiple years. I mainly worked on three specific parts:
+                    Optimization, VR integration and Smartphone synchronization.
+                    <br>
+                    As I started working on the project, performance had greatly suffered from the years of continuous
+                    and incremental implementation. Even on the most performant settings, my somewhat decent PC was not
+                    able to push the project beyond 5-10 FPS. Over the course of a few weeks I applied as many
+                    optimizations as possible, reaching ~60 FPS even on the most demanding study setups. The VR
+                    integration and smartphone synchronization went hand-in-hand with each other. Together with another
+                    student assistant I debugged the different VR + smartphone setup modes to achieve a properly usable
+                    and enjoyable simulation experience.
+                </p>
+                <table class="image-table">
+                    <tr class="image-table-row">
+                        <td class="image-table-header">
+                            <img class="table-image" src="images/placeholders/Placeholder2.png" alt="Placeholder Image">
+                        </td>
+                        <td>
+                            <img class="table-image" src="images/placeholders/Placeholder1.png" alt="Placeholder Image">
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Slideshow -->
+                <div class="slideshow">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder1.png">
+                        </img>
+                        <div class="caption">Hi</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div>
+                        <img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption">Pic B</div>
+                    </div>
+
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="return-to-top" href="#navbar-holder">Return to top</a>
+        </div>
+
+
+        <!-- Study projects -->
+        <div id="projects-uni">
+            <div class="divider-small-barred"></div>
+
+            <h2> <u>Study Projects</u> </h2>
+
+            <p>
+                These are the projects I have worked on during my studies. Sadly I'm not able to provide download-links for most of these, but I'm always open to questions about them!
+            </p>
+
+            <div id="project-masters-thesis" class="project-cell" style="background-color: #98e7ea;">
+                <h2 class="caption">Master's Thesis: "ARSagas - A Historically Accurate Serious Game Focusing on
+                    Mythology"
+                </h2>
+                <p>
+                    Quite a mouthful - tho not as bad as my Bachelor's Thesis, which you will find below ;)
+                    <br>I wrote this thesis at the CAMPAR chair of the TUM for the
+                    <a href="https://www.campar.in.tum.de/Chair/ResearchAr.html" target="_blank" rel="noopener noreferrer">FAR
+                        group</a>.
+                    While my Bachelor's Thesis topic was already put forward by the chair, I proposed this thesis
+                    myself.
+                    The idea for it came to me due to a number of reasons. For once, I wanted to work on a full game
+                    project
+                    myself, secondly, I also
+                    <i>really</i>
+                    like Norse mythology.
+                    <br>The proposal was accepted by the chair and I got to work. After some considerations, the project
+                    design
+                    was finalized. The backend of the game would be constructed in a fully modular fashion and while I
+                    focused
+                    on a single myth from Norse mythology (<a href="https://en.wikipedia.org/wiki/Ragnar%C3%B6k" target="_blank"
+                       rel="noopener noreferrer">Ragnarök</a>)
+                    with the implementation and Game Design, the app should also be simple to expand further to include
+                    other myths,
+                    even from different mythologies.
+                    <br>The game would contain a "Codex" as a kind of library for interesting facts, objects, etc. as
+                    well
+                    as the
+                    main game part, that would be split into multiple sections, such as narrative-focused "Story
+                    segments",
+                    exploration-
+                    focused "Freewalk segments" (aka open environments) and action-focused "Combat segments". There
+                    would
+                    also be
+                    a framework to include various "Minigames", such as one similar to the card game "Concentration"
+                    (aka
+                    "Memory"),
+                    which would already be included as an implementation example.
+                    <br>Lastly, the game would also have to contain an Augmented Reality variant of almost each segment.
+                    I
+                    would
+                    write this thesis at the "Forschungsgruppe Augmented Reality" ("research group AR") after all.
+                    <br>After the few months of time for detailed design & implementation, I was ready to show the
+                    project
+                    to others.
+                    I presented the project both during a specific AR course and to a general audience of TUM students,
+                    which were
+                    encouraged to try out the game. While there, of course, were a few things I would have liked to
+                    refine
+                    further,
+                    the project was all-around well received and was even able to capture quite a few people who had
+                    little
+                    or no
+                    prior interest in Norse mythology.
+                </p>
+                <!-- Slideshow -->
+                <div class="slideshow" style="width: 100%;">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/story.png"></img>
+                        <div class="caption">A simple story segment, retelling a part of the well-known myth.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/freewalk info.png">
+                        <div class="caption">While travelling around in the freewalk mode, certain Points of Interest
+                            provide
+                            historically accurate info</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/ar freewalk.jpg"></img>
+                        <div class="caption">The AR version of the freewalk mode. Instead of walking around, the entire
+                            area
+                            would be projected on a surface using AR</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">4 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/combatCombined.png">
+                        <div class="caption">Some examples of the combat. To use different moves you have to draw the
+                            respective
+                            <a href="https://en.wikipedia.org/wiki/Elder_Futhark" target="_blank"
+                               rel="noopener noreferrer">Elder Futhark</a>
+                            runes.
+                            Combat
+                            is in realtime, so you'll have to parry enemy attacks and time your own attacks right.
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">5 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/minigame.png"></img>
+                        <div class="caption">The Minigame, with its "Concentration"-style gameplay about characters and
+                            items from Norse mythology.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">6 / 7</div>
+                        <img class="slide-image" src="images/projects/uni/mt/codex overview.png"></img>
+                        <div class="caption">The codex view after unlocked some entries from Norse mythology.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">7 / 7</div><img class="slide-image"
+                             src="images/projects/uni/mt/codex entry.png"></img>
+                        <div class="caption">The codex entry for Valhalla.</div>
+                    </div>
+                    <div class="divider-super-tiny"></div><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span><span
+                              class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                              class="dot"></span></div>
+                </div>
+            </div>
+            <div class="divider-small"></div>
+            <div id="project-bachelors-thesis" class="project-cell" style="background-color: #98c6ea;">
+                <h2 class="caption">Bachelor's Thesis: Development of a Serious Game about Nutrition
+                    with Augmented Reality Features</h2>
+                <p><br>Just as with my Master's Thesis, I wrote it at the CAMPAR chair of the TUM or
+                    more specifically the<a href="https://www.campar.in.tum.de/Chair/ResearchAr.html" target="_blank"
+                       rel="noopener noreferrer">FAR group</a>.
+                    Contrary to most other projects on this list, the game/gamification part of this Thesis was rather
+                    slim.
+                    Instead it initially focused more on the overall amount of features and an easily extendable
+                    framework.<br>The core gameplay idea was simple and case-driven: The<a
+                       href="https://www.enable-cluster.de/en/" target="_blank" rel="noopener noreferrer">enable-Cluster</a>,
+                    a German research group focusing on various nutrition- & food-based disciplines, required a quiz app
+                    for their upcoming participation at the "Freisinger Innovationstag" (FIT), an event-day all about
+                    nutrition in
+                    the German city of Freising. As part of the FAR group and enables' partnership, they were looking
+                    for a
+                    student
+                    to create this app in the scope of a thesis.<br>After various design iterations, my advisor and I settled on
+                    a split design, that would utilize
+                    two separate applications: The quiz app itself, as well as an editor that would allow anyone to
+                    easily
+                    create various types
+                    of quiz questions and transfer them with a single button press to all instances of said app.
+                    I got to work and implemented all discussed features until the end of the semester, meeting my
+                    submission deadline in time.<br>Overall this was an interesting experience, as it was the first time I
+                    actively worked for a
+                    "customer", with regular meetings
+                    between my advisor, representatives from the enable-Cluster and myself.<br>I can say with certainty I
+                    learned a lot about various programming concepts and apis &
+                    frameworks,
+                    such as
+                    asynchronous programming, realtime data transfer using Google's Firebase, and GPS visualizations via<a
+                       style="color:red;">OpenStreetMap</a>.</p><!-- Slideshow -->
+                <div class="slideshow"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
+                    <div class="slide fade" style="width:25%; align-content: center;">
+                        <div class="slide-index">1 / 4</div><img class="slide-image"
+                             src="images/projects/uni/bt/GameQuestionExample.png"></img>
+                        <div class="caption">A dummy question to showcase the Multiple-Choice question archetype</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 4</div><img class="slide-image"
+                             src="images/projects/uni/bt/GameSettingsMenu.png">
+                        <div class="caption">The basic settings menu, which allowed you to consent to location tracking
+                            and
+                            set your age group</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 4</div><img class="slide-image"
+                             src="images/projects/uni/bt/EditorMain.png">
+                        <div class="caption">Main view of the question editor, allowing specific questions per age group
+                            and
+                            custom translations for German and English</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">4 / 4</div><img class="slide-image"
+                             src="images/projects/uni/bt/EditorARFeature.png">
+                        <div class="caption">AR</div>
+                    </div><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                <p>
+                    Now you might think all was good and well, however, the last semester of my Bachelor's degree
+                    was during summer 2020. Yes, that summer. So the weeks came and went, but as lockdowns continued,
+                    it became apparent that the FIT would not be able to take place and thus my app not see the light
+                    of day within the foreseeable future...
+                </p>
+                <p>
+                    A few months and ultimately well over a year passed, before I got to work on the project again.
+                    This time as part of my student assitant job at the FAR group. In the meantime, however, quite a
+                    few plans had changed. I adjusted the app to these new requirements and integrated all questions
+                    given to us by the numerous different subgroups of the enable-Cluster.
+                    <br>
+                    Some things had changed, others stayed the same: Some question types, the map integration as well as the
+                    leaderboard and even the AR-based questions had to go. As a replacement we would use
+                    QR codes, scanned from within the app to grant players access to the different booths' questions, combined
+                    with a physical booklet and stamps that would allow players to participate in an on-site
+                    lottery.
+                    <br>
+                    Additionally some background info texts were included for interested participants and the
+                    admittedly sometimes rather rough UI was updated.
+                    <br>
+                    The final version was published on both the Google Playstore, as well as the iOS AppStore.
+                </p>
+                <div class="slideshow">
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 3</div><img class="slide-image" src="images/placeholders/Placeholder2.png"
+                             style="width:100%">
+                        <div class="caption">Pic A</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 3</div><img class="slide-image" src="images/placeholders/Placeholder1.png"
+                             style="width:100%">
+                        <div class="caption">Pic B</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 3</div><img class="slide-image" src="images/placeholders/Placeholder2.png"
+                             style="width:100%">
+                        <div class="caption">Pic C</div>
+                    </div><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+            <div id="project-level-design" class="project-cell" style="background-color: #98c6ea;">
+                <h2 class="caption">Project</h2>
+                <p></p><!-- Slideshow -->
+                <div class="slideshow" style="width:100%;"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div><img class="slide-image"
+                             src="images/placeholders/Placeholder1.png"></img>
+                        <div class="caption">Placeholder 1</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div><img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption">Placeholder 2</div>
+                    </div><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+            <div id="project-games-lab" class="project-cell" style="background-color: #d6d6d6;">
+                <h2 class="caption">Project: Equilibrium</h2>
+                <p>Probably one of my favourite Uni projects I've worked on. The player controls a small Icosphere and
+                    has to shoot down approaching enemies, consisting of cubes, tetrahedrons, and similar geometric
+                    shapes.
+                    As one can imagine, on its own this isn't the most complex or interesting gameplay idea.
+                    However, this game was developed as part of a course that was pretty much a semester-long GameJam
+                    with the topic "Chaos and Order". Our team of 3 came up with a unique concept: During the level the state
+                    of the environment would constantly swap between chaos and order. This resulted in a pretty interesting
+                    gameplay flow: While the player is in the order state, enemies are organized and attack in
+                    pre-defined formations. As soon as enemies enter the chaos state, they will move randomly and unpredictably.
+                    The player can attack enemies to destroy them during the order state, but has to use defensive
+                    weapons during the chaos state to survive the sudden onslaught. The world state itself constantly rotates,
+                    originating from the center of the arena.
+                    <br>Additionally the player can collect PowerUps to save themselves
+                    in difficult situations.<br>If you want to read more about this (or even play it), the<a
+                       href="https://wiki.tum.de/display/gameslab2021summer/Team+Equilibrium" target="_blank"
+                       rel="noopener noreferrer">TUM-Wiki site</a>should be publically accessible. Be prepared for a
+                    lot of documentation and presentation files, though!
+                </p><!-- Slideshow -->
+                <div class="slideshow" style="width:100%;"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 5</div><img class="slide-image"
+                             src="images/projects/uni/gl/BasicGameplayDiegetic.png"></img>
+                        <div class="caption">Basic gameplay. Another neat feature was the diegetic UI one could
+                            enable or disable before playing. The clock-like yin and yang icon on the right
+                            shows when the world state will change.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 5</div><img class="slide-image"
+                             src="images/projects/uni/gl/TutorialDiegetic.png"></img>
+                        <div class="caption">The tutorial is a pre-defined sequence that will teach you all basics in an
+                            easy intro level</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 5</div><img class="slide-image"
+                             src="images/projects/uni/gl/Parry.png"></img>
+                        <div class="caption">While in the<i>Chaos</i>state, you are unable to attack. You can,
+                            however, time your block correctly to parry enemy attacks and damage them.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">4 / 5</div><img class="slide-image"
+                             src="images/projects/uni/gl/Boss2.png"></img>
+                        <div class="caption">At the end of some levels, you have to face powerful bosses. This one fires
+                            lasers and utilizes the level's pillar environment. The pillars are destructible obstacles,
+                            but also provide protection from the boss's main laser attack, forcing you to make a choice.</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">5 / 5</div><img class="slide-image"
+                             src="images/projects/uni/gl/Boss2MidTransition.png" style="max-width: 50%; margin-left: 25%;"></img>
+                        <div class="caption">A close-up of the boss from the last picture during a phase transition.</div>
+                    </div> <!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span><span
+                              class="dot"></span><span class="dot"></span><span class="dot"></span> </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+
+            <div id="project-business-simulations" class="project-cell" style="background-color: #b198ea;">
+                <!--<div class="project-background" style="background-image: url('images/placeholders/Placeholder1.png');"></div>-->
+                <h2 class="caption">Galaxy Simulation</h2>
+                <p>
+                    This was the largest group project I participated in during my time at TUM. In a team of 8, we developed a galaxy simulation, that would see multiple interstellar races compete for dominance in a large procedurally generated galaxy with complex solar systems. As the goal was to primarily create a simulation, the project only had little actual gameplay, with only minor ways of influencing the different civilizations. A large part of the work was focused on detailed numerical values and calculations, such as traits of the different races and planets, as well as their interactions with factors such as population growth and expansion rates.
+                    <br>
+                    The core design of the project was heavily inspired by well-known Sci-Fi aspects, such as the Dark Forest theorem popularized by Liu Cixin's <a href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)" target="_blank" rel="noopener noreferrer">The Three-Body Problem</a> series, while visuals and aspects of the procedural generation drew from popular Sci-Fi games, like <a href="https://en.wikipedia.org/wiki/Stellaris_(video_game)" target="_blank" rel="noopener noreferrer">Stellaris'</a> Galaxy Map.
+                </p>
+
+                <!-- Slideshow -->
+                <div class="slideshow" style="width:100%;">
+                    <a class="slide-prev">&#10094;</a>
+                    <a class="slide-next">&#10095;</a>
+
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/ConfigMenu.PNG"></img>
+                        <div class="caption">The Main Menu used to configure the simulation</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/GalaxyMap.PNG"></img>
+                        <div class="caption">The galaxy map. Grey circles represent uninhabitated systems, while colored ones indicate the civilizations occupying them. The lines between indicate connections that may be traversed by spaceships.</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/Wormhole.PNG"></img>
+                        <div class="caption">A wormhole, allowing for long-distance travel across the galaxy. Pairs of wormholes are shown via a yellow connector on the galaxy map.</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="slide-index">4 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/SystemUninhabited.PNG"></img>
+                        <div class="caption">An uninhabited system</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="slide-index">5 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/SystemInhabited.PNG"></img>
+                        <div class="caption">An inhabited system. The panel on the left showcases the resident civilazitation's stats.</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <div class="slide-index">6 / 6</div><img class="slide-image"
+                             src="images/projects/uni/bs/Results.PNG"></img>
+                        <div class="caption">After manually ending the simulation (or a single civilization conquers the entire galaxy), a number of interesting stats - both relating to economics and combat - are shown</div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+            <div id="project-social-gaming" class="project-cell"
+                 style="
+                 background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgb(255, 122, 122) 25%, rgb(153, 126, 75) 50%, rgb(121, 130, 248) 75%, rgba(0,0,0,0) 100%);
+                 border-style: none;">
+                <h2 class="caption">Unnamed Multiplayer Platformer</h2>
+                <p>
+                    This project was a fun little bonus credits group project. While some parts of the UI design & graphics are arguably rough, this is one of the first goal-oriented projects I worked on. Most of my work went into the networking and basic gameplay aspects.
+                    <br>
+                    The gameplay is simple, yet enticing: In every match, two players compete against each other. The <i>Runner</i> has to survive in a 2D side-scrolling level with hazards and enemies, while the <i>Builder</i> attempts to actively kill the <i>Runner</i> by placing the levels components in the most difficult - yet possible - way.
+                    <br>
+                    The project was developed in Unity, using Firebase for networking.
+                </p><!-- Slideshow -->
+                <div class="slideshow" style="width:100%;"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 4</div> <img class="slide-image"
+                             src="images/projects/uni/sg/Main Menu.PNG"></img>
+                        <div class="caption">The main menu</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 4</div><img class="slide-image"
+                             src="images/projects/uni/sg/Lobby Browser.PNG">
+                        <div class="caption">The lobby browser</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">3 / 4</div><img class="slide-image" src="images/projects/uni/sg/Runner.PNG">
+                        <div class="caption">Gameplay example of player 1, the <i>Runner</i></div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">4 / 4</div><img class="slide-image" src="images/projects/uni/sg/Builder.PNG">
+                        <div class="caption">Gameplay example of player 2, the <i>Builder</i></div>
+                    </div><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span><span
+                              class="dot"></span><span class="dot"></span></div>
+                </div>
+                <p>
+                    While the project looks somewhat questionable when it comes to graphics, I still think the core gameplay was pretty fun and unique. The nemesis system, which would actively encourage you to compete against other players, combined with the realtime PvP nature of the game made it enjoyable to play. Though, of course, as a small course project this was never published in any meaningful way, I learned a lot about networking and asynchronous programming here.
+                </p>
+            </div>
+
+            <div class="divider-small"></div>
+            <div id="project-game-engine-design" class="project-cell" style="background-color: #98c6ea;">
+                <h2 class="caption">Unnamed Stationary On-Rails Shooter</h2>
+                <p>
+                    This is the very first interesting project I worked on. As part of a course we course members implemented the different parts of this game on our own in 1-week-long sprints. Notably, however, we did not use any Game Engine, but rather wrote the entire game from the ground up using C++ and DirectX. This included everything from basic mesh rendering and lighting to enemy AI and gameplay features. While not the most visually stunning, I learned a great deal about low-level programming and rendering.
+                </p>
+
+                <!-- Slideshow -->
+                <div class="slideshow" style="width:100%;"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
+                    <div class="slide fade">
+                        <div class="slide-index">1 / 2</div><img class="slide-image"
+                             src="images/placeholders/Placeholder1.png"></img>
+                        <div class="caption">Placeholder 1</div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="slide-index">2 / 2</div><img class="slide-image" src="images/placeholders/Placeholder2.png">
+                        <div class="caption">Placeholder 2</div>
+                    </div><!-- The dots/circles -->
+                    <div style="text-align:center"><span class="dot"></span><span class="dot"></span></div>
+                </div>
+            </div>
+
+            <div class="divider-small"></div>
+
+        </div>
+
+        Tiny projects
+
+        <p>
+            Here is a short compilation of either older projects I've worked on or those where my part was less visible.
+        </p>
+        (Level Engineering, Indie Games, 3D Scanning, Game Engine Design, Trinkuntersetzer ...)
+    </div>
+

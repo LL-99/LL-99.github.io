@@ -1,0 +1,135 @@
+<!DOCTYPE html><!-- CSS only -->
+<html>
+<header>
+    <!-- Include Stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Setup -->
+    <title>Some prices</title>
+
+    <!-- Navbar -->
+    <script src="../navloader.js"> </script>
+
+</header>
+
+<body>
+
+    <div class="justify-content-center" style="position: relative;">
+        <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg"
+            class="img-fluid rounded w-100 h-50" style="padding-bottom: -0%" alt="Responsive image">
+
+        <main role="main" class="container center-holder">
+
+
+            <div class="text-center" style="height: 500px">
+                <img id="mainStack" style="position: relative; height: 50%; margin-top: 25%;" src="/images/CardStackTemp.png" class="rounded" alt="...">
+                <img id="mainMovable" style="position: absolute; height: 50%" src="/images/CardBackTemp.png" class="rounded" alt="...">
+            </div>
+
+            <script>
+                function DegToRad(deg) {
+                    return deg * 0.01745329252;
+                }
+
+                alert("Hi");
+                let i = 0;
+                let mainMovable = document.getElementById("mainMovable");
+                let range = 100;
+                let offset = [200, 200];
+                let drawCardID = 0;
+
+                function Temp() {
+                    i++;
+                    console.log(i);
+                    mainMovable.style.left = offset[0] + range * Math.cos(DegToRad(i % 360)) + "px";
+                    mainMovable.style.top = offset[1] + range * Math.sin(DegToRad(i % 360)) + "px";
+                    mainMovable.width = i;
+                }
+
+                function DrawCard() {
+                    i++;
+                    //console.log(i);
+                    mainMovable.style.left = offset[0] + range * Math.cos(DegToRad(i % 360)) + "px";
+                    mainMovable.style.top = offset[1] + range * Math.sin(DegToRad(i % 360)) + "px";
+                    mainMovable.width = i;
+
+                    if (i >= 1000) {
+                        alert("Triggered!");
+                        clearInterval(drawCardID);
+                    }
+                }
+
+                drawCardID = setInterval(DrawCard, 1);
+
+
+            </script>
+
+            <h1 class="text-center">Prices</h1>
+            <p class="text-center">This page contains (in my eyes) appropriate prices for items, services and more.
+                Please keep in mind that these values are setting-dependent! </p>
+            <p class="text-center">This page contains (in my eyes) appropriate prices for items, services and more.
+                Please keep in mind that these values are setting-dependent! </p>
+
+            <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex
+                communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem
+                certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+            <p class="text-left">Left aligned text on all viewport sizes.</p>
+            <p class="text-center">Center aligned text on all viewport sizes.</p>
+            <p class="text-right">Right aligned text on all viewport sizes.</p>
+
+            <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+            <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+            <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+            <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+            <p class="text-lowercase">Lowercased text.</p>
+            <p class="text-uppercase">Uppercased text.</p>
+            <p class="text-capitalize">CapiTaliZed text.</p>
+
+            <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                This text should wrap.
+            </div>
+
+            <p class="text-break">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+            <p class="fs-1">.fs-1 text</p>
+            <p class="fs-2">.fs-2 text</p>
+            <p class="fs-3">.fs-3 text</p>
+            <p class="fs-4">.fs-4 text</p>
+            <p class="fs-5">.fs-5 text</p>
+            <p class="fs-6">.fs-6 text</p>
+
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+            <p class="fw-normal">Normal weight text.</p>
+            <p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+
+            <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+        </main>
+    </div>
+</body>
+
+</html>
