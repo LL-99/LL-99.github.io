@@ -1,4 +1,4 @@
-name: Deploy Blazor WASM to GitHub Pages
+name: Deploy Blazor WASM to GitHub Pages (branch-based)
 
 on:
   push:
@@ -7,22 +7,21 @@ on:
 
 # --- EDIT THESE 3 VALUES --------------------------------------------
 env:
-  PROJECT_PATH: LL-99.github.io.csproj   # <- path to your Blazor WASM .csproj
-  BASE_PATH: /           # <- "/<repo>/" for project pages; use "/" for user/org pages
+  PROJECT_PATH: LL-99.github.io.csproj   # path to your Blazor WASM .csproj at repo root
+  BASE_PATH: /                           # user/org site => "/"
   PUBLISH_DIR: ${{ github.workspace }}/build/wwwroot
 # --------------------------------------------------------------------
 
+# We push to another branch, so we need write access to contents.
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,7 +41,6 @@ jobs:
       - name: Rewrite <base href> for GitHub Pages
         run: |
           index="$PUBLISH_DIR/index.html"
-          # Replace href="/" (handles both <base href="/"> and <base href="/" />)
           sed -i 's#<base href="/"\( *\/\)?>#<base href="'"$BASE_PATH"'" />#g' "$index"
 
       - name: Add .nojekyll and SPA 404 fallback
@@ -50,17 +48,11 @@ jobs:
           touch "$PUBLISH_DIR/.nojekyll"
           cp "$PUBLISH_DIR/index.html" "$PUBLISH_DIR/404.html"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy built site to 'blazor' branch
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ${{ env.PUBLISH_DIR }}
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          branch: blazor
+          folder: ${{ env.PUBLISH_DIR }}
+          clean: true
+          commit-message: "Deploy to GitHub Pages"
+          single-commit: true
