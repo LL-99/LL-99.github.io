@@ -1,0 +1,236 @@
+<!DOCTYPE html><!-- CSS only -->
+<html>
+<header>
+    <!-- Include Stuff -->
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/translator.css">
+
+    <!-- Setup -->
+    <title>D1</title>
+
+    <!-- Navbar -->
+    <!--<script src="../loaders/navloader.js"> </script>-->
+
+</header>
+
+<body>
+
+    <h1>Extraction Point</h1>
+
+    <p>
+        Hi! Welcome to my very first "devblog"!
+        <br>
+        This little page is dedicated to the first project (of hopefully quite a few) that I aim to complete as part of a challenge I set for myself: "Work a single week on a project, record your steps, and see how far you've come. Then publish it on sites, such as itch.io."
+        <br>
+        To clarify: I didn't want to slave away at my desk for 10h+ each day, which may very well happen during GameJams. Instead I set myself the goal to work around a maximum of 3 to 4 hours a day on the project, which admittedly wasn't much.
+        <br>
+        The idea for this came to me since I'm someone who probably has approximately a <it>dozen</it> unfinished projects and technical prototypes lying around - some of which I simply never had time or motivation to finish. There a also a few projects from my time at University that I believe have a lot of untapped potential. Ultimately, I just want to wrap up a few projects and if I can make them into games that - at least a few - people enjoy I'm happy.
+        <br>
+        For this first project I wanted to pick up a neat project I worked on during my Master's degree. While it was a 3-man project with enough credits to amount for a third of an entire semester, I skipped a lot of things we had to submit, such as paper prototypes, design documents and presentations. Furthermore, I mainly focused on gameplay and attempted to innovate on the original idea. So... let's get started.
+    </p>
+
+    <p>
+        Day 1: 19th of June, 2023
+        <br>
+        The concept:
+        <br>
+        Before beginning development, I of course had to think of a plan, what to do and how to do it.
+        The game would be based around the bullet hell theme and low-poly style of "Project: Equilibrium", a game I had worked on for one of my Computer Science classes. That project had a few neat ideas, such as a constantly changing world state between chaos and order, which would dictate enemy behaviour and player abilities, forcing the player to constantly adapt. While I really liked the concept, I did not want to copy it exactly as that would be lame. Also, the state swapping did have its issues, particularly when only few enemies remained and so you would have to wait a long time before finishing the current wave. This lead me to the decision to put state swapping into the hands of the player, allowing them to manage their ships own energy, similar to Star Trek, etc.
+        <br>
+        Ship you say? Yes! The original game didn't really have any story, lore or similar beyond, "Hey, you're the icosphere! Go murder cubes and other 'inferior' geometric shapes.". While I didn't want to introduce and deep story, I thought it would be nice to have a proper objective. Something along the lines of: "This is your ship. Survive the enemy onslaught until you can escape.". Yeah, I know, it's not great, but this isn't a game with even a remotely narrative aspect, so who cares ;)
+        <br>
+        Expanding upon the idea of this, I wanted to add more advanced weapons for the player than the old single bullet shot. Since
+        <br>
+        Lastly, I thought about level design and how it probably was way too ambitious of me to assume I'd be able to make more than a single hardcoded level. However, I don't like hardcoded/non-modular things, so I considered alternative ways of spawning in enemies. In the end I got stuck with a survivors-like enemy system - yep, I know, this is probably the most copied & overused game-genre in the last 1-2 years, but getting it work is easy and evolving it into something more shouldn't be too difficult.
+        <br>
+        However, I didn't want the game to turn into true "reverse-bullet-hell" game, like the original Vampire Survivors. So the player itemization would have to be integrated well to feel satisfying without completely escalating too quickly.
+        <br>
+        Let's recap & summarize:
+        <ul>
+            <li>Core gameplay: Simple bullet-hell</li>
+            <li>Advanced gameplay with energy rerouting and powerups</li>
+            <li>Persistent gameplay with permanent upgrades and ship customization</li>
+            <li>Visuals: Low-poly, using a lot geometric shapes; Neon-style</li>
+            <li>Enemy spawning: Survivors-like but with waves.</li>
+        </ul>
+        <br>
+        Let's proceed with actual implementation:
+        The main tools I used:
+        <ul>
+            <li>Unity 2022.3.f1</li>
+            <li>Gimp 2.10.34</li>
+            <li>Blender 3.5</li>
+            <li>Visual Studio Community 2022 17.5.5</li>
+            <li>Audacity 3.3.2</li>
+        </ul>
+
+        Day 1 implementation was very basic.
+        The main Unity packages I required were the "new" Input System, for the player input, Cinemachine for the camera, and, of course, the URP & related packages, such as VFX graph and Shader Graph.
+        I set up the core platform, made a basic player using Unity's character controller and most importantly implemented the "Screenshot Manager" that would allow me to easily make new screenshots for this documentation.
+
+        <br>
+        While looking for a good way to record videos in Unity (OBS can get somewhat tiresome if you're only interested in the game-view), I discovered the Unity Recorder package.
+        To be honest, this came as an absolute to me as I had never even heard about it before.
+        Using it however, is absolutely trivial! After configuring it to spit out gifs, the rest of the week could come
+        <br>
+
+        <img src="/images/projects/own/d1/Day1Showcase.gif" height="200px" width="355px" />
+
+
+
+        Day 2: Models & Data structures
+
+        In order to spawn enemies, bullets, and so on, I wanted to create fitting underlying data structures...
+
+        *TODO: Insert basic UML
+
+        Also I played around with Blender & created some models for later use
+
+        *TODO: Insert model view gifs
+
+
+        Day 3 (21.06.23): Shooting & Enemy Spawning
+
+        On this day, I wanted to achieve the first functioning game loop. The player should be able to shoot randomly spawning enemies, get some kind of score value, and die if they are hit too many times.
+
+        Since enemies need some way of spawning I had to spend some time considering how to handle it. In the end I came up with the following system: 2 mathematical functions would describe total enemy amount & maximum enemy tier respectively. Basic enemies, such as 'Runners' would be tier 1, while 'Shooters' and other more advanced enemies would be placed in tiers 2 through 5, which would contain bosses. Depending on this max tier, the available enemy types would be selected and - depending on the total amount of enemies - spawned, based upon their weight.
+        I decided on a total of 20 waves for which I would balance the game. In wave 1 50 enemies of tier 1 should spawn, while in wave 20 1000 enemies of tier 4 or lower should appear. Since tier 5 is reserved for bosses, it is not included in the main function and instead spawned every 10 waves once. Waves are only over once all enemies have been destroyed.
+
+        To test the weighted spawn script, I assigned 4 enemies of weights 1 000 (a), 100 (b), 10 (c), and 1 (d) to it. The results after 1 million rolls were: 900 154 (a), 89 984 (b), 8 913 (c), and 949 (d), which easily shows that the spawn table is working as intended. As expected, reordering the test enemies arbitrarily yielded similar results.
+
+        <br>
+
+        <img src="/images/projects/own/d1/Day3Showcase.gif" height="200px" width="355px" />
+
+        <br>
+
+        As you can see, a gameplay baseline was existant on Day 3 and the visual effects gave it at least a small satisfaction value when playing. While still A LOT was missing, the core gameplay loop (except for player death) and most underlying systems were already in place.
+
+        Day 4 (22.06.23): User Interface, Player Death & Basic Progression
+
+        First things first, I wanted to design the UI. To do that I created a prototype on https://app.diagrams.net/
+
+        <img src="/images/projects/own/d1/UIPrototype.svg" height="200px" width="355px" />
+        - Neat side fact: app.diagrams.net can export your images as both png as svg, depending on what you need, which means you can enjoy this prototype as crisp as possible :)
+
+        In order to fit it to the most common screen resolution (1920x1080), I made sure that the design had the same aspect ratio of 16:9 (meaning the width would be 1.778 x height).
+
+        Yeah this design has a LOT of components, but I though to myself: Let's start with everything that could even be remotely interesting and trim down the UI if it gets too cluttered.
+
+        Some time later and the UI is finally "done":
+        <img src="/images/projects/own/d1/PrototypeUIandW1.png" height="200px" width="355px" />
+
+        It's nothing special, but all components from the prototype are there and functional. The reason I like to introduce UI early is because it allows me to notice problems while playtesting other features & either fix these immediately or at least write them down for later.
+
+        So I went ahead and implemented the different UI elements, however I quickly realized that I would require multiple weapons as well as various other features to properly debug the cooldown indicators. In order to not drop behind schedule I simply added a 'Spread' weapon type which shoots all of its bullets in a cone with equally spaced distances. The dash, powerups, boss HUD, and the energy redirection mechanic would have to wait.
+
+        Now to implement the player death & a simple respawn button... Oops, guess it turned into a fully fledged pause menu...
+        <img src="/images/projects/own/d1/PauseMenu.png" height="200px" width="355px" />
+        Well, that was quick... or it would've been if I hadn't gotten too ambitious and also implemented the entire UI system already. I'm running out of time for today, so I'll move progression to tomorrow, but at least I won't have to worry about menus again for the next 1 or 2 days...
+
+        <img src="/images/projects/own/d1/PrototypeW1andW2.png" height="200px" width="355px" />
+
+        Lastly, here are the 2 distinct weapons we have now. They don't look like much, but as soon as we add upgrades, they'll become really cool - I hope ^^'.
+
+
+        Day 4 (23.06.23): Fixes, Game loop & Main Menu
+
+        While I originally intended to continue with further new features, I soon realized that there were a few errors & bugs I had to fix. Furthermore I wanted to make sure that from today the game would be - in theory - fully playable, meaning players could run a build, click 'Play' in the main menu and survive an endlessly scaling attack until their inevitable demise.
+
+        In the end all of this took me most of the day, but the results are - in my humble opinion - satisfying to play around with.
+
+        <img src="/images/projects/own/d1/Day4Showcase.gif" height="200px" width="355px" />
+
+        Since I had some spare time in the evening I also brainstormed some cool player weapons, upgrades and powerups, while also creating some VFX elements for them already. However, implementation & progression systems would have to wait for tomorrow (to be fair they probably deserve an entire day of their own, so I didn't feel as bad as I maybe should for procrastinating on the design there).
+
+        Day 4.5 (24.06.23): Pause
+
+        I originally intended to work through the entire week without a proper day of pause, only to realize in the morning that I would only have about half an hour of free time today...
+        So I decided to just do some quick bug fixes, record the gif for yesterday's entry (which I totally hadn't forgotten ^^'), and call it a day.
+
+        On a side note I realized some aspects of program flow I had used for initial prototyping (and still was using) weren't that great. However, with time pressure slowly but surely mounting, I decided that this would remain on the Todo list for later.
+
+
+        Day 5 (26.06.23): Energy Redirect, Player Weapons & Enemy Types (foundation)
+
+        After the 2-day pause I was ready to go again.
+        The plan for today was to start with the energy rerouting feature, meaning the player would be able to swap between different 'stances', each of which had a different effect:
+
+        <ul>
+            <li>Weapons: Faster attack speed, if time allows it, some weapons may receive 'overdrive' features</li>
+            <li>Shield: Higher knockback on contact damage taken, shield blocks the first few damage taken</li>
+            <li>Thrusters: Faster movement speed, shorter dash cooldown</li>
+        </ul>
+
+        On a sidenote, the player would also receive a tiny invulnerability window when hit, to avoid  insane amounts when barely scratching enemies.
+
+        <img src="/images/projects/own/d1/Day5EnergyShowcase.gif" height="200px" width="355px" />
+
+        For player weapons I thought about categorizing everything into a few subcategories, an idea that I had already considered when implementing the test weapons.
+
+        <ul>
+            <li>Projectile weapons: These can shoot any amounts of projectiles in any direction & angle. Their stats vary in attacks per second, spawn positions, projectiles per spawn position, projectile spread (in angles), and, of course, the projectile to shoot, as well as its stats.</li>
+            <li>Laser weapons: These are "hitscan" weapons that may or may not project lasting effects. Their stats include maximum range, aim speed, damage per second, and if they penetrate targets.</li>
+            <li>AoE weapons: These can be any type of weapon that uses specific AoE markers before actually firing. They can range from an orbital strike to artillery rockets/missile barrages and so on...</li>
+        </ul>
+
+        <img src="/images/projects/own/d1/Day5WeaponShowcase.gif" height="200px" width="355px" />
+
+        The great advantage of including AoE weapons was that the marker/area indicators could be reused for enemy attack markers. This would allow me to "easily" add multiple types of enemies. Of course this would take a lot of time, so I planned ahead and decided to just think about enemies today and focus on implementing them tomorrow:
+
+        <ul>
+            <li>Runner: Already in the game</li>
+            <li>Shooter: Shoots a basic projectile at the enemy</li>
+            <li>Bomber: Stands still and then launches a slowly moving artillery rocket at a location close to the player. If the target location was not on the platform (and didn't hit ANYTHING - yeah friendly fire would be neat), the rocket would simply drop down without detonating</li>
+            <li>Laser: Similar to bomber, but with a laser and no friendly fire</li>
+            <li>Bosses: Of course bosses would be low priority, but I thought of 2 that may be fun to fight - this game was intended as a bullet hell after all</li>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </ul>
+
+        I had a lot of other ideas regarding elite enemies (stronger versions of normal mobs), more bosses, different weapon damage types (kinetic, laser, explosion, etc.), but frankly these are some features that I just won't have time to implement. IF I continue working on this project in the future I may, however, decide to add them.
+        
+        Day 6 (27.06.23): Player Weapons (Cont.), Enemy Types
+
+        Building on yesterday's implementations & concepts I wanted to wrap these things up, but I quickly realized that this wouldn't be as easy as I had hoped. I wondered why some of the things I wanted to do were quite complicated to get right and then I saw my mistakes: Code-wise many of my systems & data structures had been absolutely over-engineered. While many chunks of the project would be suited well for large-scale projects and easily extendable, it was hard to do things quick - as I was trying to do. Some mistakes were to be expected, as this was the first time I had attempted something like this, but it was still frustrating. I gave my best and at the end of the day I had fixed all weapons and integrated them into the UI, but most enemy types were still lacking.
+
+        I thought about what to do tomorrow. While I might have been able to add more enemies & bosses in time, the game would have lacked something else entirely: Polish.
+        So I decided to call it a day, and focus on visual upgrades during the last day.
+
+        <img src="/images/projects/own/d1/Day6Showcase.gif" height="200px" width="355px" />
+
+        Day 7 (27.06.23): "Finishing" touches
+
+        Menu revamps, UI upgrades, Game environment, SOUNDS
+        ...
+        Player Heal after Waves
+        Collectibles that grant permanent power ups
+
+        As you saw in day 6's showcase, the game was still VERY gray. While I had a cyberpunkish/neon style in mind, which can get quite gray at times, this seems much more like "meh, he just didn't do anything regarding visuals", so it was time to fix this.
+
+        SFX https://assetstore.unity.com/packages/audio/sound-fx/weapons/free-laser-weapons-214929
+
+        As I wanted to be able to provide the project's source code without problems, I decided to only use free assets, despite having quite a few good ones from Humble Bundle etc.
+
+        I managed to vastly overhaul the games visuals, but as you may realize, some things are still missing. Since I only had about 2 hours to work on the project today I'm kind of frustrated, but it is what it is. I do not intend to cheat on this challenge I set for myself, so tomorrow I will only fix 2 game-breaking bugs: the enemy textures not showing up and the laser weapon never deactivating (and maybe decrease the glow of everything by a notch).
+        Other than that I will leave all bugs in the game, polish up this report - and get feedback on the result. Since family and friends are always biased, I will also post it anonymously on r/Unity and/or r/GameDev.
+
+
+        <img src="/images/projects/own/d1/MainMenu.png" width="355px" />
+        <img src="/images/projects/own/d1/IngameDay7.png" width="355px" />
+
+    </p>
+</body>
+
+</html>

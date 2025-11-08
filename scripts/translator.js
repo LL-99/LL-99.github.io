@@ -9,6 +9,7 @@ var allPopups = {
     "Info": document.getElementById("popup-info"),
     "Rule Editor": document.getElementById("popup-rule-editor")
 };
+
 for (let name in allPopups) {
     allPopups[name].style.visibility = "hidden";
 }
