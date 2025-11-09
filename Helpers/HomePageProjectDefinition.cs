@@ -1,4 +1,4 @@
-﻿namespace Components
+﻿namespace Helpers
 {
     public class HomePageProjectDefinition
     {

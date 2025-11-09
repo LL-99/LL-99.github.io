@@ -1,0 +1,69 @@
+﻿@using Helpers
+@using MudBlazor
+@using Services
+
+@inject ContentService ContentService
+@inject NavigationManager NavigationManager
+
+<MudGrid Spacing="0" Class="ml-0 mt-0" Style="width:100% !important;" Justify="Justify.Center">
+	@foreach (var project in Projects)
+	{
+		<MudItem xs="6" Class="px-10 pt-5" Style="aspect-ratio:6/8; max-height:calc(40cqw)">
+			<div class="project-card">
+				@if (project.IsVideo == false)
+				{
+					<MudImage Class="rounded-lg" Elevation="25" Src="@project.Thumbnail" ObjectFit="ObjectFit.Cover" Style="width:100%; height:100%;" />
+				}
+				else
+				{
+@* 					<video style="width:100%; height:100%;" autoplay muted loop controls playsinline>
+						<source src="@project.Thumbnail" type="video/mp4"/>
+					</video> *@
+				}
+
+				<MudOverlay Class="project-card-overlay rounded-lg pa-5" Visible DarkBackground="true" Absolute="true">
+					<MudText Typo="Typo.h6" Align="Align.Center">@project.Name</MudText>
+					<MudText Typo="Typo.body2" Align="Align.Justify">@project.Summary</MudText>
+					<MudText Typo="Typo.body2" Align="Align.Left">
+						<MudLink Href="@(new Uri(NavigationManager.Uri)+project.LocalUrl)">
+							<MudIcon Icon="@Icons.Material.Filled.ArrowRight" />
+							Click here to learn more
+						</MudLink>
+					</MudText >
+				</MudOverlay>
+			</div>
+		</MudItem>
+	}
+</MudGrid>
+
+<style>
+	.project-card {
+		height: 100%;
+		position: relative;
+	}
+	
+	.project-card:hover .project-card-overlay {
+		opacity: 1;
+	}
+
+	.project-card-overlay {
+		opacity: 0;
+		overflow: hidden;
+	}
+</style>
+
+@code {
+	[Parameter]
+	public ProjectGroup ProjectGroup { get; set; }
+
+	public int ProjectCardHeight { get; set; } = 500;
+	public List<MinimalProjectDefinition> Projects { get; set; } = [];
+
+	protected override async Task OnParametersSetAsync()
+	{
+		await base.OnParametersSetAsync();
+
+		Projects = await ContentService.GetProjectsForGroup(ProjectGroup);
+		StateHasChanged();
+	}
+}

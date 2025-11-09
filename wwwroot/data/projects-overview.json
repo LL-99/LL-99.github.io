@@ -32,7 +32,7 @@
     "ImageColWidth": 7,
     "Title": "brainboost Projects",
     "Description": "Here you can find some projects I've worked on for current position at brainboost, where I do both game & software develop-ment pre-dominently in a Neurofeedback context",
-    "ProjectUrl": "/projects/bb"
+    "ProjectUrl": "/projects/brainboost"
   },
   {
     "Height": 3,
@@ -58,6 +58,6 @@
     "ImageColWidth": 7,
     "Title": "University Projects",
     "Description": "These projects I developed during my time at the Technical University of Munich. They include everything from theory-heavy simulations over multiplayer platformers to serious games. Some of these games were developed alone and others in groups of up to 8 people.",
-    "ProjectUrl": "/projects/uni"
+    "ProjectUrl": "/projects/student"
   }
 ]

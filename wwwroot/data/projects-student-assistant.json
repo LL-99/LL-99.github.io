@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Drinking Gadgets",
+    "Summary": "Micro-controller-based custom-made drinking scales paired with a dedicated app for monitoring drinking habits of elderly people in retirement homes.",
+    "Thumbnail": "images/projects/far/dg/thumbnails/DrinkingGadget_Thumbnail.png",
+    "LocalUrl": "#drinking-gadgets"
+  },
+  {
+    "Name": "Bluetooth Dice",
+    "Summary": "A digitized version of Ludo, for which I rewrote the script of a custom-printed Bluetooth Dice and further assisted in updating the cross-device connectivity features.",
+    "Thumbnail": "images/projects/far/bd/thumbnails/Bild4_1 copy.png",
+    "LocalUrl": "#bluetooth-dice"
+  },
+  {
+    "Name": "VR Supermarket",
+    "Summary": "This project focused on creating a digital clone of a common supermarket and study user behaviour using both Virtual Reality and Augmented Virtuality in the shape of a tracked and live-streamed smartphone.",
+    "Thumbnail": "images/projects/far/vr/SupermarketAisle.png",
+    "LocalUrl": "#vr-supermarket"
+  },
+  {
+    "Name": "FIT - Quiz App",
+    "Summary": "A quiz app made for the \"Freisinger Innovationstag\" (Freising Innovation Day) and published on both the Google Playstore and Apple App Store as continuation of my Bachelor's Thesis.",
+    "Thumbnail": "images/projects/far/fit/thumbnails/MainMenuResolutionAdjusted.mp4",
+    "IsVideo": "True",
+    "LocalUrl": "#fit-app"
+  }
+]

@@ -1,6 +1,6 @@
 ﻿using MudBlazor;
 
-namespace Components
+namespace Helpers
 {
     public class DynamicGridCell
     {
