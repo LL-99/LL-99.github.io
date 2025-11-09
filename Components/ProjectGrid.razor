@@ -8,7 +8,7 @@
 <MudGrid Spacing="0" Class="ml-0 mt-0" Style="width:100% !important;" Justify="Justify.Center">
 	@foreach (var project in Projects)
 	{
-		<MudItem xs="6" Class="px-10 pt-5" Style="aspect-ratio:6/8; max-height:calc(40cqw)">
+		<MudItem xs="5" Class="px-10 pt-5" Style="aspect-ratio:6/8; max-height:calc(40cqw)">
 			<div class="project-card">
 				@if (project.IsVideo == false)
 				{
@@ -16,20 +16,22 @@
 				}
 				else
 				{
-@* 					<video style="width:100%; height:100%;" autoplay muted loop controls playsinline>
-						<source src="@project.Thumbnail" type="video/mp4"/>
-					</video> *@
+					<MudPaper Style="height:100%;background:#4d4d4d;">
+						<video style="width:100%; height:100%;" autoplay muted loop>
+							<source src="@project.Thumbnail" type="video/mp4" />
+						</video>
+					</MudPaper>
 				}
 
 				<MudOverlay Class="project-card-overlay rounded-lg pa-5" Visible DarkBackground="true" Absolute="true">
 					<MudText Typo="Typo.h6" Align="Align.Center">@project.Name</MudText>
 					<MudText Typo="Typo.body2" Align="Align.Justify">@project.Summary</MudText>
 					<MudText Typo="Typo.body2" Align="Align.Left">
-						<MudLink Href="@(new Uri(NavigationManager.Uri)+project.LocalUrl)">
+						<MudLink Href="@(new Uri(NavigationManager.Uri) + project.LocalUrl)">
 							<MudIcon Icon="@Icons.Material.Filled.ArrowRight" />
 							Click here to learn more
 						</MudLink>
-					</MudText >
+					</MudText>
 				</MudOverlay>
 			</div>
 		</MudItem>
@@ -41,10 +43,10 @@
 		height: 100%;
 		position: relative;
 	}
-	
-	.project-card:hover .project-card-overlay {
-		opacity: 1;
-	}
+
+		.project-card:hover .project-card-overlay {
+			opacity: 1;
+		}
 
 	.project-card-overlay {
 		opacity: 0;
@@ -57,12 +59,13 @@
 	public ProjectGroup ProjectGroup { get; set; }
 
 	public int ProjectCardHeight { get; set; } = 500;
-	public List<MinimalProjectDefinition> Projects { get; set; } = [];
+	public List<DetailedProjectDefinition> Projects { get; set; } = [];
 
 	protected override async Task OnParametersSetAsync()
 	{
 		await base.OnParametersSetAsync();
 
+		Console.WriteLine("Loading project grid for group " + ProjectGroup);
 		Projects = await ContentService.GetProjectsForGroup(ProjectGroup);
 		StateHasChanged();
 	}

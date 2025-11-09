@@ -3,25 +3,120 @@
     "Name": "Drinking Gadgets",
     "Summary": "Micro-controller-based custom-made drinking scales paired with a dedicated app for monitoring drinking habits of elderly people in retirement homes.",
     "Thumbnail": "images/projects/far/dg/thumbnails/DrinkingGadget_Thumbnail.png",
-    "LocalUrl": "#drinking-gadgets"
+    "LocalUrl": "#drinking-gadgets",
+
+    "Description": [
+      {
+        "Text": "For this project I revised and updated the code of a custom-made scale used by the FAR group for a cooperation project with various nursing homes. The purpose of the scale and its accompanying app was to track the hydration levels of the nursing homes' residents.<br/>Using the app, nursing home staff members are capable of creating profiles for the separate residents. By linking different instances of the drinking gadgets to specific profiles, the daily drinking habits of the associated residents can be monitored. Each drinking gadget also contains a color sensor that can track stickers placed on the bottom of each glass or cup. Additionally, by associating each sticker color with a different type of liqiud, habits regarding specific drinks (e.g., water, milk, coffee) can be analyzed.<br/>Lastly, I reworked the mentioned app and brought it up-to-date in terms of functionalities and stability.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/far/dg/Bild2_2.png",
+            "Caption": "The drinking scale and the accompanying app"
+          },
+          {
+            "Source": "images/projects/far/dg/Bild2_1.png",
+            "Caption": "A infographic from an associated paper"
+          },
+          {
+            "Source": "images/projects/far/dg/Bild1.png",
+            "Caption": "Another graphic showcasing the drinking gadget side-by-side with other projects of the research group, including the <a href=\"#project-bluetooth-dice\">Bluetooth Dice</a>\""
+          }
+        ]
+      }
+    ]
   },
   {
     "Name": "Bluetooth Dice",
     "Summary": "A digitized version of Ludo, for which I rewrote the script of a custom-printed Bluetooth Dice and further assisted in updating the cross-device connectivity features.",
     "Thumbnail": "images/projects/far/bd/thumbnails/Bild4_1 copy.png",
-    "LocalUrl": "#bluetooth-dice"
+    "LocalUrl": "#bluetooth-dice",
+    "Description": [
+      {
+        "Text": "For this project I built upon an existing venture of the chair that aimed to create a digital version of the German board game \"<a href=\"https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht\" target=\"_blank\" rel=\"noopener noreferrer\">Mensch ärgere Dich nicht</a>\" (which is pretty similar to <a href=\"https://en.wikipedia.org/wiki/Ludo\" target=\"_blank\" rel=\"noopener noreferrer\">Ludo</a>). The original project digitized the entire board game and combined it with a server-based splitscreen functionality that would allow up to 4 devices (typically tablets) to be joined together into a single playing field. Later iterations added custom-made 3D-printed pawns/pieces that could be placed on top of the tablets and moved as if playing the classic version of the game. The tablets then registered these movements and applied them, if they were in accordance to the rules.<br/>My job was to further integrate a previously created 3D-printed dice, which would communicate its results with the tablets using Bluetooth. The dice was based on an Arduino microcontroller and utilized gyroscopes to gather required data. In order to achieve my goal, I rewrote the dice-script and fully integrated the Bluetooth connection into the existing game project using Unity.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/far/bd/thumbnails/Bild4_1 copy.png"
+          },
+          {
+            "Source": "images/projects/far/bd/Dice.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "Name": "VR Supermarket",
     "Summary": "This project focused on creating a digital clone of a common supermarket and study user behaviour using both Virtual Reality and Augmented Virtuality in the shape of a tracked and live-streamed smartphone.",
     "Thumbnail": "images/projects/far/vr/SupermarketAisle.png",
-    "LocalUrl": "#vr-supermarket"
+    "LocalUrl": "#vr-supermarket",
+
+    "Description": [
+      {
+        "Text": "Undoubtedly, this was one of the more complex projects I worked on. It combined server-based Networking, VR and Webcam inputs to create an experience akin to an immersive simulation of a supermarket. This project was called into life way before I joined the research group with the goal of studying users' experience and behavior in such a situation. Utilizing a VR Headset, users are placed inside the supermarket and are tasked with retrieving specific goods. In order to find the goods, users are supported by a virtualized smartphone, which - depending on the mode - may be a livestreamed version of their own smartphone.<br>Of course, this complex system had multiple components which were developed by students writing their theses or other FAR members over multiple years. I mainly worked on three specific parts: Optimization, VR integration and Smartphone synchronization.<br>As I started working on the project, performance had greatly suffered from the years of continuous and incremental implementation. Even on the most performant settings, my somewhat decent PC was not able to push the project beyond 5-10 FPS. Over the course of a few weeks I applied as many optimizations as possible, reaching ~60 FPS even on the most demanding study setups. The VR integration and smartphone synchronization went hand-in-hand with each other. Together with another student assistant I debugged the different VR + smartphone setup modes to achieve a properly usable and enjoyable simulation experience.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/far/vr/SupermarketAisle.png",
+            "Caption": "A supermarket aisle, including the shopping basket"
+          },
+          {
+            "Source": "images/projects/far/vr/SmartphoneWithMarkers.jpg",
+            "Caption": "The Augmented Virtuality features allows for pairing a minimally prepared smartphone with a VR headset & controller"
+          },
+          {
+            "Source": "images/projects/far/vr/FoodAnalysis.jpg",
+            "Caption": "An older version of the project even included a food analysis mode. While this feature was excluded for the study, it might return in the future."
+          },
+          {
+            "Source": "images/projects/far/vr/SupermarketNew.png",
+            "Caption": "After wrapping up the optimizations, the project ran at 60 fps, even on mediocre hardware."
+          }
+        ]
+      }
+    ]
   },
   {
     "Name": "FIT - Quiz App",
+    "NameLong": "Quiz App - Freisinger Innovationstag 2022(aka FIT; ~Freising Day of Innovation)",
     "Summary": "A quiz app made for the \"Freisinger Innovationstag\" (Freising Innovation Day) and published on both the Google Playstore and Apple App Store as continuation of my Bachelor's Thesis.",
     "Thumbnail": "images/projects/far/fit/thumbnails/MainMenuResolutionAdjusted.mp4",
     "IsVideo": "True",
-    "LocalUrl": "#fit-app"
+    "LocalUrl": "#fit-app",
+    "Description": [
+      {
+        "Text": "This project was a continuation of my Bachelor's Thesis. <a href=\"#project-bachelors-thesis\">Click here to scroll down to part I.</a><br><br>After I had finished my Bachelor's Thesis I got hired by the FAR as a student assistant. I worked for the group during my entire Master's degree and got to work on many different interesting projects, one of which was the final development phase and release of my prior Bachelor's Thesis. Since then (almost 1.5 years later), quite a few plans had changed.<br>I adjusted the app to these new requirements and integrated all questions given to us by the numerous different subgroups of the enable-Cluster. While some things had to be changed, others stayed the same. Sadly most question types, the map integration as well as the leaderboard and even the AR-based questions had to go as the app's scope was redefined. As a replacement we would use QR codes, scanned from within the app to grant players access to the different booths' questions, combined with a physical booklet and stamps that would allow players to participate in an on-site lottery. Additionally some background info texts were included for interested participants and the admittedly sometimes rather rough UI was updated.<br>The final version was published on both the Google Playstore, as well as the iOS AppStore, and actively utilized during the aforementioned <a href=\"https://www.enable-cluster.de/innovationstag/fit-2022\" target=\"_blank\" rel=\"noopener noreferrer\">Freisinger Day of Innovation</a> (<a href=\"https://www.enable-cluster.de/en/\" target=\"_blank\" rel=\"noopener noreferrer\">english homepage of the enable Cluster, which sadly does not cover the FIT 2022</a>)",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/far/fit/thumbnails/MainMenuResolutionAdjusted.mp4",
+            "IsVideo": "True",
+            "Caption": "The main menu from which players can reach both the info sections as well as the actual gameplay"
+          },
+          {
+            "Source": "images/projects/far/fit/Infos.PNG",
+            "Caption": "In the 'About Enable' menu, players can learn about the various groups of the enable cluster"
+          },
+          {
+            "Source": "images/projects/far/fit/QR Scanner.PNG",
+            "Caption": "This menu allows players to scan individual booth's QR codes"
+          },
+          {
+            "Source": "images/projects/far/fit/QuestionExample.PNG",
+            "Caption": "An example question"
+          },
+          {
+            "Source": "images/projects/far/fit/QuizMenu.PNG",
+            "Caption": "The 'Questions' menu, which allows the player navigate between QR Code scanner, trophies and a trial run containing all questions in random order."
+          },
+          {
+            "Source": "images/projects/far/fit/Scoreboard.PNG",
+            "Caption": "In the scoreboard, detailed results are given for each individual booth."
+          },
+          {
+            "Source": "images/projects/far/fit/Trophies.PNG",
+            "Caption": "In the trophy menu, trophies are be awarded for finishing separate booths and required for entering the lottery"
+          }
+        ]
+        
+      }
+    ]
   }
 ]

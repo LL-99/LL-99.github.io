@@ -20,7 +20,7 @@ namespace Services
             return JsonConvert.DeserializeObject<List<HomePageProjectDefinition>>(json) ?? [];
         }
 
-        public async Task<List<MinimalProjectDefinition>> GetProjectsForGroup(ProjectGroup projectGroup)
+        public async Task<List<DetailedProjectDefinition>> GetProjectsForGroup(ProjectGroup projectGroup)
         {
             var json = await httpClient.GetStringAsync("data/projects-" + (projectGroup switch
             {
@@ -30,7 +30,7 @@ namespace Services
                 _ => "own",
             }) + ".json");
 
-            return JsonConvert.DeserializeObject<List<MinimalProjectDefinition>>(json) ?? [];
+            return JsonConvert.DeserializeObject<List<DetailedProjectDefinition>>(json) ?? [];
         }
     }
 }

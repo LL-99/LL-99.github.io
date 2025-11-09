@@ -1,0 +1,237 @@
+[
+  {
+    "Name": "AR Sagas (Master's Thesis)",
+    "NameLong": "Master's Thesis: \"ARSagas - A Historically Accurate Serious Game Focusing on Mythology\"",
+    "Summary": "My Master's Thesis (titled \"AR Sagas\") was a framework for interactive storytelling using various gameplay components. As an implementation example, I focused on the Norse myth \"Ragnarök\".",
+    "Thumbnail": "images/projects/uni/mt/combat_fenrir.PNG",
+    "LocalUrl": "#masters-thesis",
+
+    "Description": [
+      {
+        "Text": "Quite a mouthful - though not as bad as my Bachelor's Thesis, which you will find below ;)<br>I wrote this thesis at TUM's CAMPAR, namely for the FAR group. While my Bachelor's Thesis topic was already put forward by the chair, I proposed this thesis myself. The idea for it came to me due to a number of reasons. For once, I wanted to work on a full game project myself, secondly, I also <i>really</i> like Norse mythology.<br>The proposal was accepted by the chair and I got to work. After some considerations, the project design was finalized. The backend of the game would be constructed in a fully modular fashion, allowing anyone proficient with C# and Unity to relatively easily add new myths, even from different mythologies. Afterwards, I would focus exclusively on a single myth from Norse mythology (<a href=\"https://en.wikipedia.org/wiki/Ragnar%C3%B6k\" target=\"_blank\" rel=\"noopener noreferrer\">Ragnarök</a>) in terms of implementation and Game Design.<br>The game would contain a \"Codex\" as a kind of library for interesting facts, objects, etc. as well as the main game part, that would be split into multiple sections, such as narrative-focused \"Story segments\", exploration-focused \"Freewalk segments\" (aka openly explorable environments) and action-focused \"Combat segments\". There would also be a framework to include various \"Minigames\", such as one similar to the card game \"Concentration\" (aka \"Memory\"), which would already be included as an implementation example.<br>Importantly, the game would also have to contain an Augmented Reality variant of almost each segment. I wrote this thesis at the \"Forschungsgruppe Augmented Reality\" (\"Research Group Augmented Reality\") after all. While AR is always an interesting topic, sadly the performance-wise more limited hardware forced me to cut down on certain parts I would have liked to cover with more visual fidelity.<br>After the few months of time for detailed design & implementation, I was ready to show the project to others. I presented the project both during one of the group's AR courses as well as to a general audience of TUM students, which were encouraged to try out the game. While there, of course, were a few things I would have liked to refine further, the project was all-around well received and was even able to capture quite a few people who had little to no prior interest in Norse mythology.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/mt/story.png",
+            "Caption": "A simple story segment, retelling a part of the well-known myth."
+          },
+          {
+            "Source": "images/projects/uni/mt/freewalk_default.PNG",
+            "Caption": "In the freewalk mode, the player can traverse a small Viking village, based on real locations"
+          },
+          {
+            "Source": "images/projects/uni/mt/freewalk info.png",
+            "Caption": "While travelling around in the freewalk mode, certain Points of Interest (POIs) provide historically accurate info"
+          },
+          {
+            "Source": "images/projects/uni/mt/freewalk_ar_2.PNG",
+            "Caption": "The AR version of the freewalk mode. Instead of walking around, the entire area is projected on a nearby surface using AR. Since normal interactions would be difficult, the player here assumes more of a \"god-mode\"-style role, with some fun hidden interactions."
+          },
+          {
+            "Source": "images/projects/uni/mt/combat_combined.png",
+            "Caption": "Some examples of the combat. While the first battle is against a \"Draugr\" (norse undead), which acts as a tutorial enemy and does not appear in the actual tale, the others re-enact significant fights from the story (Thor vs. the serpent Jörmungandr, Odin and Vidarr against the wolf Fenrir and lastly the clash between Heimdall and Loki)."
+          },
+          {
+            "Source": "images/projects/uni/mt/combat_draugr_2.PNG",
+            "Caption": "To use different moves during combat you have to draw the respective <a href=\"https://en.wikipedia.org/wiki/Elder_Futhark\" target=\"_blank\" rel=\"noopener noreferrer\">Elder Futhark</a> runes. Combat is in realtime, so you'll have to parry enemy attacks and time your own attacks right, but entering Draw-mode slows down everything to allow you to focus on drawing the right rune. More runes are unlocked later fights and may be strong or weak against certain enemies."
+          },
+          {
+            "Source": "images/projects/uni/mt/minigame.png",
+            "Caption": "The Minigame, with its \"Concentration\"/\"Memory\"-style gameplay about characters and items from Norse mythology."
+          },
+          {
+            "Source": "images/projects/uni/mt/codex_overview.png",
+            "Caption": "The codex view after unlocked some entries from Norse mythology."
+          },
+          {
+            "Source": "images/projects/uni/mt/codex_entry.png",
+            "Caption": "The codex entry for Valhalla. Many entries use historical works as image references & visualizations, such as \"Valhalla\" by Max Brückner (1896)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Bachelor's Thesis",
+    "NameLong": "Bachelor's Thesis: Development of a Serious Game about Nutrition with Augmented Reality Features",
+    "Summary": "As my Bachelor's Thesis, I created a dynamic quiz app that I later reworked as the FIT - Quiz App above.",
+    "Thumbnail": "images/projects/uni/bt/GameQuestionExample.png",
+    "LocalUrl": "#bachelors-thesis",
+
+    "Description": [
+      {
+        "Text": "Just as with my Master's Thesis, I wrote my Bachelor's Thesis at the CAMPAR chair of the TUM or more specifically the FAR group. Contrary to most other projects on this list, the game/gamification part of this thesis was rather slim. Instead it initially focused more on the overall amount of features and on creating an easily extendable framework.<br>The core gameplay idea was simple and case-driven: The enable-Cluster, a German research group focusing on various nutrition- & food-based disciplines, required a quiz app for their upcoming participation at the \"Freisinger Innovationstag\" (FIT), an event-day all about nutrition in the German city of Freising. As part of the FAR group and enables' partnership, they were looking for a student to create this app in the scope of a thesis.<br>After various design iterations, my advisor and I settled on a split design, that would utilize two separate applications: The quiz app itself, as well as an editor that would allow anyone to easily create various types of quiz questions and deploy them with a single button press to all instances of said app, without needing to update the app in the various stores it would be published in. I got to work and implemented all discussed features until the end of the semester, meeting my submission deadline in time.<br>Overall this was an interesting experience, as it was the first time I actively worked for a \"customer\", with regular meetings between my advisor, representatives from the enable-Cluster and myself.<br>I can say with certainty I learned a lot about various programming concepts, APIs, and frameworks, such as asynchronous programming, realtime data transfer using <a href=\"https://firebase.google.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Google's Firebase</a>, and even GPS visualizations via <a href=\"https://www.mapbox.com/unity\" target=\"_blank\" rel=\"noopener noreferrer\">Mapbox's Unity SDK</a> or later <a href=\"https://developers.google.com/maps/documentation/gaming/overview_musk?hl=de\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps SDK for Unity</a>.<br><br>As part of my student assistant job, I later got to continue work on this project. <a href=\"#project-fit-app\">Click here to scroll up to part II, in case you haven't seen it yet.</a>",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/bt/GameQuestionExample.png",
+            "Caption": "A dummy question to showcase the Multiple-Choice question archetype"
+          },
+          {
+            "Source": "images/projects/uni/bt/GameSettingsMenu.png",
+            "Caption": "The basic settings menu, which allowed you to consent to location tracking and set your age group"
+          },
+          {
+            "Source": "images/projects/uni/bt/EditorMain.png",
+            "Caption": "Main view of the question editor, allowing specific questions per age group and custom translations for German and English"
+          },
+          {
+            "Source": "images/projects/uni/bt/EditorARFeature.png",
+            "Caption": "The AR-Edit menu allows the visualization of AR objects, the loading of custom meshes and allocation of points of interest"
+          }
+        ]
+      },
+      {
+        "_Text": "Now you might think all was good and well, however, the last semester of my Bachelor's degree was during summer 2020. Yes, that summer. So the weeks came and went, but as lockdowns continued, it became apparent that the FIT would not be able to take place and thus my app not see the light of day within the foreseeable future...<br>A few months and ultimately well over a year passed, before I got to work on the project again. This time as part of my student assitant job at the FAR group. In the meantime, however, quite a few plans had changed. I adjusted the app to these new requirements and integrated all questions given to us by the numerous different subgroups of the enable-Cluster.<br>Some things had changed, others stayed the same: Some question types, the map integration as well as the leaderboard and even the AR-based questions had to go. As a replacement we would use QR codes, scanned from within the app to grant players access to the different booths' questions, combined with a physical booklet and stamps that would allow players to participate in an on-site lottery.<br>Additionally some background info texts were included for interested participants and the admittedly sometimes rather rough UI was updated.<br>The final version was published on both the Google Playstore, as well as the iOS AppStore."
+      }
+    ]
+  },
+  {
+    "Name": "The Facility",
+    "Summary": "A level design focused first person horror game. Developed in a group of four, each of us focused on a different level and style.",
+    "Thumbnail": "images/projects/uni/ld/Sewers_Airlock.png",
+    "LocalUrl": "#level-design",
+
+    "Description": [
+      {
+        "Text": "Since most of the projects I've worked on as a student or student assistant, except for my Master's Thesis, were either Gameplay or Tech-focused, it was refreshing to work on a more immersive and narrative experience. The player took on the role of a CEO's bodyguard sent into a research and development blacksite, owned by the CEO, in order to retrieve some top-secret documents. However, there were two main obstacles: On one hand, the facility had suffered a major containment breach only hours prior and now was swarming with monstrous creatures. On the other, the facility was located on a space station, which had automatically activated its self-destruct sequence as response to the breach.<br>The Facility is a first-person horror game and was created in a team of four, with each of us designing and building his very own level.My level were \"The Sewers\", a network of claustrophobic underground tunnels in which a worm-like monster stalked the player at every turn. While the first segment of the level was ominous and quiet, the second half was a much more stressful chase sequence in which the player would have to avoid the creature while finding their way through a maze-like pipe system.<br>I also really enjoyed the Gameplay development, which I did together with another group member, as it strayed away from the classic bird's-eye view/third-person-perspective I had used in many prior projects.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/ld/MainMenu.PNG",
+            "Caption": "The main menu"
+          },
+          {
+            "Source": "images/projects/uni/ld/Tutorial_01.png",
+            "Caption": "The tutorial walks the player through all controls and player abilities"
+          },
+          {
+            "Source": "images/projects/uni/ld/Sewers_Airlock.png",
+            "Caption": "After entering the sewer floor, players are greeted by dim lights and bleak industrial tunnels and pipes"
+          },
+          {
+            "Source": "images/projects/uni/ld/Sewers_Entrance.png",
+            "Caption": "Still, some passages may seem more sinister than others"
+          },
+          {
+            "Source": "images/projects/uni/ld/Sewers_Pillars.png",
+            "Caption": "Certain locations may even defy conventional reality and laws of physics"
+          },
+          {
+            "Source": "images/projects/uni/ld/Sewers_Storage_Enemy.png",
+            "Caption": "With every step closing in on the target, the lurking monster becomes more present and aggressive"
+          },
+          {
+            "Source": "images/projects/uni/ld/Sewers_Lair.png",
+            "Caption": "If one survives long enough, one might even find themselves inside the slimy lair of the beast itself"
+          },
+          {
+            "Source": "images/projects/uni/ld/Asylum_Entrance.png",
+            "Caption": "The Asylum, another level, made by another team member"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Project: Equilibrium",
+    "Summary": "A small top-down bullet-hell game I worked on with 2 other students. It had a number of cool and unique features, which ultimately inspired me to create \"Extraction Point\".",
+    "Thumbnail": "images/projects/uni/gl/BasicGameplayDiegetic.png",
+    "LocalUrl": "#games-lab",
+    "Description": [
+      {
+        "Text": "Probably one of my favourite Uni projects I've worked on. The player controls a small Icosphere and has to shoot down approaching enemies, consisting of cubes, tetrahedrons, and similar geometric shapes. As one can imagine, on its own this isn't the most complex or interesting gameplay idea. However, this game was developed as part of a course that was pretty much a semester-long GameJam with the topic \"Chaos and Order\". Our team of 3 came up with a unique concept: During the level the state of the environment would constantly swap between chaos and order. This resulted in a pretty interesting gameplay flow: While the player is in the order state, enemies are organized and attack in pre-defined formations. As soon as enemies enter the chaos state, they will move randomly and unpredictably. The player can attack enemies to destroy them during the order state, but has to use defensive weapons during the chaos state to survive the sudden onslaught. The world state itself constantly rotates, originating from the center of the arena.<br>Additionally the player can collect PowerUps to save themselves in difficult situations.<br>If you want to read more about this (or even play it), the <a href=\"https://wiki.tum.de/display/gameslab2021summer/Team+Equilibrium\" target=\"_blank\" rel=\"noopener noreferrer\">TUM-Wiki site</a> should be publically accessible. Be prepared for a lot of documentation and presentation files, though!",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/gl/BasicGameplayDiegetic.png",
+            "Caption": "Basic gameplay. Another neat feature was the diegetic UI one could enable or disable before playing. The clock-like yin and yang icon on the right shows when the world state will change."
+          },
+          {
+            "Source": "images/projects/uni/gl/TutorialDiegetic.png",
+            "Caption": "The tutorial is a pre-defined sequence that will teach you all basics in an easy intro level"
+          },
+          {
+            "Source": "images/projects/uni/gl/Parry.png",
+            "Caption": "While in the <i>Chaos</i> state, you are unable to attack. You can, however, time your block correctly to parry enemy attacks and damage them."
+          },
+          {
+            "Source": "images/projects/uni/gl/Boss2.png",
+            "Caption": "At the end of some levels, you have to face powerful bosses. This one fires lasers and utilizes the level's pillar environment. The pillars are destructible obstacles, but also provide protection from the boss's main laser attack, forcing you to make a choice."
+          },
+          {
+            "Source": "images/projects/uni/gl/Boss2MidTransition.png",
+            "Caption": "A close-up of the boss from the last picture during a phase transition."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Galaxy Simulation",
+    "Summary": "Developed in a group of 8 students this was one of the most theory-heavy projects I worked on. Its backend utilizes many factors, such as intelligence and aggressiveness of species to simulate their expansions across a galaxy.",
+    "Thumbnail": "images/projects/uni/bs/GalaxyMap.PNG",
+    "LocalUrl": "#business-simulations",
+    "Description": [
+      {
+        "Text": " This was the largest group project I participated in during my time at TUM. In a team of 8, we developed a galaxy simulation, that would see multiple interstellar races compete for dominance in a large procedurally generated galaxy with complex solar systems. As the goal was to primarily create a simulation, the project only had little actual gameplay, with only minor ways of influencing the different civilizations. A large part of the work was focused on detailed numerical values and calculations, such as traits of the different races and planets, as well as their interactions with factors such as population growth and expansion rates.<br>The core design of the project was heavily inspired by well-known Sci-Fi aspects, such as the Dark Forest theorem popularized by Liu Cixin's <a href=\"https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)\" target=\"_blank\" rel=\"noopener noreferrer\">The Three-Body Problem</a> series, while visuals and aspects of the procedural generation drew from popular Sci-Fi games, like <a href=\"https://en.wikipedia.org/wiki/Stellaris_(video_game)\" target=\"_blank\" rel=\"noopener noreferrer\">Stellaris'</a> Galaxy Map.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/bs/ConfigMenu.PNG",
+            "Caption": "The Main Menu used to configure the simulation"
+          },
+          {
+            "Source": "images/projects/uni/bs/GalaxyMap.PNG",
+            "Caption": "The galaxy map. Grey circles represent uninhabitated systems, while colored ones indicate the civilizations occupying them. The lines between indicate connections that may be traversed by spaceships."
+          },
+          {
+            "Source": "images/projects/uni/bs/Wormhole.PNG",
+            "Caption": "A wormhole, allowing for long-distance travel across the galaxy. Pairs of wormholes are shown via a yellow connector on the galaxy map."
+          },
+          {
+            "Source": "images/projects/uni/bs/SystemUninhabited.PNG",
+            "Caption": "An uninhabited system"
+          },
+          {
+            "Source": "images/projects/uni/bs/SystemInhabited.PNG",
+            "Caption": "An inhabited system. The panel on the left showcases the resident civilazitation's stats."
+          },
+          {
+            "Source": "images/projects/uni/bs/Results.PNG",
+            "Caption": "After manually ending the simulation (or a single civilization conquers the entire galaxy), a number of interesting stats - both relating to economics and combat - are shown."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Multiplayer Platformer",
+    "NameLong": "Unnamed Multiplayer Platformer",
+    "Summary": "An unnamed multiplayer platformer I created in a small group. While nothing special, it was my first foray into the world of networking.",
+    "Thumbnail": "images/projects/uni/sg/Main Menu.PNG",
+    "LocalUrl": "#social-gaming",
+
+    "Description": [
+      {
+        "Text": "This project was a fun little bonus credits group project. While some parts of the UI design & graphics are arguably rough, this is one of the first goal-oriented projects I worked on. Most of my work went into the networking and basic gameplay aspects.<br>The gameplay is simple, yet enticing: In every match, two players compete against each other. The <i>Runner</i> has to survive in a 2D side-scrolling level with hazards and enemies, while the <i>Builder</i> attempts to actively kill the <i>Runner</i> by placing the levels components in the most difficult - yet possible - way.<br>The project was developed in Unity, using Firebase for networking.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/uni/sg/Main Menu.PNG",
+            "Caption": "The main menu"
+          },
+          {
+            "Source": "images/projects/uni/sg/Lobby Browser.PNG",
+            "Caption": "The lobby browser"
+          },
+          {
+            "Source": "images/projects/uni/sg/Runner.PNG",
+            "Caption": "Gameplay example of player 1, the <i>Runner</i>"
+          },
+          {
+            "Source": "images/projects/uni/sg/Builder.PNG",
+            "Caption": "Gameplay example of player 2, the <i>Builder</i>"
+          }
+        ]
+      },
+      {
+        "Text": "While the project looks somewhat questionable when it comes to graphics, I still think the core gameplay was pretty fun and unique. The nemesis system, which would actively encourage you to compete against other players, combined with the realtime PvP nature of the game made it enjoyable to play. Though, of course, as a small course project this was never published in any meaningful way, I learned a lot about networking and asynchronous programming here."
+      }
+    ]
+  }
+]

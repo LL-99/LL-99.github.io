@@ -1,6 +1,24 @@
-﻿@page "/Projects/Student"
+﻿@using LL_99.github.io.Components
+@using MudBlazor
 
-<h3>ProjectsOwn</h3>
+@page "/Projects/University"
+
+
+<MudText Typo="Typo.h5" Align="Align.Center">Study Projects</MudText>
+
+<MudDivider Class="my-3" />
+
+<MudText Typo="Typo.body1" Align="Align.Justify">
+    These are the projects I have worked on during my studies. Sadly I'm not able to provide download-links for most of these, but I'm always open to questions about them!
+</MudText>
+
+<ProjectGrid ProjectGroup="@Services.ProjectGroup.Uni" />
+
+<div class="my-20" />
+
+<ProjectList ProjectGroup="@Services.ProjectGroup.Uni" />
+
+<div class="my-20" />
 
 @code {
 

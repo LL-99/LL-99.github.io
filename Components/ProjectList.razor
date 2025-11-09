@@ -1,0 +1,84 @@
+﻿@using Helpers
+@using MudBlazor
+@using Services
+
+@inject ContentService ContentService
+
+@foreach (var project in Projects)
+{
+	<MudContainer>
+		<MudText Typo="Typo.h6" Align="Align.Center">@(string.IsNullOrWhiteSpace(project.NameLong) ? project.Name : project.NameLong)</MudText>
+
+		<MudDivider Class="my-3" />
+
+		@if (project.Description != null && project.Description.Count > 0)
+		{
+			foreach (var descr in project.Description)
+			{
+				@if (string.IsNullOrWhiteSpace(descr.Text) == false)
+				{
+					<MudText Typo="Typo.body1" Align="Align.Justify">@((MarkupString)descr.Text)</MudText>
+				}
+
+				@if (descr.ShowcaseElements != null && descr.ShowcaseElements.Count > 0)
+				{
+					<div style="width:75%;margin-left:auto;margin-right:auto;margin-top:20px">
+						<MudCarousel Class="mud-width-full"
+									 Style="height:400px;"
+									 ShowArrows="@(descr.ShowcaseElements.Count > 1)"
+									 ShowBullets="@(descr.ShowcaseElements.Count > 1)"
+									 EnableSwipeGesture
+									 AutoCycle
+									 TData="object"
+									 @bind-SelectedIndex="SelectedShowcaseIndex[descr]">
+							@foreach (var element in descr.ShowcaseElements)
+							{
+								<MudCarouselItem Transition="Transition.Slide" Color="@Color.Primary">
+									<div class="d-flex" style="height:100%;background:#4d4d4d;">
+										@if (element.IsVideo == false)
+										{
+											<MudImage Class="rounded-lg" Elevation="25" Src="@element.Source" ObjectFit="ObjectFit.ScaleDown" Style="width:100%; height:100%;" />
+										}
+										else
+										{
+											<div style="width:100%;margin-left:auto;margin-right:auto;">
+												@* <MudPaper Style="height:100%;"> *@
+													<video style="width:100%; height:100%;" autoplay muted loop>
+														<source src="@element.Source" type="video/mp4" />
+													</video>
+												@* </MudPaper> *@
+											</div>
+										}
+									</div>
+								</MudCarouselItem>
+							}
+						</MudCarousel>
+
+						<MudText Align="Align.Center" Style="height:50px" Class="mt-3">@descr.ShowcaseElements[SelectedShowcaseIndex[descr]].Caption</MudText>
+					</div>
+				}
+			}
+
+			<div style="height:50px" />
+		}
+	</MudContainer>
+}
+
+@code {
+	[Parameter]
+	public ProjectGroup ProjectGroup { get; set; }
+
+	public List<DetailedProjectDefinition> Projects { get; set; } = [];
+	public Dictionary<ProjectDescriptor, int> SelectedShowcaseIndex { get; set; } = new();
+
+
+	protected override async Task OnParametersSetAsync()
+	{
+		await base.OnParametersSetAsync();
+
+		Projects = await ContentService.GetProjectsForGroup(ProjectGroup);
+		SelectedShowcaseIndex = Projects.SelectMany(x => x.Description ?? new()).Select(x => KeyValuePair.Create(x, 0)).ToDictionary();
+
+		StateHasChanged();
+	}
+}

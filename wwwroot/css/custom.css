@@ -1,0 +1,19 @@
+﻿a:link {
+    color: #4d4dff; /* blue */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #9b54de; /* purple */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #4d4dff;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff6666; /* red while active */
+    text-decoration: underline;
+}
