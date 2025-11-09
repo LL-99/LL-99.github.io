@@ -1,8 +1,146 @@
-﻿@page "/"
+﻿@using Components
+@using MudBlazor
+@using Services
+@page "/"
+
+@inject ContentService ContentService
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hey, this page is currently WIP</h1>
+<MudText Typo="Typo.h4" Align="Align.Center">This page is currently <i>highly work in progress</i></MudText>
 
-At the moment I'm moving my page from plain old html & js over to a fancy new blazor page.
-In the meantime, you can find the old version <a href="/legacy/index.html" target="_blank" style="color:blue;">here</a>.
+<MudText Typo="Typo.body1" Align="Align.Center">
+	At the moment I'm moving my page from plain old html & js over to a fancy new blazor page.
+	In the meantime, you can find the old version <a href="/legacy/index.html" target="_blank" style="color:blue;">here</a>.
+</MudText>
+
+<MudDivider Class="my-5" />
+
+<MudText Typo="Typo.h4" Align="Align.Center">Welcome!</MudText>
+<MudText Typo="Typo.body1" Align="Align.Center">Hi, I'm Lucas and this is my homepage. Below you can find some of my projects. Feel free to take a look around.</MudText>
+
+<div style="height:5px" />
+@* 
+<MudGrid>
+	<MudItem xs="8" Style="height:150px;">
+		<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
+	</MudItem>
+	<MudItem xs="4">
+		<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
+	</MudItem>
+	<MudItem xs="3" Style="height:150px;">
+		<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
+	</MudItem>
+	<MudItem xs="9" Style="height:150px;">
+		<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
+	</MudItem>
+</MudGrid> *@
+
+<MudContainer Class="home-page-grid pt-4 px-0">
+	@foreach (var cell in GridCells)
+	{
+		<MudPaper Class="@cell.CssClass" Style=@cell.CssStyle>
+			@if (cell.Images == null || cell.Images.Count == 0)
+			{
+				if (string.IsNullOrWhiteSpace(cell.Title) && string.IsNullOrWhiteSpace(cell.Descr))
+				{
+					<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
+				}
+				else
+				{
+					<MudPaper class="pa-5" Style="height:100%; align-content:center">
+						@if (string.IsNullOrWhiteSpace(cell.Title) == false)
+						{
+							<MudText Typo="Typo.h5" Align="Align.Center" Style="font-weight:bold">@cell.Title</MudText>
+							<MudDivider Class="my-2" />
+						}
+						@if (string.IsNullOrWhiteSpace(cell.Descr) == false)
+						{
+							<MudText Typo="Typo.body1" Align="Align.Justify">@((MarkupString)cell.Descr)</MudText>
+						}
+						@if(string.IsNullOrWhiteSpace(cell.Link) == false)
+						{
+							<MudText Typo="Typo.body1" Align="Align.Left"><a href=@cell.Link>Learn more</a></MudText>							
+						}
+					</MudPaper>
+				}
+
+			}
+			else if (cell.Images.Count == 1)
+			{
+				<MudPaper class="d-flex justify-content-center" style="width:stretch;height:100%;">
+					<MudImage Src="@cell.Images.First()" Elevation="25" Class="rounded-lg" ObjectFit="ObjectFit.Cover" Style="width: 100%; height: 100%;" />
+				</MudPaper>
+			}
+			else
+			{
+				<MudCarousel Class="mud-width-full rounded-lg" Style="height:100%;" ShowArrows ShowBullets EnableSwipeGesture AutoCycle TData="object">
+					@foreach (var img in cell.Images)
+					{
+						<MudCarouselItem Class="rounded-lg" Transition="Transition.Slide" Color="@Color.Primary">
+							<MudPaper class="d-flex justify-content-center" style="width:stretch;height:100%;">
+								<MudImage Src="@img" Class="rounded-0" ObjectFit="ObjectFit.Cover" Style="width: 100%; height: 100%;" />
+							</MudPaper>
+						</MudCarouselItem>
+					}
+				</MudCarousel>
+			}
+
+		</MudPaper>
+	}
+</MudContainer>
+
+<div style="height:100px" />
+
+<style>
+	.home-page-grid {
+		display: grid;
+		gap: 25px;
+		grid-template-columns: repeat(12, 1fr);
+		grid-auto-rows: 100px;
+		height: contain;
+		width: 100%;
+	}
+
+	a:link {
+		color: #4d4dff; /* blue */
+		text-decoration: underline;
+	}
+
+	a:visited {
+		color: #9b54de; /* purple */
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: #4d4dff;
+		text-decoration: underline;
+	}
+
+	a:active {
+		color: #ff6666; /* red while active */
+		text-decoration: underline;
+	}
+</style>
+
+
+@code {
+	public List<DynamicGridCell> GridCells { get; set; } = [];
+	public List<HomePageProjectDefinition> Projects { get; } = [];
+
+	protected override async Task OnInitializedAsync()
+	{
+		await base.OnInitializedAsync();
+
+		GridCells.Clear();
+		StateHasChanged();
+
+		var proj = await ContentService.GetHomePageProjects();
+
+		GridCells = proj.SelectMany(x => x.InvertOrder == false ?
+			new List<DynamicGridCell>() { x.ImageCell, x.DescrCell } :
+			new List<DynamicGridCell>() { x.DescrCell, x.ImageCell })
+			.ToList();
+		StateHasChanged();
+	}
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "Height": 3,
+    "Images": [
+      "/images/projects/own/website/SourceExample.png"
+    ],
+    "ImageColWidth": 4,
+    "Title": "This Website",
+    "Description": "Initially built by hand using good old plain html, css & a bit of js sprinkled in, by now I've swapped to a more modern toolkit.<br/>The current version of the website uses <a href=\"https://www.mudblazor.com/\" target=\"_blank\">Mudblazor</a>, which has allowed me to step up both functionalities and design while still allowing more customization than an out-of-the box website host.<br/>If you are interested in checking out the old version of my website/portfolio click <a href=\"/legacy/pages/portfolio/portfolio.html\" target=\"_blank\">here</a>. It is no longer maintained, but images & most links should still be working fine.",
+    "ProjectUrl": ""
+  },
+  {
+    "Height": 3,
+    "Images": [
+      "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
+      "/images/projects/own/islands/Medium_1.png",
+      "/images/projects/own/website/SourceExample.png"
+    ],
+    "ImageColWidth": 7,
+    "Title": "Own Projects",
+    "Description": "The projects in this category are those I've created myself in my spare time. Many of these are just prototypes - as it commonly happens with game/software development - but I'd love to get around to expanding upon these eventually.",
+    "ProjectUrl": "/projects/own",
+    "InvertOrder": "true"
+  },
+  {
+    "Height": 3,
+    "Images": [
+      "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
+      "/images/projects/own/islands/Medium_1.png",
+      "/images/projects/own/website/SourceExample.png"
+    ],
+    "ImageColWidth": 7,
+    "Title": "brainboost Projects",
+    "Description": "Here you can find some projects I've worked on for current position at brainboost, where I do both game & software develop-ment pre-dominently in a Neurofeedback context",
+    "ProjectUrl": "/projects/bb"
+  },
+  {
+    "Height": 3,
+    "Images": [
+      "/images/projects/far/dg/thumbnails/DrinkingGadget_Thumbnail.png",
+      "/images/projects/far/vr/SupermarketAisle.png",
+      "/images/projects/far/fit/MainMenu.png",
+      "/images/projects/far/bd/Bild4_1.png"
+    ],
+    "ImageColWidth": 6,
+    "Title": "Student Assistant Projects",
+    "Description": "These are the projects I worked on during my student job at the Technical University of Munich's Chair for Augmented Medical Procedures & Augmented Reality (<a href=\"https://www.campar.in.tum.de/WebHome\" target=\"_blank\" rel=\"noopener noreferrer\">CAMPAR</a>) or more precisely, its research group \"Forschungsgruppe Augmented Reality\" (<a href=\"https://www.cs.cit.tum.de/far/startseite/\" target=\"_blank\" rel=\"noopener noreferrer\">FAR</a>).<br/>My tasks there revolved around expanding, optimizing, and maintaining older projects, such mobile apps, custom made Bluetooth gadgets/research tools, and VR studies.",
+    "ProjectUrl": "/projects/far",
+    "InvertOrder": "true"
+  },
+  {
+    "Height": 3,
+    "Images": [
+      "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
+      "/images/projects/own/islands/Medium_1.png",
+      "/images/projects/own/website/SourceExample.png"
+    ],
+    "ImageColWidth": 7,
+    "Title": "University Projects",
+    "Description": "These projects I developed during my time at the Technical University of Munich. They include everything from theory-heavy simulations over multiplayer platformers to serious games. Some of these games were developed alone and others in groups of up to 8 people.",
+    "ProjectUrl": "/projects/uni"
+  }
+]
