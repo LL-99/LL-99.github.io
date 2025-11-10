@@ -9,107 +9,16 @@
 <PageTitle>Home</PageTitle>
 
 <MudText Typo="Typo.h4" Align="Align.Center">Hey there, this page is currently <i>highly</i> work in progress</MudText>
+<MudText Typo="Typo.subtitle2" Align="Align.Center">Last updated: Nov 10th 25</MudText>
 
 <MudText Typo="Typo.body1" Align="Align.Center">
 	At the moment I'm moving my website from plain old html & js over to a fancy new blazor page.
 	In the meantime, you can find the old version <a href="/legacy/index.html" target="_blank" style="color:blue;">here</a>.
 	<br/>
-	Feel free to check out the WIP page below, but be aware of many broken links, wrong pictures, missing text, or unfinished pages.
+	Feel free to check out the new WIP page 
+	<MudLink Href="/Portfolio">here</MudLink>,
+	but be aware of many broken links, wrong pictures, missing text, or unfinished pages.
 </MudText>
 
-
-<MudDivider Class="my-5" />
-
-<MudText Typo="Typo.h4" Align="Align.Center">Welcome!</MudText>
-<MudText Typo="Typo.body1" Align="Align.Center">Hi, I'm Lucas and this is my homepage. Below you can find some of my projects. Feel free to take a look around.</MudText>
-
-<div style="height:5px" />
-
-<MudContainer Class="home-page-grid pt-4 px-0">
-	@foreach (var cell in GridCells)
-	{
-		<MudPaper Class="@cell.CssClass" Style=@cell.CssStyle>
-			@if (cell.Images == null || cell.Images.Count == 0)
-			{
-				if (string.IsNullOrWhiteSpace(cell.Title) && string.IsNullOrWhiteSpace(cell.Descr))
-				{
-					<MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="100%" Width="100%" />
-				}
-				else
-				{
-					<MudPaper class="pa-5" Style="height:100%; align-content:center">
-						@if (string.IsNullOrWhiteSpace(cell.Title) == false)
-						{
-							<MudText Typo="Typo.h5" Align="Align.Center" Style="font-weight:bold">@cell.Title</MudText>
-							<MudDivider Class="my-2" />
-						}
-						@if (string.IsNullOrWhiteSpace(cell.Descr) == false)
-						{
-							<MudText Typo="Typo.body1" Align="Align.Justify">@((MarkupString)cell.Descr)</MudText>
-						}
-						@if(string.IsNullOrWhiteSpace(cell.Link) == false)
-						{
-							<MudText Typo="Typo.body1" Align="Align.Left"><a href=@cell.Link>Learn more</a></MudText>							
-						}
-					</MudPaper>
-				}
-
-			}
-			else if (cell.Images.Count == 1)
-			{
-				<MudPaper class="d-flex justify-content-center" style="width:stretch;height:100%;">
-					<MudImage Src="@cell.Images.First()" Elevation="25" Class="rounded-lg" ObjectFit="ObjectFit.Cover" Style="width: 100%; height: 100%;" />
-				</MudPaper>
-			}
-			else
-			{
-				<MudCarousel Class="mud-width-full rounded-lg" Style="height:100%;" ShowArrows ShowBullets EnableSwipeGesture AutoCycle TData="object">
-					@foreach (var img in cell.Images)
-					{
-						<MudCarouselItem Class="rounded-lg" Transition="Transition.Slide" Color="@Color.Primary">
-							<MudPaper class="d-flex justify-content-center" style="width:stretch;height:100%;">
-								<MudImage Src="@img" Class="rounded-0" ObjectFit="ObjectFit.Cover" Style="width: 100%; height: 100%;" />
-							</MudPaper>
-						</MudCarouselItem>
-					}
-				</MudCarousel>
-			}
-
-		</MudPaper>
-	}
-</MudContainer>
-
-<div style="height:100px" />
-
-<style>
-	.home-page-grid {
-		display: grid;
-		gap: 25px;
-		grid-template-columns: repeat(12, 1fr);
-		grid-auto-rows: 100px;
-		height: contain;
-		width: 100%;
-	}
-</style>
-
-
 @code {
-	public List<DynamicGridCell> GridCells { get; set; } = [];
-	public List<HomePageProjectDefinition> Projects { get; } = [];
-
-	protected override async Task OnInitializedAsync()
-	{
-		await base.OnInitializedAsync();
-
-		GridCells.Clear();
-		StateHasChanged();
-
-		var proj = await ContentService.GetHomePageProjects();
-
-		GridCells = proj.SelectMany(x => x.InvertOrder == false ?
-			new List<DynamicGridCell>() { x.ImageCell, x.DescrCell } :
-			new List<DynamicGridCell>() { x.DescrCell, x.ImageCell })
-			.ToList();
-		StateHasChanged();
-	}
 }
