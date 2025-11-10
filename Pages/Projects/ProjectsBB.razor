@@ -1,6 +1,28 @@
 ﻿@page "/Projects/brainboost"
+@using LL_99.github.io.Components
+@using MudBlazor
 
-<h3>ProjectsOwn</h3>
+<MudText Typo="Typo.h5" Align="Align.Center">brainboost Projects</MudText>
+
+<MudDivider Class="my-3" />
+
+<MudText Typo="Typo.body1" Align="Align.Justify">
+	These projects I've been part of since Feb 24, when I started working for
+	<MudLink Href="https://www.landing.brainassistant.de/en" Target="_blank">brainboost</MudLink>
+	full-time. So far I've had a lot of fun there, learned a LOT and am looking forward to working on even more projects in the future.<br/>
+	At brainboost we are constantly working on improving our Neurofeedback software: the BrainAssistant. 
+	However, Neurofeedback works best if you have good games & apps to use for training, which is where I came in originally.
+	My first almost entirely new project was the NeuroRacer (see below) and it was a great success with both our direct Neurofeedback clients as well as our business customers.
+	But alas I found myself drifting more and more into classical software development, such as helping out with development of the BrainAssitant, webtools, and data exports for research partners.
+	Right now my main areas of work are split about evenly between game and software development, but I also do technical customer support.<br/>
+	Below you can find a short summary of the projects I want to highlight the most.
+</MudText>
+
+<ProjectGrid ProjectGroup="@Services.ProjectGroup.BB" />
+
+<div class="my-20" />
+
+<ProjectList ProjectGroup="@Services.ProjectGroup.BB" />
 
 @code {
 

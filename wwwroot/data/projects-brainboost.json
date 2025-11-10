@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "NeuroRacer",
+    "Summary": "",
+    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Dragonbay",
+    "Summary": "",
+    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "BrainAssistant",
+    "Summary": "",
+    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Various Others",
+    "Summary": "",
+    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": ""
+          }
+        ]
+      }
+    ]
+  }
+]

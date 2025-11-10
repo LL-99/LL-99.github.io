@@ -1,0 +1,92 @@
+[
+  {
+    "Name": "This website",
+    "NameLong": "Master's Thesis: \"ARSagas - A Historically Accurate Serious Game Focusing on Mythology\"",
+    "Summary": "This website was made by myself as a place to showcase and keep track of my projects. If you have any questions regarding them feel free to contact me via email or discord!",
+    "Thumbnail": "images/projects/own/website/SourceExample.PNG",
+    "LocalUrl": "#website",
+
+    "Description": [
+      {
+        "Text": "Unsurprisingly, this website was made by me ;)<br/>While I could've used any of the countless visual editors for websites (or used some framework or library like Bootstrap or a proper editor like Google Sites), I wanted to familiarize myself a bit more with web development, so I decided to do all of this myself.<br/>This website may not look as good as a professional company's page, but I can proudly say that I've learned quite a bit about HTML, CSS and JS during the process of making it.<br>Since you are already on this page screenshots/pictures wouldn't make much sense, however, feel free to check out the page's source code if your browser supports some kind of developer console or <a href=\"https://github.com/LL-99/LL-99.github.io\" target=\"_blank\" rel=\"noopener noreferrer\">directly on GitHub</a>. It's not much, but I'm happy with how it turned out.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/own/website/SourceExample.PNG"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Extraction Point",
+    "Summary": "A small bullet hell / survivors-like game I originally attempted to create in a single week. Due to positive feedback I decided to continue working on it and plan on publishing it on itch.io, once I am satisfied with it.",
+    "Thumbnail": "images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
+    "LocalUrl": "#extraction-point",
+
+    "Description": [
+      {
+        "Text": "I created this game as part of a self-imposed GameJam-esque challenge in which I attempted to create a full game within a single week. While I was largely successful, there are still some bugs I want to iron out before properly publishing it.<br>The gameplay is inspired by another project on which I worked during my degree, namely <a href=\"#project-games-lab\">Project: Equilibrium</a>. While the bullet-hell-style core of both games is similar, I wanted to move away from Equilibrium's constantly swapping world state and instead wanted to give the player more control. To achieve this, I focused on an energy-redirection system, which allows the player to empower either their ships offensive, defensive or mobility-based aspects. I originally wanted to add multiple swappable weapons and more complex enemies, however, due to time constraints these features had to be cut. Since I like how the game turned out so far, I may continue working on it as a side-project in the future. A download link will be added here as soon as I publish the game on itch.io or similar.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/own/extraction_point/Current_MainMenu.png",
+            "Caption": "The main menu. Settings will be added in a future version."
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_1.png",
+            "Caption": "A basic view of the UI. On the left the currently empowered subsystem can be seen. On the right the current score & weapon cooldowns are shown. On the bottom player HP is displayed in the shape of a classic HP bar."
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
+            "Caption": "The primary weapon, a shotgun-style multi-bullet weapon"
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_Laser.png",
+            "Caption": "The secondary weapon, a powerful continuous laser"
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_AOE.png",
+            "Caption": "The tertiary weapon, a delayed bomb. (Stage I: Area Indicator)"
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_Explosion.png",
+            "Caption": "The tertiary weapon, a delayed bomb. (Stage II: Bomb Impact)"
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_Shield.png",
+            "Caption": "The shield boost mitigates damage taken from enemies"
+          },
+          {
+            "Source": "images/projects/own/extraction_point/Current_Gameplay_ThrusterBoost.png",
+            "Caption": "The thruster boost makes it easier to dodge enemy attacks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Island Generator",
+    "Summary": "A fun side-project I'm working on in my spare time, that centers around procedurally generating floating islands. At some point in the future I might add proper gameplay elements.",
+    "Thumbnail": "images/projects/own/islands/Medium_1.png",
+    "LocalUrl": "#island-generator",
+
+    "Description": [
+      {
+        "Text": "One of the things I always enjoyed the most, when it comes to just playing around with 3D Game Engines, was creating environments and particularly their procedural generation. Over the years I was able to pick up quite a bit of knowledge about these algorithms, but I was never really able to use it during my studies.<br/>At one point I wrote a more complex procedural generation algorithm inspired by 3D sandbox games like Minecraft. So I thought to myself: Why not make something cool out of it? Ultimately, I started working on this small project, which aims to create idyllic floating islands, during my spare time. I am still actively improving it.<br/>The core algorithm combines multiple layers of classical procedural generation algorithms and components, such as Perlin noise or Marching Squares, but also comes with some custom additions to create the islands. Since I wanted to create (almost) everything from scratch, the range of environmental objects is currently rather limited. However, I intend to add more variety to the flora as well as some fauna in the future.<br/>At the moment the project does not have any proper gameplay, but I am inclined towards adding it at a later point - once I am satisfied with the island generation itself. The tiled nature of the island is perfect for placing buildings upon it, so perhaps I'll go down the route of turning this into a building sim or a simple strategy game.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/own/islands/Medium_3.png",
+            "Caption": "A medium sized island. This is the main size (around 25x25 tiles) I am focusing my efforts on."
+          },
+          {
+            "Source": "images/projects/own/islands/Small.png",
+            "Caption": "A smaller island. These are a neat twist, but require more work/configuration to look good."
+          },
+          {
+            "Source": "images/projects/own/islands/Large.png",
+            "Caption": "A large-scale island. While it is fun to fly around above them and push the algorithm to its performance-wise limits, they are definitely not a priority."
+          }
+        ]
+      }
+    ]
+  }
+]

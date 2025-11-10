@@ -1,6 +1,23 @@
-﻿@page "/Projects/Own"
+﻿@using LL_99.github.io.Components
+@using MudBlazor
 
-<h3>ProjectsOwn</h3>
+@page "/Projects/Own"
+
+<MudText Typo="Typo.h5" Align="Align.Center">Own Projects</MudText>
+
+<MudDivider Class="my-3" />
+
+<MudText Typo="Typo.body1" Align="Align.Justify">
+    These are the projects I have been working on by myself. 
+    There are quite a few more prototypes/tiny fun projects I've made over the years, but listing them all here would get quite boring, so instead I want to focus on the notable ones.
+</MudText>
+
+<ProjectGrid ProjectGroup="@Services.ProjectGroup.Own" />
+
+<div class="my-20" />
+
+<ProjectList ProjectGroup="@Services.ProjectGroup.Own" />
+
 
 @code {
 
