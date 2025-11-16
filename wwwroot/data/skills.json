@@ -1,0 +1,119 @@
+[
+	{
+		"CategoryName": "Programming languages, markup languages, domain-specific languages, etc.",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [ "C# (+LINQ" ]
+			},
+			{
+				"Level": 3,
+				"Skills": [
+					"HTML, CSS, JS",
+					"C++",
+					"Java",
+					"Python, R"
+				]
+			},
+			{
+				"Level": 2,
+				"Skills": [
+					"jQuery",
+					"XML & XQuery",
+					"SQL"
+				]
+			},
+			{
+				"Level": 1,
+				"Skills": [
+					"HLSL & GLSL",
+					"Assembly"
+				]
+			}
+		]
+	},
+	{
+		"CategoryName": "Communication Skills",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [
+					"Interpersonal communication",
+					"Teamwork"
+				]
+			},
+			{
+				"Level": 3,
+				"Skills": [ "Presentation skills" ]
+			},
+			{
+				"Level": 2,
+				"Skills": [ "Project management" ]
+			}
+		]
+	},
+	{
+		"CategoryName": "Electronic Data Processing",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [ "C# (+LINQ" ]
+			},
+			{
+				"Level": 3,
+				"Skills": [
+					"Image editing (GIMP)",
+					"Text creation & editing (Microsoft Word, PowerPoint, etc.)",
+					"Tables and databases (Microsoft Excel, etc.)"
+				]
+			}
+		]
+	},
+	{
+		"CategoryName": "Software and Game Development",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [ "Game Design", "Data Management", "Code Comprehension" ]
+			},
+			{
+				"Level": 3,
+				"Skills": [ "Level Design, Gameplay Programming" ]
+			},
+			{
+				"Level": 2,
+				"Skills": [ "Networking, VFX" ]
+			}
+		]
+	},
+	{
+		"CategoryName": "Tools",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [ "Game Design", "Data Management", "Code Comprehension" ]
+			},
+			{
+				"Level": 3,
+				"Skills": [ "Level Design, Gameplay Programming" ]
+			},
+			{
+				"Level": 2,
+				"Skills": [ "Networking, VFX" ]
+			}
+		]
+	},
+	{
+		"CategoryName": "Other Skills",
+		"SkillLevels": [
+			{
+				"Level": 4,
+				"Skills": [ "German (Native language), English (Cambridge C1 Advanced)" ]
+			},
+			{
+				"Level": 4,
+				"Skills": [ "Swedish (A1 Language course)", "Portuguese (A1 Language course)", "Latin (German \"Latinum\")" ]
+			}
+		]
+	}
+]
