@@ -14,6 +14,7 @@
     "Images": [
       "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
       "/images/projects/own/islands/Medium_1.png",
+      "/images/projects/own/group-tracker/GroupTracker.png",
       "/images/projects/own/website/SourceExample.png"
     ],
     "ImageColWidth": 7,
@@ -25,13 +26,17 @@
   {
     "Height": 3,
     "Images": [
-      "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
-      "/images/projects/own/islands/Medium_1.png",
-      "/images/projects/own/website/SourceExample.png"
+      "/images/projects/bb/BrainAssistant/BrainAssistant_Home.png",
+      "/images/projects/bb/BrainAssistant/BrainAssistant_EEG.png",
+      "/images/projects/bb/Dragonbay/GlacierLevel6.webp",
+      "/images/projects/bb/Dragonbay/BasicGameplay.jpg",
+      "/images/projects/bb/FocusMaster/MonkPond.jpg",
+      "/images/projects/bb/FocusMaster/SamuraiAsia.jpg",
+      "/images/projects/bb/FocusMaster/CaptainPirates.jpg"
     ],
     "ImageColWidth": 7,
     "Title": "brainboost Projects",
-    "Description": "Here you can find some projects I've worked on for current position at brainboost, where I do both game & software develop-ment pre-dominently in a Neurofeedback context",
+    "Description": "Here you can find some projects I've worked on for current position at brainboost, where I do both game & software development pre-dominently in a Neurofeedback context",
     "ProjectUrl": "/portfolio/projects/brainboost"
   },
   {
@@ -51,9 +56,12 @@
   {
     "Height": 3,
     "Images": [
-      "/images/projects/own/extraction_point/Current_Gameplay_Bullets.png",
-      "/images/projects/own/islands/Medium_1.png",
-      "/images/projects/own/website/SourceExample.png"
+      "/images/projects/uni/bs/GalaxyMap.png",
+      "/images/projects/uni/bt/EditorARFeature.png",
+      "/images/projects/uni/gl/BasicGameplayDiegetic.png",
+      "/images/projects/uni/ld/Sewers_Airlock.png",
+      "/images/projects/uni/mt/combat_combined.png",
+      "/images/projects/uni/sg/Runner.png"
     ],
     "ImageColWidth": 7,
     "Title": "University Projects",
