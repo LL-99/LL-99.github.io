@@ -2,7 +2,7 @@
   {
     "Name": "This website",
     "Summary": "This website was made by myself as a place to showcase and keep track of my projects. If you have any questions regarding them feel free to contact me via email or discord!",
-    "Thumbnail": "images/projects/own/website/SourceExample.PNG",
+    "Thumbnail": "images/projects/own/website/SourceExample.png",
     "LocalUrl": "#website",
 
     "Description": [
@@ -10,7 +10,7 @@
         "Text": "Unsurprisingly, this website was made by me ;)<br/>While I could've used any of the countless visual editors for websites (or used some framework or library like Bootstrap or a proper editor like Google Sites), I wanted to familiarize myself a bit more with web development, so I decided to do all of this myself.<br/>This website may not look as good as a professional company's page, but I can proudly say that I've learned quite a bit about HTML, CSS and JS during the process of making it.<br>Since you are already on this page screenshots/pictures wouldn't make much sense, however, feel free to check out the page's source code if your browser supports some kind of developer console or <a href=\"https://github.com/LL-99/LL-99.github.io\" target=\"_blank\" rel=\"noopener noreferrer\">directly on GitHub</a>. It's not much, but I'm happy with how it turned out.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/own/website/SourceExample.PNG"
+            "Source": "images/projects/own/website/SourceExample.png"
           }
         ]
       }
