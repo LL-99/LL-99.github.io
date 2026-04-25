@@ -1,7 +1,6 @@
 [
   {
     "Name": "This website",
-    "NameLong": "Master's Thesis: \"ARSagas - A Historically Accurate Serious Game Focusing on Mythology\"",
     "Summary": "This website was made by myself as a place to showcase and keep track of my projects. If you have any questions regarding them feel free to contact me via email or discord!",
     "Thumbnail": "images/projects/own/website/SourceExample.PNG",
     "LocalUrl": "#website",
@@ -12,6 +11,23 @@
         "ShowcaseElements": [
           {
             "Source": "images/projects/own/website/SourceExample.PNG"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Various Minor Webtools",
+    "Summary": "Since getting in touch with MudBlazor during my job at brainboost I've worked on a number of small utility tools for various purposes",
+    "Thumbnail": "images/projects/own/group-tracker/GroupTracker.png",
+    "LocalUrl": "#website",
+
+    "Description": [
+      {
+        "Text": "Since getting in touch with MudBlazor during my job at brainboost and figuring out to deploy pages using it as free standalone/client-only Websites to github I've developed a number of small utility tools. These are mostly very simple & just-for-fun hobby projects, but have seen some use during our brainboost-internal game nights and the D&D campaign I run for my friends. A good example would be the <a href=\"https://ll-99.github.io/GroupTracker/\" target=\"_blank\" rel=\"noopener noreferrer\">Group Tracker</a> project I developed for a Minigame-focused game night.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/own/group-tracker/GroupTracker.png"
           }
         ]
       }

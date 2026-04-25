@@ -1,35 +1,45 @@
 [
   {
-    "Name": "NeuroRacer",
-    "Summary": "",
-    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
-    "LocalUrl": "#neuro-racer",
-
-    "Description": [
-      {
-        "Text": "",
-        "ShowcaseElements": [
-          {
-            "Source": "images/projects/placeholders/Placeholder1.png",
-            "Caption": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "Name": "Dragonbay",
-    "Summary": "",
-    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "Summary": "A third-person platformer that couples Neurofeedback with motoric challenges",
+    "Thumbnail": "images/projects/bb/Dragonbay/GlacierLevel6.webp",
     "LocalUrl": "#neuro-racer",
 
     "Description": [
       {
-        "Text": "",
+        "Text": "Dragonbay is a third-person platformer that combines classical controller-based gameplay with Neurofeedback. In it the player controls a dragon who has to traverse various levels facing numerous challenges along the way. Each level's floor is split into cube-shaped tiles which the player has to raise from the water below by maintaining positive Neurofeedback. Should the player's feedback become negative, the tiles will start to move and rotate, trying to shake them off. If the player falls into the water, they will respawn at the last checkpoint they reached. The player also has two main tools/abilities at their disposal: Jumping to cross gaps and a fire breath to burn/melt obstacles as well as activate certain lever-like mechanics. In the course of the gameplay players also obtain Neuro Coins which they can spend to unlock additional dragons. These dragons have further abilities, such as double jumps and stat enhancements, or even gameplay modifiers like gliding.<br/>When I started working on Dragonbay it had not been updated in quite some time. After updating its visuals and rebuilding various of its systems (such as character movement, level design tools, etc.) I expanded the original 20 levels in its classic pirate bay and mountain/volcano themes with 2 more 'basic' levels per environment as well as an entirely new norse/ice world. I also reworked some its slightly outdated levels to provide players with a fresh experience. Due to the constantly expanding scope of the project it took slightly longer than originally anticipated, but the additional time was worth it: Dragonbay was very well received by our clients, both in our Munich practice as well as with our Software customers globally.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/placeholders/Placeholder1.png",
-            "Caption": ""
+            "Source": "images/projects/bb/Dragonbay/BasicGameplay.jpg",
+            "Caption": "Example Gameplay - the player moves across the path split into small boxes"
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/Jumping.jpg",
+            "Caption": "Some gaps in the floor can only be overcome by jumping, one of the main interactions that require energy"
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/FireBreath.jpg",
+            "Caption": "Another use for energy: A fire breath that can burn away obstacles"
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/LevelFinished.jpg",
+            "Caption": "Levels are finished by reaching the final checkpoint"
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/Shop.jpg",
+            "Caption": "In the shop, the player can purchase new dragons to use, most of them with special traits & abilities"
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/WorldSelection.jpg",
+            "Caption": "At the moment the game features 3 worlds..."
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/BayLevelSelection.jpg",
+            "Caption": "...with 10 classical levels + 2 extra simple showcase levels each."
+          },
+          {
+            "Source": "images/projects/bb/Dragonbay/GlacierLevel6.webp",
+            "Caption": "The final segment of a level in the 'Ice Mountain' world."
           }
         ]
       }
@@ -37,9 +47,49 @@
   },
   {
     "Name": "BrainAssistant",
-    "Summary": "",
+    "Summary": "The main software developed and distributed by brainboost. It is capable of Neurofeedback, qEEG recordings, advanced EEG analysis, and much more",
+    "Thumbnail": "images/projects/bb/BrainAssistant/BrainAssistant_EEG.png",
+    "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "The BrainAssistant is a highly advanced & professional application for Neurofeedback, qEEG recordings, advanced EEG analysis, and much more. It is compatible with most well-known EEG amplifiers and provides a combination of features, quality, and modern design not found elsewhere in the EEG-related industry.<br/>Mostly developed by our CTO Daniel, I've also contributed to and sometimes created various features. The most noticeable ones include Telemetry, data exports for research projects and university partners, as well as a lot of smaller features for our game-related data handling & evaluation, but also overall code maintenance, QoL features, and bug fixing.",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/bb/BrainAssistant/BrainAssistant_Home.png",
+            "Caption": "The BrainAssistant's main menu"
+          },
+          {
+            "Source": "images/projects/bb/BrainAssistant/BrainAssistant_EEG.png",
+            "Caption": "An example view from the Neurofeedback mode showcasing the EEG which is currently being recorded, as well as realtime spectrum bars in the center and the actual Neurofeedback threshold bars below"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "NeuroRacer",
+    "Summary": "A fast-paced racing game where the player must maintain positive Neurofeedback in order to accelerate",
     "Thumbnail": "images/projects/placeholders/Placeholder1.png",
     "LocalUrl": "#neuro-racer",
+
+    "Description": [
+      {
+        "Text": "",
+        "ShowcaseElements": [
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Pirate Islands",
+    "Summary": "A walking simulator that takes the player on a treasure hunt across the seas",
+    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "LocalUrl": "#pirate-islands",
 
     "Description": [
       {
