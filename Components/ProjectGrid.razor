@@ -5,54 +5,35 @@
 @inject ContentService ContentService
 @inject NavigationManager NavigationManager
 
-<MudGrid Spacing="0" Class="ml-0 mt-0" Style="width:100% !important;" Justify="Justify.Center">
+<MudGrid Spacing="4" Class="project-grid" Justify="Justify.Center">
 	@foreach (var project in Projects)
 	{
-		<MudItem xs="5" Class="px-10 pt-5" Style="aspect-ratio:6/8; max-height:calc(40cqw)">
-			<div class="project-card">
-				@if (project.IsVideo == false)
-				{
-					<MudImage Class="rounded-lg" Elevation="25" Src="@project.Thumbnail" ObjectFit="ObjectFit.Cover" Style="width:100%; height:100%;" />
-				}
-				else
-				{
-					<MudPaper Style="height:100%;background:#4d4d4d;">
-						<video style="width:100%; height:100%;" autoplay muted loop>
+		<MudItem xs="12" sm="6" lg="5">
+			<MudPaper Class="project-card" Elevation="8">
+				<div class="project-card-media">
+					@if (project.IsVideo == false)
+					{
+						<MudImage Src="@project.Thumbnail" ObjectFit="ObjectFit.Cover" Style="width:100%; height:100%;" />
+					}
+					else
+					{
+						<video style="width:100%; height:100%; object-fit:cover;" autoplay muted loop>
 							<source src="@project.Thumbnail" type="video/mp4" />
 						</video>
-					</MudPaper>
-				}
+					}
+				</div>
 
-				<MudOverlay Class="project-card-overlay rounded-lg pa-5" Visible DarkBackground="true" Absolute="true">
-					<MudText Typo="Typo.h6" Align="Align.Center">@project.Name</MudText>
-					<MudText Typo="Typo.body2" Align="Align.Justify">@project.Summary</MudText>
-					<MudText Typo="Typo.body2" Align="Align.Left">
-						<MudLink Href="@(new Uri(NavigationManager.Uri) + project.LocalUrl)">
-							<MudIcon Icon="@Icons.Material.Filled.ArrowRight" />
-							Click here to learn more
-						</MudLink>
-					</MudText>
+				<MudOverlay Class="project-card-overlay pa-5" Visible="true" DarkBackground="true" Absolute="true">
+					<MudStack Spacing="2" AlignItems="AlignItems.Center" Justify="Justify.Center" Class="h-100">
+						<MudText Typo="Typo.h5" Align="Align.Center">@project.Name</MudText>
+						<MudText Typo="Typo.body2" Align="Align.Center">@project.Summary</MudText>
+						<MudButton Href="@ProjectHref(project)" Variant="Variant.Filled" Color="Color.Primary" EndIcon="@Icons.Material.Filled.ArrowForward">Click here to learn more</MudButton>
+					</MudStack>
 				</MudOverlay>
-			</div>
+			</MudPaper>
 		</MudItem>
 	}
 </MudGrid>
-
-<style>
-	.project-card {
-		height: 100%;
-		position: relative;
-	}
-
-		.project-card:hover .project-card-overlay {
-			opacity: 1;
-		}
-
-	.project-card-overlay {
-		opacity: 0;
-		overflow: hidden;
-	}
-</style>
 
 @code {
 	[Parameter]
@@ -68,5 +49,28 @@
 		Console.WriteLine("Loading project grid for group " + ProjectGroup);
 		Projects = await ContentService.GetProjectsForGroup(ProjectGroup);
 		StateHasChanged();
+	}
+
+	private string ProjectHref(DetailedProjectDefinition project)
+	{
+		var relativePath = NavigationManager.ToBaseRelativePath(NavigationManager.Uri).Split('?', '#')[0].TrimStart('/');
+		return "/" + relativePath + "#" + ProjectAnchor(project);
+	}
+
+	private static string ProjectAnchor(DetailedProjectDefinition project) =>
+		NormalizeAnchor(project.LocalUrl) ?? Slug(project.Name);
+
+	private static string? NormalizeAnchor(string? anchor) =>
+		string.IsNullOrWhiteSpace(anchor) ? null : anchor.Trim().TrimStart('#');
+
+	private static string Slug(string? value)
+	{
+		var result = new string((value ?? "project").ToLowerInvariant().Select(c => char.IsLetterOrDigit(c) ? c : '-').ToArray());
+		while (result.Contains("--"))
+		{
+			result = result.Replace("--", "-");
+		}
+
+		return result.Trim('-');
 	}
 }

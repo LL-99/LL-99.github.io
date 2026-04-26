@@ -3,20 +3,20 @@
 
 @page "/Portfolio/Projects/Own"
 
-<MudText Typo="Typo.h5" Align="Align.Center">Own Projects</MudText>
+<MudStack Spacing="4">
+	<MudText Typo="Typo.h3" Align="Align.Center">Own Projects</MudText>
 
-<MudDivider Class="my-3" />
+	<MudPaper Class="page-intro pa-4" Elevation="0" Outlined="true">
+		<MudText Typo="Typo.body1">
+			These are the projects I have been working on by myself. 
+			There are quite a few more prototypes/tiny fun projects I've made over the years, but listing them all here would get quite boring, so instead I want to focus on the notable ones.
+		</MudText>
+	</MudPaper>
 
-<MudText Typo="Typo.body1" Align="Align.Justify">
-    These are the projects I have been working on by myself. 
-    There are quite a few more prototypes/tiny fun projects I've made over the years, but listing them all here would get quite boring, so instead I want to focus on the notable ones.
-</MudText>
+	<ProjectGrid ProjectGroup="@Services.ProjectGroup.Own" />
 
-<ProjectGrid ProjectGroup="@Services.ProjectGroup.Own" />
-
-<div class="my-20" />
-
-<ProjectList ProjectGroup="@Services.ProjectGroup.Own" />
+	<ProjectList ProjectGroup="@Services.ProjectGroup.Own" />
+</MudStack>
 
 
 @code {

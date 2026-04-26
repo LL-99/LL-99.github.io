@@ -3,68 +3,21 @@
 
 @page "/Portfolio/Projects/FAR"
 
-<MudText Typo="Typo.h5" Align="Align.Center">Student Assistant Projects</MudText>
+<MudStack Spacing="4">
+	<MudText Typo="Typo.h3" Align="Align.Center">Student Assistant Projects</MudText>
 
-<MudDivider Class="my-3" />
+	<MudPaper Class="page-intro pa-4" Elevation="0" Outlined="true">
+		<MudText Typo="Typo.body1">
+			These are the projects I worked on during my student job at the Technical University of Munich's Chair for Augmented Medical Procedures & Augmented Reality (CAMPAR) or more precisely, its research group "Forschungsgruppe Augmented Reality" (FAR).
+			My tasks there revolved around expanding, optimizing, and maintaining older projects, such mobile apps, custom made Bluetooth gadgets/research tools, and VR studies.<br />
+			Sadly, I'm not able to provide a lot of images, since many of the projects have not been made publically available (at least for free). However, I will link research papers & publications where appropriate.
+		</MudText>
+	</MudPaper>
 
-<MudText Typo="Typo.body1" Align="Align.Justify">
-	These are the projects I worked on during my student job at the Technical University of Munich's Chair for Augmented Medical Procedures & Augmented Reality (CAMPAR) or more precisely, its research group "Forschungsgruppe Augmented Reality" (FAR).
-	My tasks there revolved around expanding, optimizing, and maintaining older projects, such mobile apps, custom made Bluetooth gadgets/research tools, and VR studies.<br />
-	Sadly, I'm not able to provide a lot of images, since many of the projects have not been made publically available (at least for free). However, I will link research papers & publications where appropriate.
-</MudText>
+	<ProjectGrid ProjectGroup="@Services.ProjectGroup.Far" />
 
-<ProjectGrid ProjectGroup="@Services.ProjectGroup.Far" />
-
-<div class="my-20" />
-
-<ProjectList ProjectGroup="@Services.ProjectGroup.Far" />
-@* 
-<MudDivider Class="my-10" />
-
-<MudContainer>
-	<MudText Typo="Typo.h6" Align="Align.Center">Bluetooth Dice</MudText>
-
-	<MudDivider Class="my-3" />
-
-	<MudText Typo="Typo.body1" Align="Align.Justify">
-		For this project I built upon an existing venture of the chair that aimed to create a digital version of the German board game "<a href="https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht" target="_blank" rel="noopener noreferrer">Mensch ärgere Dich nicht</a>" (which is pretty similar to <a href="https://en.wikipedia.org/wiki/Ludo" target="_blank" rel="noopener noreferrer">Ludo</a>). The original project digitized the entire board game and combined it with a server-based splitscreen functionality that would allow up to 4 devices (typically tablets) to be joined together into a single playing field. Later iterations added custom-made 3D-printed pawns/pieces that could be placed on top of the tablets and moved as if playing the classic version of the game. The tablets then registered these movements and applied them, if they were in accordance to the rules.
-		<br/>
-		My job was to further integrate a previously created 3D-printed dice, which would communicate its results with the tablets using Bluetooth. The dice was based on an Arduino microcontroller and utilized gyroscopes to gather required data. In order to achieve my goal, I rewrote the dice-script and fully integrated the Bluetooth connection into the existing game project using Unity.
-	</MudText>
-	
-	<MudImage Class="centered-image rounded-lg" Src="images/projects/far/bd/Bild4_1.png" />
-	<MudImage Class="centered-image rounded-lg" Src="images/projects/far/bd/Dice.png" />
-
-	<MudText Typo="Typo.subtitle2" Align="Align.Center">The chess version of the game, using only a single tablet and a different set of equally produced game pieces.</MudText>
-</MudContainer>
-
-<MudContainer>
-	<MudText Typo="Typo.h6" Align="Align.Center">Drinking Gadgets</MudText>
-
-	<MudDivider Class="my-3" />
-
-	<MudText Typo="Typo.body1" Align="Align.Justify">
-		For this project I revised and updated the code of a custom-made scale used by the FAR group for a cooperation project with various nursing homes. The purpose of the scale and its accompanying app was to track the hydration levels of the nursing homes' residents.
-		<br/>
-		Using the app, nursing home staff members are capable of creating profiles for the separate residents. By linking different instances of the drinking gadgets to specific profiles, the daily drinking habits of the associated residents can be monitored. Each drinking gadget also contains a color sensor that can track stickers placed on the bottom of each glass or cup. Additionally, by associating each sticker color with a different type of liqiud, habits regarding specific drinks (e.g., water, milk, coffee) can be analyzed.
-		<br/>
-		Lastly, I reworked the mentioned app and brought it up-to-date in terms of functionalities and stability.
-	</MudText>
-
-
-	<MudImage Class="centered-image rounded-lg" Src="images/projects/far/bd/Bild4_1.png" />
-	<MudImage Class="centered-image rounded-lg" Src="images/projects/far/bd/Dice.png" />
-
-	<MudText Typo="Typo.subtitle2" Align="Align.Center">The chess version of the game, using only a single tablet and a different set of equally produced game pieces.</MudText>
-</MudContainer>
- *@
-<style>
-	.centered-image {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-</style>
+	<ProjectList ProjectGroup="@Services.ProjectGroup.Far" />
+</MudStack>
 
 @code {
 }

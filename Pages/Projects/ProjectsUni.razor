@@ -4,21 +4,21 @@
 @page "/Portfolio/Projects/University"
 
 
-<MudText Typo="Typo.h5" Align="Align.Center">Study Projects</MudText>
+<MudStack Spacing="4">
+	<MudText Typo="Typo.h3" Align="Align.Center">Study Projects</MudText>
 
-<MudDivider Class="my-3" />
+	<MudPaper Class="page-intro pa-4" Elevation="0" Outlined="true">
+		<MudText Typo="Typo.body1">
+			These are the projects I have worked on during my studies. Sadly I'm not able to provide download-links for most of these, but I'm always open to questions about them!
+		</MudText>
+	</MudPaper>
 
-<MudText Typo="Typo.body1" Align="Align.Justify">
-    These are the projects I have worked on during my studies. Sadly I'm not able to provide download-links for most of these, but I'm always open to questions about them!
-</MudText>
+	<ProjectGrid ProjectGroup="@Services.ProjectGroup.Uni" />
 
-<ProjectGrid ProjectGroup="@Services.ProjectGroup.Uni" />
+	<ProjectList ProjectGroup="@Services.ProjectGroup.Uni" />
 
-<div class="my-20" />
-
-<ProjectList ProjectGroup="@Services.ProjectGroup.Uni" />
-
-<div class="my-20" />
+	<div class="my-8" />
+</MudStack>
 
 @code {
 

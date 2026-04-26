@@ -3,7 +3,7 @@
     "Name": "Dragonbay",
     "Summary": "A third-person platformer that couples Neurofeedback with motoric challenges",
     "Thumbnail": "images/projects/bb/Dragonbay/GlacierLevel6.webp",
-    "LocalUrl": "#neuro-racer",
+    "LocalUrl": "#dragonbay",
 
     "Description": [
       {
@@ -49,7 +49,7 @@
     "Name": "BrainAssistant",
     "Summary": "The main software developed and distributed by brainboost. It is capable of Neurofeedback, qEEG recordings, advanced EEG analysis, and much more",
     "Thumbnail": "images/projects/bb/BrainAssistant/BrainAssistant_EEG.png",
-    "LocalUrl": "#neuro-racer",
+    "LocalUrl": "#brainassistant",
 
     "Description": [
       {

@@ -3,42 +3,41 @@
 
 @page "/Portfolio/Projects/brainboost"
 
-<MudText Typo="Typo.h5" Align="Align.Center">brainboost Projects</MudText>
+<MudStack Spacing="4">
+	<MudText Typo="Typo.h3" Align="Align.Center">brainboost Projects</MudText>
 
-<MudDivider Class="my-3" />
+	<MudPaper Class="page-intro pa-4" Elevation="0" Outlined="true">
+		<MudStack Spacing="3">
+			<MudText Typo="Typo.body1">
+				These are some of the projects I've worked on since Feb 2024, when I started working for
+				<MudLink Href="https://www.landing.brainassistant.de/en" Target="_blank">brainboost</MudLink>
+				full-time. So far I've had a lot of fun there, learned a LOT and am looking forward to working on even more projects in the future.
+			</MudText>
+			<MudText Typo="Typo.body1">
+				At brainboost we are constantly working on improving our Neurofeedback software: the BrainAssistant.<br />
 
-<MudText Typo="Typo.body1" Align="Align.Left">
-    These are some of the projects I've worked on since Feb 2024, when I started working for
-    <MudLink Href="https://www.landing.brainassistant.de/en" Target="_blank">brainboost</MudLink>
-    full-time. So far I've had a lot of fun there, learned a LOT and am looking forward to working on even more projects in the future.
-</MudText>
-<div style="height:8px;"/>
-<MudText Typo="Typo.body1" Align="Align.Left">
-    At brainboost we are constantly working on improving our Neurofeedback software: the BrainAssistant.<br/>
+				<MudLink Href="https://en.wikipedia.org/wiki/Neurofeedback" Target="_blank">Neurofeedback</MudLink> is a modern and recent method of neurotherapy.
+				It can be used to a large variety of cases, from ADHD and ADD therapy to peak performance training.
 
-    <MudLink Href="https://en.wikipedia.org/wiki/Neurofeedback" Target="_blank">Neurofeedback</MudLink> is a modern and recent method of neurotherapy.
-    It can be used to a large variety of cases, from ADHD and ADD therapy to peak performance training.
+				In general, Neurofeedback works by using an EEG amplifier to collect data on brain activity, analyzing these signal spectrums, and using this to control feedback applications.
+				Signal spectrums are using bins commonly referred to as frequency bands, such as Theta (4-8 Hz), Alpha (8-12 Hz), and Low Beta (12-20 Hz).
+				Different training protocols then aim to reduce the amplitude of measurements within specific frequency bands while increasing it within others.
 
-    In general, Neurofeedback works by using an EEG amplifier to collect data on brain activity, analyzing these signal spectrums, and using this to control feedback applications.
-    Signal spectrums are using bins commonly referred to as frequency bands, such as Theta (4-8 Hz), Alpha (8-12 Hz), and Low Beta (12-20 Hz).
-    Different training protocols then aim to reduce the amplitude of measurements within specific frequency bands while increasing it within others.
+				As such, you not only need EEG-capable hardware and a software tool to record & evaluate the data, but also actual training apps.
+				For this, brainboost uses games developed in-house with Unity (or Flash for some of the original versions), which is where I came in when joining the company.
+				My first major project was NeuroRacer (see below) and it was a great success with both our direct Neurofeedback clients as well as our business customers.
+			</MudText>
+			<MudText Typo="Typo.body1">
+				Over the past few years at brainboost I've also drifted more into classical software development, such as helping out with development of the BrainAssitant, our various webtools, and data exports for research partners.
+				Right now, my main areas of work are split about evenly between game and software development, but I also do technical customer support.<br />
+				Below you can find a short summary of the projects I want to highlight the most.
+			</MudText>
+		</MudStack>
+	</MudPaper>
 
-    As such, you not only need EEG-capable hardware and a software tool to record & evaluate the data, but also actual training apps.
-    For this, brainboost uses games developed in-house with Unity (or Flash for some of the original versions), which is where I came in when joining the company.
-    My first major project was NeuroRacer (see below) and it was a great success with both our direct Neurofeedback clients as well as our business customers.
-</MudText>
-<div style="height:8px;" />
-<MudText Typo="Typo.body1" Align="Align.Left">
-    Over the past few years at brainboost I've also drifted more into classical software development, such as helping out with development of the BrainAssitant, our various webtools, and data exports for research partners.
-    Right now, my main areas of work are split about evenly between game and software development, but I also do technical customer support.<br />
-    Below you can find a short summary of the projects I want to highlight the most.
-</MudText>
-
-<ProjectGrid ProjectGroup="@Services.ProjectGroup.BB" />
-
-<div class="my-20" />
-
-<ProjectList ProjectGroup="@Services.ProjectGroup.BB" />
+	<ProjectGrid ProjectGroup="@Services.ProjectGroup.BB" />
+	<ProjectList ProjectGroup="@Services.ProjectGroup.BB" />
+</MudStack>
 
 @code {
 

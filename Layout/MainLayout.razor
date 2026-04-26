@@ -6,45 +6,51 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-	<MudAppBar Elevation="0">
+	<MudAppBar Elevation="1" Class="site-appbar px-2">
 		<MudIconButton Icon="@(_isDark? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode)"
 					   OnClick="ToggleTheme"
-					   AriaLabel="Toggle dark/light" />
+					   aria-label="Toggle dark/light" />
 	</MudAppBar>
 
-	<MudMainContent Class="d-flex align-content-center justify-content-center">
-		<MudContainer MaxWidth="MaxWidth.Medium" Class="pt-5">
+	<MudMainContent Class="site-main">
+		<MudContainer MaxWidth="MaxWidth.Large" Class="pt-6 px-4">
 			@Body
 		</MudContainer>
 	</MudMainContent>
 </MudLayout>
 
-<style>
-	a:link {
-		color: #4d4dff; /* blue */
-		text-decoration: underline;
-	}
-
-	a:visited {
-		color: #9b54de; /* purple */
-		text-decoration: underline;
-	}
-
-	a:hover {
-		color: #4d4dff;
-		text-decoration: underline;
-	}
-
-	a:active {
-		color: #ff6666; /* red while active */
-		text-decoration: underline;
-	}
-</style>
-
 @code {
 	private bool _isDark = true;                 // Default to dark
 	private MudThemeProvider? _provider;
-	private MudTheme _theme = new();             // Default MudBlazor theme
+	private MudTheme _theme = new()
+	{
+		PaletteLight = new PaletteLight()
+		{
+			Primary = "#3758f9",
+			Secondary = "#00a896",
+			Tertiary = "#f59e0b",
+			Background = "#f6f8fb",
+			Surface = "#ffffff",
+			AppbarBackground = "#ffffff",
+			AppbarText = "#172033",
+			TextPrimary = "#172033",
+			TextSecondary = "#5d6b82",
+			LinesDefault = "#dbe4f0"
+		},
+		PaletteDark = new PaletteDark()
+		{
+			Primary = "#8ea2ff",
+			Secondary = "#4dd7c8",
+			Tertiary = "#ffcb6b",
+			Background = "#0b1020",
+			Surface = "#121a2b",
+			AppbarBackground = "#0f172a",
+			AppbarText = "#f8fafc",
+			TextPrimary = "#f8fafc",
+			TextSecondary = "#c5d0e2",
+			LinesDefault = "#273449"
+		}
+	};
 
 	private void ToggleTheme() => _isDark = !_isDark;
 
