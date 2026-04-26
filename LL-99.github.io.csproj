@@ -150,22 +150,22 @@
     <Content Update="wwwroot\images\projects\far\dg\thumbnails\DrinkingGadget_Thumbnail.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\Infos.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\Infos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\MainMenu.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\MainMenu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\QR Scanner.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\QR Scanner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\QuestionExample.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\QuestionExample.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\QuizMenu.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\QuizMenu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\Scoreboard.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\Scoreboard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\far\fit\thumbnails\MainMenu.gif">
@@ -180,7 +180,7 @@
     <Content Update="wwwroot\images\projects\far\fit\thumbnails\MainMenuResolutionAdjusted.webm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\far\fit\Trophies.PNG">
+    <Content Update="wwwroot\images\projects\far\fit\Trophies.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\far\vr\FoodAnalysis.jpg">
@@ -312,22 +312,22 @@
     <Content Update="wwwroot\images\projects\placeholders\thumbnails\Placeholder2_Thumbnail.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\ConfigMenu.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\ConfigMenu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\GalaxyMap.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\GalaxyMap.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\Results.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\Results.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\SystemInhabited.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\SystemInhabited.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\SystemUninhabited.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\SystemUninhabited.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\bs\Wormhole.PNG">
+    <Content Update="wwwroot\images\projects\uni\bs\Wormhole.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\uni\bt\EditorARFeature.png">
@@ -378,10 +378,10 @@
     <Content Update="wwwroot\images\projects\uni\ld\Asylum_Entrance_2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\ld\MainMenu.PNG">
+    <Content Update="wwwroot\images\projects\uni\ld\MainMenu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\ld\MapOverview.PNG">
+    <Content Update="wwwroot\images\projects\uni\ld\MapOverview.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\uni\ld\Map_Enemy_Nearby.png">
@@ -432,7 +432,7 @@
     <Content Update="wwwroot\images\projects\uni\mt\combat_draugr.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\combat_draugr_2.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\combat_draugr_2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\uni\mt\combat_fenrir.PNG">
@@ -450,19 +450,19 @@
     <Content Update="wwwroot\images\projects\uni\mt\freewalk info.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_1.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_2.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_combined.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\freewalk_ar_combined.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\freewalk_default.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\freewalk_default.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\mt\mainmenu_story_selection.PNG">
+    <Content Update="wwwroot\images\projects\uni\mt\mainmenu_story_selection.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\projects\uni\mt\minigame.png">
@@ -471,31 +471,31 @@
     <Content Update="wwwroot\images\projects\uni\mt\story.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Builder.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Builder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Final 1.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Final 1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Final 2.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Final 2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Firebase.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Firebase.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Lobby Browser.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Lobby Browser.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Lobby Test 2.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Lobby Test 2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Lobby Test.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Lobby Test.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Main Menu.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Main Menu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\images\projects\uni\sg\Runner.PNG">
+    <Content Update="wwwroot\images\projects\uni\sg\Runner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\legacy\.jsbeautifyrc">

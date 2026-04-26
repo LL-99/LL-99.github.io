@@ -91,27 +91,27 @@
             "Caption": "The main menu from which players can reach both the info sections as well as the actual gameplay"
           },
           {
-            "Source": "images/projects/far/fit/Infos.PNG",
+            "Source": "images/projects/far/fit/Infos.png",
             "Caption": "In the 'About Enable' menu, players can learn about the various groups of the enable cluster"
           },
           {
-            "Source": "images/projects/far/fit/QR Scanner.PNG",
+            "Source": "images/projects/far/fit/QR Scanner.png",
             "Caption": "This menu allows players to scan individual booth's QR codes"
           },
           {
-            "Source": "images/projects/far/fit/QuestionExample.PNG",
+            "Source": "images/projects/far/fit/QuestionExample.png",
             "Caption": "An example question"
           },
           {
-            "Source": "images/projects/far/fit/QuizMenu.PNG",
+            "Source": "images/projects/far/fit/QuizMenu.png",
             "Caption": "The 'Questions' menu, which allows the player navigate between QR Code scanner, trophies and a trial run containing all questions in random order."
           },
           {
-            "Source": "images/projects/far/fit/Scoreboard.PNG",
+            "Source": "images/projects/far/fit/Scoreboard.png",
             "Caption": "In the scoreboard, detailed results are given for each individual booth."
           },
           {
-            "Source": "images/projects/far/fit/Trophies.PNG",
+            "Source": "images/projects/far/fit/Trophies.png",
             "Caption": "In the trophy menu, trophies are be awarded for finishing separate booths and required for entering the lottery"
           }
         ]

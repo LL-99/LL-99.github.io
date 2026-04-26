@@ -3,7 +3,7 @@
     "Name": "AR Sagas (Master's Thesis)",
     "NameLong": "Master's Thesis: \"ARSagas - A Historically Accurate Serious Game Focusing on Mythology\"",
     "Summary": "My Master's Thesis (titled \"AR Sagas\") was a framework for interactive storytelling using various gameplay components. As an implementation example, I focused on the Norse myth \"Ragnarök\".",
-    "Thumbnail": "images/projects/uni/mt/combat_fenrir.PNG",
+    "Thumbnail": "images/projects/uni/mt/combat_fenrir.png",
     "LocalUrl": "#masters-thesis",
 
     "Description": [
@@ -15,7 +15,7 @@
             "Caption": "A simple story segment, retelling a part of the well-known myth."
           },
           {
-            "Source": "images/projects/uni/mt/freewalk_default.PNG",
+            "Source": "images/projects/uni/mt/freewalk_default.png",
             "Caption": "In the freewalk mode, the player can traverse a small Viking village, based on real locations"
           },
           {
@@ -23,7 +23,7 @@
             "Caption": "While travelling around in the freewalk mode, certain Points of Interest (POIs) provide historically accurate info"
           },
           {
-            "Source": "images/projects/uni/mt/freewalk_ar_2.PNG",
+            "Source": "images/projects/uni/mt/freewalk_ar_2.png",
             "Caption": "The AR version of the freewalk mode. Instead of walking around, the entire area is projected on a nearby surface using AR. Since normal interactions would be difficult, the player here assumes more of a \"god-mode\"-style role, with some fun hidden interactions."
           },
           {
@@ -31,7 +31,7 @@
             "Caption": "Some examples of the combat. While the first battle is against a \"Draugr\" (norse undead), which acts as a tutorial enemy and does not appear in the actual tale, the others re-enact significant fights from the story (Thor vs. the serpent Jörmungandr, Odin and Vidarr against the wolf Fenrir and lastly the clash between Heimdall and Loki)."
           },
           {
-            "Source": "images/projects/uni/mt/combat_draugr_2.PNG",
+            "Source": "images/projects/uni/mt/combat_draugr_2.png",
             "Caption": "To use different moves during combat you have to draw the respective <a href=\"https://en.wikipedia.org/wiki/Elder_Futhark\" target=\"_blank\" rel=\"noopener noreferrer\">Elder Futhark</a> runes. Combat is in realtime, so you'll have to parry enemy attacks and time your own attacks right, but entering Draw-mode slows down everything to allow you to focus on drawing the right rune. More runes are unlocked later fights and may be strong or weak against certain enemies."
           },
           {
@@ -95,7 +95,7 @@
         "Text": "Since most of the projects I've worked on as a student or student assistant, except for my Master's Thesis, were either Gameplay or Tech-focused, it was refreshing to work on a more immersive and narrative experience. The player took on the role of a CEO's bodyguard sent into a research and development blacksite, owned by the CEO, in order to retrieve some top-secret documents. However, there were two main obstacles: On one hand, the facility had suffered a major containment breach only hours prior and now was swarming with monstrous creatures. On the other, the facility was located on a space station, which had automatically activated its self-destruct sequence as response to the breach.<br>The Facility is a first-person horror game and was created in a team of four, with each of us designing and building his very own level.My level were \"The Sewers\", a network of claustrophobic underground tunnels in which a worm-like monster stalked the player at every turn. While the first segment of the level was ominous and quiet, the second half was a much more stressful chase sequence in which the player would have to avoid the creature while finding their way through a maze-like pipe system.<br>I also really enjoyed the Gameplay development, which I did together with another group member, as it strayed away from the classic bird's-eye view/third-person-perspective I had used in many prior projects.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/uni/ld/MainMenu.PNG",
+            "Source": "images/projects/uni/ld/MainMenu.png",
             "Caption": "The main menu"
           },
           {
@@ -166,34 +166,34 @@
   {
     "Name": "Galaxy Simulation",
     "Summary": "Developed in a group of 8 students this was one of the most theory-heavy projects I worked on. Its backend utilizes many factors, such as intelligence and aggressiveness of species to simulate their expansions across a galaxy.",
-    "Thumbnail": "images/projects/uni/bs/GalaxyMap.PNG",
+    "Thumbnail": "images/projects/uni/bs/GalaxyMap.png",
     "LocalUrl": "#business-simulations",
     "Description": [
       {
         "Text": " This was the largest group project I participated in during my time at TUM. In a team of 8, we developed a galaxy simulation, that would see multiple interstellar races compete for dominance in a large procedurally generated galaxy with complex solar systems. As the goal was to primarily create a simulation, the project only had little actual gameplay, with only minor ways of influencing the different civilizations. A large part of the work was focused on detailed numerical values and calculations, such as traits of the different races and planets, as well as their interactions with factors such as population growth and expansion rates.<br>The core design of the project was heavily inspired by well-known Sci-Fi aspects, such as the Dark Forest theorem popularized by Liu Cixin's <a href=\"https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)\" target=\"_blank\" rel=\"noopener noreferrer\">The Three-Body Problem</a> series, while visuals and aspects of the procedural generation drew from popular Sci-Fi games, like <a href=\"https://en.wikipedia.org/wiki/Stellaris_(video_game)\" target=\"_blank\" rel=\"noopener noreferrer\">Stellaris'</a> Galaxy Map.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/uni/bs/ConfigMenu.PNG",
+            "Source": "images/projects/uni/bs/ConfigMenu.png",
             "Caption": "The Main Menu used to configure the simulation"
           },
           {
-            "Source": "images/projects/uni/bs/GalaxyMap.PNG",
+            "Source": "images/projects/uni/bs/GalaxyMap.png",
             "Caption": "The galaxy map. Grey circles represent uninhabitated systems, while colored ones indicate the civilizations occupying them. The lines between indicate connections that may be traversed by spaceships."
           },
           {
-            "Source": "images/projects/uni/bs/Wormhole.PNG",
+            "Source": "images/projects/uni/bs/Wormhole.png",
             "Caption": "A wormhole, allowing for long-distance travel across the galaxy. Pairs of wormholes are shown via a yellow connector on the galaxy map."
           },
           {
-            "Source": "images/projects/uni/bs/SystemUninhabited.PNG",
+            "Source": "images/projects/uni/bs/SystemUninhabited.png",
             "Caption": "An uninhabited system"
           },
           {
-            "Source": "images/projects/uni/bs/SystemInhabited.PNG",
+            "Source": "images/projects/uni/bs/SystemInhabited.png",
             "Caption": "An inhabited system. The panel on the left showcases the resident civilazitation's stats."
           },
           {
-            "Source": "images/projects/uni/bs/Results.PNG",
+            "Source": "images/projects/uni/bs/Results.png",
             "Caption": "After manually ending the simulation (or a single civilization conquers the entire galaxy), a number of interesting stats - both relating to economics and combat - are shown."
           }
         ]
@@ -204,7 +204,7 @@
     "Name": "Multiplayer Platformer",
     "NameLong": "Unnamed Multiplayer Platformer",
     "Summary": "An unnamed multiplayer platformer I created in a small group. While nothing special, it was my first foray into the world of networking.",
-    "Thumbnail": "images/projects/uni/sg/Main Menu.PNG",
+    "Thumbnail": "images/projects/uni/sg/Main Menu.png",
     "LocalUrl": "#social-gaming",
 
     "Description": [
@@ -212,19 +212,19 @@
         "Text": "This project was a fun little bonus credits group project. While some parts of the UI design & graphics are arguably rough, this is one of the first goal-oriented projects I worked on. Most of my work went into the networking and basic gameplay aspects.<br>The gameplay is simple, yet enticing: In every match, two players compete against each other. The <i>Runner</i> has to survive in a 2D side-scrolling level with hazards and enemies, while the <i>Builder</i> attempts to actively kill the <i>Runner</i> by placing the levels components in the most difficult - yet possible - way.<br>The project was developed in Unity, using Firebase for networking.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/uni/sg/Main Menu.PNG",
+            "Source": "images/projects/uni/sg/Main Menu.png",
             "Caption": "The main menu"
           },
           {
-            "Source": "images/projects/uni/sg/Lobby Browser.PNG",
+            "Source": "images/projects/uni/sg/Lobby Browser.png",
             "Caption": "The lobby browser"
           },
           {
-            "Source": "images/projects/uni/sg/Runner.PNG",
+            "Source": "images/projects/uni/sg/Runner.png",
             "Caption": "Gameplay example of player 1, the <i>Runner</i>"
           },
           {
-            "Source": "images/projects/uni/sg/Builder.PNG",
+            "Source": "images/projects/uni/sg/Builder.png",
             "Caption": "Gameplay example of player 2, the <i>Builder</i>"
           }
         ]

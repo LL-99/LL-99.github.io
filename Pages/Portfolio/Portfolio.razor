@@ -52,7 +52,7 @@
 						<MudCarousel Class="mud-width-full portfolio-carousel" ShowArrows ShowBullets EnableSwipeGesture AutoCycle TData="object">
 							@foreach (var img in cell.Images)
 							{
-								<MudCarouselItem Transition="Transition.Slide" Color="@Color.Primary">
+								<MudCarouselItem Transition="Transition.Slide">
 									<MudImage Src="@img" ObjectFit="ObjectFit.Cover" Style="width: 100%; height: 100%;" />
 								</MudCarouselItem>
 							}

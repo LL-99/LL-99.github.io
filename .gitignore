@@ -202,3 +202,5 @@ __pycache__/
 # Windows thumbnail cache files
 Thumbs.db
 /build-check
+/.dotnet-home
+/.localappdata

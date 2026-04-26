@@ -92,6 +92,13 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
     min-height: 240px;
 }
 
+.portfolio-carousel .mud-carousel-item,
+.showcase-carousel .mud-carousel-item,
+.portfolio-carousel .mud-skeleton,
+.showcase-carousel .mud-skeleton {
+    background-color: color-mix(in srgb, var(--mud-palette-surface) 90%, var(--mud-palette-primary) 10%) !important;
+}
+
 .project-card {
     aspect-ratio: 6 / 7;
     overflow: hidden;

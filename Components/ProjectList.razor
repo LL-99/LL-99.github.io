@@ -38,7 +38,7 @@
 									 @bind-SelectedIndex="SelectedShowcaseIndex[descr]">
 							@foreach (var element in descr.ShowcaseElements)
 							{
-								<MudCarouselItem Transition="Transition.Slide" Color="@Color.Primary">
+								<MudCarouselItem Transition="Transition.Slide">
 									<div class="showcase-media">
 										@if (element.IsVideo == false)
 										{

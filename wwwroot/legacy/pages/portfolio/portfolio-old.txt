@@ -1015,37 +1015,37 @@
 
                     <div class="slide fade">
                         <div class="slide-index">1 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/ConfigMenu.PNG"></img>
+                             src="images/projects/uni/bs/ConfigMenu.png"></img>
                         <div class="caption">The Main Menu used to configure the simulation</div>
                     </div>
 
                     <div class="slide fade">
                         <div class="slide-index">2 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/GalaxyMap.PNG"></img>
+                             src="images/projects/uni/bs/GalaxyMap.png"></img>
                         <div class="caption">The galaxy map. Grey circles represent uninhabitated systems, while colored ones indicate the civilizations occupying them. The lines between indicate connections that may be traversed by spaceships.</div>
                     </div>
 
                     <div class="slide fade">
                         <div class="slide-index">3 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/Wormhole.PNG"></img>
+                             src="images/projects/uni/bs/Wormhole.png"></img>
                         <div class="caption">A wormhole, allowing for long-distance travel across the galaxy. Pairs of wormholes are shown via a yellow connector on the galaxy map.</div>
                     </div>
 
                     <div class="slide fade">
                         <div class="slide-index">4 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/SystemUninhabited.PNG"></img>
+                             src="images/projects/uni/bs/SystemUninhabited.png"></img>
                         <div class="caption">An uninhabited system</div>
                     </div>
 
                     <div class="slide fade">
                         <div class="slide-index">5 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/SystemInhabited.PNG"></img>
+                             src="images/projects/uni/bs/SystemInhabited.png"></img>
                         <div class="caption">An inhabited system. The panel on the left showcases the resident civilazitation's stats.</div>
                     </div>
 
                     <div class="slide fade">
                         <div class="slide-index">6 / 6</div><img class="slide-image"
-                             src="images/projects/uni/bs/Results.PNG"></img>
+                             src="images/projects/uni/bs/Results.png"></img>
                         <div class="caption">After manually ending the simulation (or a single civilization conquers the entire galaxy), a number of interesting stats - both relating to economics and combat - are shown</div>
                     </div>
 
@@ -1077,20 +1077,20 @@
                 <div class="slideshow" style="width:100%;"><a class="slide-prev">&#10094;</a><a class="slide-next">&#10095;</a>
                     <div class="slide fade">
                         <div class="slide-index">1 / 4</div> <img class="slide-image"
-                             src="images/projects/uni/sg/Main Menu.PNG"></img>
+                             src="images/projects/uni/sg/Main Menu.png"></img>
                         <div class="caption">The main menu</div>
                     </div>
                     <div class="slide fade">
                         <div class="slide-index">2 / 4</div><img class="slide-image"
-                             src="images/projects/uni/sg/Lobby Browser.PNG">
+                             src="images/projects/uni/sg/Lobby Browser.png">
                         <div class="caption">The lobby browser</div>
                     </div>
                     <div class="slide fade">
-                        <div class="slide-index">3 / 4</div><img class="slide-image" src="images/projects/uni/sg/Runner.PNG">
+                        <div class="slide-index">3 / 4</div><img class="slide-image" src="images/projects/uni/sg/Runner.png">
                         <div class="caption">Gameplay example of player 1, the <i>Runner</i></div>
                     </div>
                     <div class="slide fade">
-                        <div class="slide-index">4 / 4</div><img class="slide-image" src="images/projects/uni/sg/Builder.PNG">
+                        <div class="slide-index">4 / 4</div><img class="slide-image" src="images/projects/uni/sg/Builder.png">
                         <div class="caption">Gameplay example of player 2, the <i>Builder</i></div>
                     </div><!-- The dots/circles -->
                     <div style="text-align:center"><span class="dot"></span><span class="dot"></span><span
