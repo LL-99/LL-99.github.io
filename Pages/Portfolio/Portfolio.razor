@@ -6,11 +6,11 @@
 
 @inject ContentService ContentService
 
-<MudPaper Class="portfolio-hero pa-5 mb-5" Elevation="0" Outlined="true">
+<MudStack Class="portfolio-hero mb-6" Spacing="1">
 	<MudText Typo="Typo.h4" Align="Align.Center">Welcome!</MudText>
 	<MudText Typo="Typo.body1" Align="Align.Center">Hi, I'm Lucas! Welcome my homepage! Below you can find my portfolio containing many of my projects. Feel free to take a look around.</MudText>
 	<MudText Typo="Typo.body2" Align="Align.Center">Please be aware that this page is still WIP, as I've recently been busy with migrating it from plain HTML to MudBlazor.</MudText>
-</MudPaper>
+</MudStack>
 
 <MudStack Spacing="4" Class="portfolio-categories">
 	@foreach (var project in Projects)
@@ -27,19 +27,20 @@
 						}
 						else
 						{
-							@if (string.IsNullOrWhiteSpace(cell.Title) == false)
-							{
-								<MudText Typo="Typo.h5" Style="font-weight:bold">@cell.Title</MudText>
-								<MudDivider Class="my-2" />
-							}
-							@if (string.IsNullOrWhiteSpace(cell.Descr) == false)
-							{
-								<MudText Typo="Typo.body1">@((MarkupString)cell.Descr)</MudText>
-							}
-							@if (string.IsNullOrWhiteSpace(cell.Link) == false)
-							{
-								<MudButton Class="mt-3 align-self-start" Href="@cell.Link" Variant="Variant.Text" Color="Color.Primary" EndIcon="@Icons.Material.Filled.ArrowForward">Learn more</MudButton>
-							}
+							<MudStack Class="portfolio-copy-inner" Spacing="2">
+								@if (string.IsNullOrWhiteSpace(cell.Title) == false)
+								{
+									<MudText Typo="Typo.h5" Style="font-weight:bold">@cell.Title</MudText>
+								}
+								@if (string.IsNullOrWhiteSpace(cell.Descr) == false)
+								{
+									<MudText Typo="Typo.body1" Class="portfolio-description">@((MarkupString)cell.Descr)</MudText>
+								}
+								@if (string.IsNullOrWhiteSpace(cell.Link) == false)
+								{
+									<MudButton Class="align-self-start" Href="@cell.Link" Variant="Variant.Text" Color="Color.Primary" EndIcon="@Icons.Material.Filled.ArrowForward">Learn more</MudButton>
+								}
+							</MudStack>
 						}
 					}
 					else if (cell.Images.Count == 1)

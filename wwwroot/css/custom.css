@@ -30,7 +30,6 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
     color: var(--mud-palette-secondary);
 }
 
-.portfolio-hero,
 .page-intro,
 .project-detail-section,
 .skill-panel {
@@ -39,8 +38,7 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
 }
 
 .portfolio-hero {
-    overflow: hidden;
-    position: relative;
+    padding: 1.25rem 0 1rem;
 }
 
 .portfolio-categories {
@@ -70,9 +68,18 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
 
 .portfolio-copy {
     height: 100%;
+    padding: clamp(1rem, 2vw, 1.5rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.portfolio-copy-inner {
+    width: 100%;
+}
+
+.portfolio-description {
+    max-width: 72ch;
 }
 
 .portfolio-tile-image,
