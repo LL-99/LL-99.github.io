@@ -120,11 +120,14 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
     border: 1px solid var(--mud-palette-lines-default);
 }
 
+.project-detail-section {
+    scroll-margin-top: 5rem;
+}
+
 .project-anchor {
     display: block;
     height: 0;
-    position: relative;
-    top: -5rem;
+    scroll-margin-top: 5rem;
     visibility: hidden;
 }
 

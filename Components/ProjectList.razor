@@ -5,12 +5,13 @@
 @inject ContentService ContentService
 
 @foreach (var project in Projects)
-{		
-	<MudPaper Class="project-detail-section pa-4 pa-sm-6 my-8" Elevation="0" Outlined="true">
-		
-		@foreach (var anchorId in AnchorIds(project))
+{
+	var primaryAnchor = PrimaryAnchor(project);
+	<MudPaper id="@primaryAnchor" Class="project-detail-section pa-4 pa-sm-6 my-8" Elevation="0" Outlined="true">
+
+		@foreach (var anchorId in AnchorIds(project).Where(id => id != primaryAnchor))
 		{
-			<span id="@anchorId" class="project-anchor" style="height:0px; position:relative; bottom:50px;"></span>
+			<span id="@anchorId" class="project-anchor"></span>
 		}
 
 		<MudText Typo="Typo.h4">@(string.IsNullOrWhiteSpace(project.NameLong) ? project.Name : project.NameLong)</MudText>
@@ -83,7 +84,7 @@
 	private static IEnumerable<string> AnchorIds(DetailedProjectDefinition project)
 	{
 		var ids = new List<string>();
-		var configured = NormalizeAnchor(project.LocalUrl);
+		var configured = PrimaryAnchor(project);
 		var slug = Slug(project.Name);
 
 		if (string.IsNullOrWhiteSpace(configured) == false)
@@ -100,6 +101,9 @@
 
 		return ids.Distinct();
 	}
+
+	private static string PrimaryAnchor(DetailedProjectDefinition project) =>
+		NormalizeAnchor(project.LocalUrl) ?? Slug(project.Name);
 
 	private static string? NormalizeAnchor(string? anchor) =>
 		string.IsNullOrWhiteSpace(anchor) ? null : anchor.Trim().TrimStart('#');
