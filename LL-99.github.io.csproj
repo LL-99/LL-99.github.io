@@ -99,6 +99,33 @@
     <Content Update="wwwroot\images\projects\bb\FocusMaster\Showcase.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\AsiaEnvironment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\CityEnvironment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\Gameplay00.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\Gameplay01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\Gameplay02.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\PiratesEnvironment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\RetroEnvironment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\StartLine.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\projects\bb\NeuroRacer\VoidEnvironment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\images\projects\far\bd\Bild4_1 - Kopie.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -953,6 +980,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\projects\bb\Dragonbay\" />
     <Folder Include="wwwroot\images\projects\bb\FocusMaster\" />
+    <Folder Include="wwwroot\images\projects\bb\NeuroRacer\" />
     <Folder Include="wwwroot\images\projects\bb\PirateIslands\" />
     <Folder Include="wwwroot\images\projects\own\group-tracker\" />
   </ItemGroup>

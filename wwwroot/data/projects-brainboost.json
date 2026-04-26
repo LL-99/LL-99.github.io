@@ -70,16 +70,44 @@
   {
     "Name": "NeuroRacer",
     "Summary": "A fast-paced racing game where the player must maintain positive Neurofeedback in order to accelerate",
-    "Thumbnail": "images/projects/placeholders/Placeholder1.png",
+    "Thumbnail": "images/projects/bb/NeuroRacer/Gameplay01.jpg",
     "LocalUrl": "#neuro-racer",
 
     "Description": [
       {
-        "Text": "",
+        "Text": "NeuroRacer is the first full project I got to work on by myself. The underlying concept involves the player driving along a road and racing against NPC opponents. Acceleration is achieved via positive Neurofeedback, while steering is done via controller/keyboard inputs. In order to simplify the game principle and make it accessible to a wider audience the player does not have to fully steer the car. Instead, the car drives automatically along its current lane and steering is only required to swap lanes.<br/>In its original state the project only existed as a simple proof-of-concept where the player would drive along a single, straight road. I rebuilt the project from the ground up and added curves as well as other dynamic segments by adding a fully fleshed out procedural generation system. Later, I also added some entirely new environments, more cars, and a Nitro-boost (also charged via positive feedback).<br/>The core design for the environments saw NeuroRacer as a kind of 'Multiverse' or cross-over game that would have the player visit some areas already known from our other games, such as the 'Asia' environment from Focus Master or the 'Pirates' environment from Dragonbay.",
         "ShowcaseElements": [
           {
-            "Source": "images/projects/placeholders/Placeholder1.png",
-            "Caption": ""
+            "Source": "images/projects/bb/NeuroRacer/Gameplay02.jpg",
+            "Caption": "Example gameplay from the 'Asia' environment"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/Gameplay01.jpg",
+            "Caption": "Example gameplay from the 'Pirates' environment"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/Gameplay00.jpg",
+            "Caption": "More example gameplay from the 'Asia' environment"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/StartLine.jpg",
+            "Caption": "The 'Void' environment acts as a start and finish environment for each race."
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/VoidEnvironment.jpg",
+            "Caption": "The 'Void' environment is presented as a mostly empty region only containing the game's road paired with various random pieces from other worlds'"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/CityEnvironment.jpg",
+            "Caption": "The 'City' world was the original NeuroRacer world, which I expanded with bridges and alleys"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/AsiaEnvironment.jpg",
+            "Caption": "A nod to the Focus Master's initial world, the 'Asia' sees the player racing through a region inspired by feudal Japan and other far-east influences"
+          },
+          {
+            "Source": "images/projects/bb/NeuroRacer/PiratesEnvironment.jpg",
+            "Caption": "The 'Pirates' world combines influences from Dragonbay and Pirate Islands. There the player races on long wooden piers between islands and tiles party known from those two games and sometimes completely original"
           }
         ]
       }
@@ -93,11 +121,27 @@
 
     "Description": [
       {
-        "Text": "",
+        "Text": "Another project I worked on was Pirate Islands. This game is a kind of walking simulator where the player traverses various environments (represented as treasure maps) by maintaining positive Neurofeedback. Treasure map routes are split into various sub-elements like sailing or walking segments. Occasional hazards may also block the path, requiring special effort to continue. Initially the project was created with only its original route mind, so I updated it use a more modular & extendable system, similar to one big cutscene editor. Afterwards I added a number of new routes, also containing nods to various other brainboost games. See the images below for some examples.",
         "ShowcaseElements": [
           {
             "Source": "images/projects/placeholders/Placeholder1.png",
-            "Caption": ""
+            "Caption": "The original route, after its Unity URP upgrade"
+          },
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": "A northern, icy environment inspired by Dragonbay's ice world containing 2 separate routes"
+          },
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": "The 'Three Islands' route takes the player on a journey across 3 smaller islands of the pirate archipelago"
+          },
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": "Inspired by Ocean Dive, one of our free games, this route sees the player descend into ocean within a diving bell"
+          },
+          {
+            "Source": "images/projects/placeholders/Placeholder1.png",
+            "Caption": "The latest map I've added takes the player into a Wild West region - train ride included"
           }
         ]
       }
@@ -105,17 +149,17 @@
   },
   {
     "Name": "Various Others",
-    "Summary": "",
+    "Summary": "A short summary of other games and projects I worked on at brainboost so far",
     "Thumbnail": "images/projects/placeholders/Placeholder1.png",
-    "LocalUrl": "#neuro-racer",
+    "LocalUrl": "#other-projects",
 
     "Description": [
       {
-        "Text": "",
+        "Text": "I also worked on a number of other projects. Our webtools, both internal and as special contracts for some customers, first introduced me to Blazor, which is a welcome change from my prior web development experiences using primarily raw HTML, JS and CSS. I also contributed to and worked on other games than just those listed above. I've summarized various projects with the images below.",
         "ShowcaseElements": [
           {
             "Source": "images/projects/placeholders/Placeholder1.png",
-            "Caption": ""
+            "Caption": "In Feeding Animals, the player must use positive feedback in order to feed a number of cute animals, allowing them to evolve into more imposing versions"
           }
         ]
       }
