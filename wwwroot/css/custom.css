@@ -116,8 +116,15 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
 }
 
 .showcase-frame {
+    --showcase-background: color-mix(in srgb, var(--mud-palette-surface) 82%, #000 18%);
     overflow: hidden;
     border: 1px solid var(--mud-palette-lines-default);
+    background: var(--showcase-background) !important;
+    padding-top: .75rem;
+}
+
+.showcase-caption {
+    background: var(--showcase-background);
 }
 
 .project-detail-section {
