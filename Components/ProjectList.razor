@@ -5,12 +5,14 @@
 @inject ContentService ContentService
 
 @foreach (var project in Projects)
-{
-	@foreach (var anchorId in AnchorIds(project))
-	{
-		<span id="@anchorId" class="project-anchor"></span>
-	}
+{		
 	<MudPaper Class="project-detail-section pa-4 pa-sm-6 my-8" Elevation="0" Outlined="true">
+		
+		@foreach (var anchorId in AnchorIds(project))
+		{
+			<span id="@anchorId" class="project-anchor" style="height:0px; position:relative; bottom:50px;"></span>
+		}
+
 		<MudText Typo="Typo.h4">@(string.IsNullOrWhiteSpace(project.NameLong) ? project.Name : project.NameLong)</MudText>
 		<MudDivider Class="my-3" />
 
