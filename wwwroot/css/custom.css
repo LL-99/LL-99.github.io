@@ -175,7 +175,12 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
         min-height: 260px;
     }
 
+    .portfolio-copy {
+        order: 1;
+    }
+
     .portfolio-media {
+        order: 2;
         height: clamp(260px, 64vw, 360px);
     }
 
