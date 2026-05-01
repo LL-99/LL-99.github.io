@@ -88,12 +88,21 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
     height: 100%;
 }
 
+.portfolio-carousel .mud-carousel-item,
+.showcase-carousel .mud-carousel-item,
+.portfolio-carousel .mud-carousel-item > *,
+.showcase-carousel .mud-carousel-item > * {
+    height: 100%;
+}
+
 .portfolio-media {
     min-height: 240px;
 }
 
 .portfolio-carousel .mud-carousel-item,
 .showcase-carousel .mud-carousel-item,
+.portfolio-carousel .mud-carousel-item > *,
+.showcase-carousel .mud-carousel-item > *,
 .portfolio-carousel .mud-skeleton,
 .showcase-carousel .mud-skeleton {
     background-color: color-mix(in srgb, var(--mud-palette-surface) 90%, var(--mud-palette-primary) 10%) !important;
@@ -164,6 +173,10 @@ a:not(.mud-button-root):not(.mud-nav-link):not(.mud-tab):hover {
 
     .portfolio-category-cell {
         min-height: 260px;
+    }
+
+    .portfolio-media {
+        height: clamp(260px, 64vw, 360px);
     }
 
     .project-card-overlay {
